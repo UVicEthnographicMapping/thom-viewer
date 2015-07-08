@@ -8,6 +8,7 @@ all: $(TILES)
 
 # This is lazy and only updates ones it actually needs to.
 $(TILE_DIR)/%: $(GEOTIFF_DIR)/%.tif
+	echo $@ >> $(TILE_DIR)/list
 	gdal2tiles.py -r cubicspline -w none $< $@
 
 clean:
