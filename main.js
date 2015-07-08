@@ -48,13 +48,7 @@ function init() {
             map.setCenter(new google.maps.LatLng(center_lat, center_lon));
     }
     google.maps.event.trigger(map, 'center_changed');
-    google.maps.event.addDomListener(window, "resize", function() {
-        var map_el = document.getElementById("map");
-        var header = document.getElementById("sidebar");
-        map_el.style.height = document.documentElement.clientHeight + "px";
-        google.maps.event.trigger(map, 'resize');
-    });
-    window.dispatchEvent(new Event('resize'));
+
 }
 
 google.maps.event.addDomListener(window, 'load', init);

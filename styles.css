@@ -1,11 +1,24 @@
-html, body, #map-canvas {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
+#sidebar, #map {
+    /*display: inline-block;*/
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
 #sidebar {
-    left: 0px;
-    height: 500px;
     position: absolute;
+    width: 250px;
+}
+
+#map {
+    margin-left: 250px;
 }
