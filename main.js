@@ -14,7 +14,7 @@ var map, overlay;
 function init() {
     // Map options for example map
     var mapOptions = {
-        zoom: 11,
+        zoom: 4,
         center: new google.maps.LatLng(47.597486111111095, -122.30471388888901),
         mapTypeId: google.maps.MapTypeId.SATELLITE,
         streetViewControl:false,
@@ -50,8 +50,8 @@ function init() {
     google.maps.event.trigger(map, 'center_changed');
     google.maps.event.addDomListener(window, "resize", function() {
         var map_el = document.getElementById("map");
-        var header = document.getElementById("header");
-        map_el.style.height = (document.documentElement.clientHeight - header.offsetHeight - header.offsetTop)  + "px";
+        var header = document.getElementById("sidebar");
+        map_el.style.height = document.documentElement.clientHeight + "px";
         google.maps.event.trigger(map, 'resize');
     });
     window.dispatchEvent(new Event('resize'));
