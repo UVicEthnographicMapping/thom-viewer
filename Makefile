@@ -8,7 +8,9 @@ all: $(TILES)
 
 # This is lazy and only updates ones it actually needs to.
 $(TILE_DIR)/%: $(GEOTIFF_DIR)/%.tif
-	echo $@ >> $(TILE_DIR)/list
+	# Make an entry in the list.
+	echo $(patsubst $(TILE_DIR)/%,%,$@) >> $(TILE_DIR)/list
+	# Build the tiles.
 	gdal2tiles.py -r cubicspline -w none $< $@
 
 clean:

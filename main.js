@@ -1,4 +1,6 @@
-
+/*******************************************************************************
+Modified by Andrew Hobden, 2015.
+******************************************************************************/
 /*******************************************************************************
 Copyright (c) 2010-2012. Gavin Harriss
 Site: http://www.gavinharriss.com/
@@ -26,29 +28,33 @@ function init() {
     document.getElementById("map").style.backgroundColor = "#5C5745";
 
     var initialOpacity = 100;
-    var tileUrl = "assets/test";
+    var tileUrl = "geotiffs/test";
     overlay = new CustomTileOverlay(map, initialOpacity, tileUrl);
     overlay.show();
     // Add opacity control and set initial value
     createOpacityControl(map, initialOpacity);
 
-    var params = {};
-    if (document.location.href.lastIndexOf('?') > -1) {
-        var paramsArray = document.location.href.substring(document.location.href.lastIndexOf('?')+1, document.location.href.length);
-        paramsArray = paramsArray.split(/&/);
-        for (var i = 0; i < paramsArray.length; i++) {
-            var pair = paramsArray[i].split(/=/);
-                params[pair[0]] = pair[1];
-            }
-            var center_lat = params.lat;
-            var center_lon = params.lon;
-            var init_zoom = parseInt(params.zoom);
-
-            map.setZoom(init_zoom);
-            map.setCenter(new google.maps.LatLng(center_lat, center_lon));
-    }
-    google.maps.event.trigger(map, 'center_changed');
-
+    buildSidebar();
 }
 
 google.maps.event.addDomListener(window, 'load', init);
+
+function buildSidebar() {
+    var ul = document.createElement("ul");
+    $("#sidebar").append(ul);
+    $.get("/tiles/list").done(function (out) {
+        var set = out.split('\n');
+        set.pop(); // remove a blank newline.
+        set.map(function (val) {
+            var li = document.createElement("li"),
+                a  = document.createElement("a");
+            $(a).html(val);
+            $(a).attr("href", "#");
+            $(a).click(function () {
+                console.log(val);
+            });
+            $(li).append(a);
+            $(ul).append(li);
+        });
+    });
+}
