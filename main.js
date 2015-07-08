@@ -27,17 +27,20 @@ function init() {
     map = new google.maps.Map(document.getElementById("map"), mapOptions);
     document.getElementById("map").style.backgroundColor = "#5C5745";
 
-    var initialOpacity = 100;
-    var tileUrl = "geotiffs/test";
-    overlay = new CustomTileOverlay(map, initialOpacity, tileUrl);
-    overlay.show();
     // Add opacity control and set initial value
-    createOpacityControl(map, initialOpacity);
+    var initialOpacity = 100;
+    // createOpacityControl(map, initialOpacity);
 
     buildSidebar();
 }
 
 google.maps.event.addDomListener(window, 'load', init);
+
+function changeMap(to) {
+    var tileUrl = to;
+    overlay = new CustomTileOverlay(map, 100, tileUrl);
+    overlay.show();
+}
 
 function buildSidebar() {
     var ul = document.createElement("ul");
@@ -49,9 +52,10 @@ function buildSidebar() {
             var li = document.createElement("li"),
                 a  = document.createElement("a");
             $(a).html(val);
+            $(a).data("tileset", val);
             $(a).attr("href", "#");
             $(a).click(function () {
-                console.log(val);
+                changeMap($(this).data("tileset"));
             });
             $(li).append(a);
             $(ul).append(li);
