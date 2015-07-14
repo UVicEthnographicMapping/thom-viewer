@@ -1,16 +1,10 @@
 /*******************************************************************************
-Modified by Andrew Hobden, 2015.
-******************************************************************************/
-/*******************************************************************************
-Copyright (c) 2010-2012. Gavin Harriss
-Site: http://www.gavinharriss.com/
-Originally developed for: http://www.topomap.co.nz/
-
-Licences: Creative Commons Attribution 3.0 New Zealand License
-http://creativecommons.org/licenses/by/3.0/nz/
+Andrew Hobden, 2015.
+MIT.
 ******************************************************************************/
 
 var OPACITY_MAX_PIXELS = 57; // Width of opacity control image
+var DATA_LIST = "cartographic-legacies.csv";
 var map, overlay;
 
 function init() {
@@ -43,22 +37,44 @@ function changeMap(to) {
 }
 
 function buildSidebar() {
-    var ul = document.createElement("ul");
-    $("#sidebar").append(ul);
-    $.get("/tiles/list").done(function (out) {
-        var set = out.split('\n');
-        set.pop(); // remove a blank newline.
-        set.map(function (val) {
-            var li = document.createElement("li"),
-                a  = document.createElement("a");
-            $(a).html(val);
-            $(a).data("tileset", val);
-            $(a).attr("href", "#");
-            $(a).click(function () {
-                changeMap($(this).data("tileset"));
+    Papa.parse(DATA_LIST, {
+        download: true,
+        header: true,
+        dynamicTyping: true,
+        complete: function (results) {
+            // The list will be added to.
+            var list = document.createElement("ul");
+            var categories = {};
+
+            results.data.map(function (val) {
+                var li = document.createElement("li"),
+                    a  = document.createElement("a");
+                $(a).html(val["File Name"]);
+                // Populate data.
+                $(a).data("dataset", val);
+                $(a).data("tileset", "/"+val["File Name"]+"/");
+                $(a).attr("href", "#");
+                $(a).click(function () {
+                    changeMap($(this).data("tileset"));
+                });
+                $(li).append(a);
+                // Add to category
+                if (!categories[val.Category]) {
+                    categories[val.Category] = document.createElement("ul");
+                }
+                $(categories[val.Category]).append(li);
             });
-            $(li).append(a);
-            $(ul).append(li);
-        });
+
+            // Build the heirarchical sidebar.
+            for (var category in categories) {
+                var sublist = document.createElement("li");
+                $(sublist).append(category);
+                $(sublist).append(categories[category]);
+                $(list).append(sublist);
+            }
+            var sidebar = $("#sidebar");
+            sidebar.append(list);
+            sidebar.jstree();
+        }
     });
 }

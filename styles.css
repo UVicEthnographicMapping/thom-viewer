@@ -17,6 +17,7 @@ html, body {
 #sidebar {
     position: absolute;
     width: 250px;
+    overflow: scroll;
 }
 
 #map {
