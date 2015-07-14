@@ -67,14 +67,22 @@ function buildSidebar() {
 
             // Build the heirarchical sidebar.
             for (var category in categories) {
-                var sublist = document.createElement("li");
-                $(sublist).append(category);
+                var sublist = document.createElement("li"),
+                    link = document.createElement("a");
+                // Link setup.
+                $(link).text(category);
+                $(link).attr("href", "#");
+                $(link).click(function () {
+                    $(this).siblings("ul").toggle();
+                });
+                // List setup.
+                $(sublist).append(link);
+                $(categories[category]).hide(); // Show on click.
                 $(sublist).append(categories[category]);
                 $(list).append(sublist);
             }
             var sidebar = $("#sidebar");
             sidebar.append(list);
-            sidebar.jstree();
         }
     });
 }
