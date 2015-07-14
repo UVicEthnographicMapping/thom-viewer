@@ -4,8 +4,7 @@ html, body {
     padding: 0;
 }
 
-#sidebar, #map {
-    /*display: inline-block;*/
+main, #sidebar, #map {
     position: relative;
     top: 0px;
     bottom: 0px;
@@ -20,6 +19,16 @@ html, body {
     overflow: scroll;
 }
 
+#header {
+    position: relative;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
 #map {
     margin-left: 250px;
+    margin-top: 50;
 }

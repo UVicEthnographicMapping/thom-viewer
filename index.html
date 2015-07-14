@@ -2,7 +2,6 @@
 <html>
     <head>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsHC073dxotBa9yPHSfqXH-yPNQmLE8jE"></script>
-        <script type="text/javascript" src="lib/CustomTileOverlay.js"></script>
         <script type="text/javascript" src="lib/ExtDraggableObject.js"></script>
         <script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="lib/papaparse.min.js"></script>
@@ -11,7 +10,18 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="sidebar"></div>
-        <div id="map"></div>
+        <header>
+            <span><strong>Number:</strong> <span id=number></span></span>
+            <span><strong>Category:</strong> <span id=category></span></span>
+            <span><strong>File Name:</strong> <span id=fileName></span></span>
+            <span><strong>Bibliographic Reference:</strong> <span id=bibliographicReference></span></span>
+            <span><strong>URL:</strong> <span id=url></span></span>
+            <span><strong>Alternate Link:</strong> <span id=alternateLink></span></span>
+            <input id=slider type=range value=100 min=0 max=100>
+        </header>
+        <main>
+            <div id=sidebar></div>
+            <div id=map></div>
+        </main>
   </body>
 </html>
