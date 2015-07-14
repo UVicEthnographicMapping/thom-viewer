@@ -2,7 +2,7 @@
 Andrew Hobden, 2015.
 MIT.
 ******************************************************************************/
-
+"use strict";
 var OPACITY_MAX_PIXELS = 57; // Width of opacity control image
 var DATA_LIST = "cartographic-legacies.csv";
 var map, overlay;
@@ -30,8 +30,10 @@ function init() {
 
 google.maps.event.addDomListener(window, 'load', init);
 
-function changeMap(to) {
-    var tileUrl = to;
+function changeMap(dataset) {
+    var tileUrl = dataset["File Name"].split(".");
+    tileUrl.pop(); // remove extension.
+    tileUrl = "tiles/" + tileUrl;
     overlay = new CustomTileOverlay(map, 100, tileUrl);
     overlay.show();
 }
@@ -52,10 +54,9 @@ function buildSidebar() {
                 $(a).html(val["File Name"]);
                 // Populate data.
                 $(a).data("dataset", val);
-                $(a).data("tileset", "/"+val["File Name"]+"/");
                 $(a).attr("href", "#");
                 $(a).click(function () {
-                    changeMap($(this).data("tileset"));
+                    changeMap($(this).data("dataset"));
                 });
                 $(li).append(a);
                 // Add to category
