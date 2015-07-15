@@ -2,7 +2,6 @@
 Andrew Hobden, 2015.
 MIT.
 ******************************************************************************/
-var OPACITY_MAX_PIXELS = 57; // Width of opacity control image
 var DATA_LIST = "cartographic-legacies.csv";
 
 var map;
@@ -77,6 +76,7 @@ function toggleMap(dataset) {
         $(sliderElem).attr("type", "range");
         $(sliderElem).attr("min", "0");
         $(sliderElem).attr("max", "100");
+        $(sliderElem).attr("value", "100");
         $(sliderElem).on("input", function () {
             var val = Number($(sliderElem).val()) / 100;
             console.log("Changing " + val);
@@ -96,15 +96,16 @@ function toggleMap(dataset) {
 
 function toggleSidebar() {
     console.log("Toggling sidebar");
-    $("#sidebar").toggle();
+    $("#sidebarContainer").toggleClass("in");
 }
 
 function toggleDatasets() {
     console.log("Toggling sidebar");
-    $("#datasets").toggle();
+    $("#datasetsContainer").toggleClass("in");
 }
 
 function buildSidebar() {
+    // Pull and parse data from the csv.
     Papa.parse(DATA_LIST, {
         download: true,
         header: true,
@@ -114,6 +115,7 @@ function buildSidebar() {
             var list = document.createElement("ul");
             var categories = {};
 
+            // Build a set of list elements and add them to respective categories.
             results.data.map(function (val) {
                 var li = document.createElement("li"),
                     label = document.createElement("label"),

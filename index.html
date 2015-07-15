@@ -11,11 +11,15 @@
     </head>
     <body>
         <main>
-            <button id=sidebarButton onclick="toggleSidebar()">Sidebar</button>
-            <div id=sidebar></div>
+            <div id=sidebarContainer>
+                <button id=sidebarButton onclick="toggleSidebar()">Sidebar</button>
+                <div id=sidebar></div>
+            </div>
             <div id=map></div>
+            <div id=datasetsContainer>
             <button id=datasetsButton onclick="toggleDatasets()">Datasets</button>
             <div id="datasets"></div>
+            </div>
         </main>
   </body>
 </html>
