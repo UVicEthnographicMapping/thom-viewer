@@ -5,15 +5,7 @@ MIT.
 var OPACITY_MAX_PIXELS = 57; // Width of opacity control image
 var DATA_LIST = "cartographic-legacies.csv";
 
-var map,
-    sliderElem,
-    // Per map
-    numberElem,
-    categoryElem,
-    fileNameElem,
-    bibliographicReferenceElem,
-    urlElem,
-    alternateLinkElem;
+var map;
 
 function init() {
     // Map options for example map
@@ -29,50 +21,87 @@ function init() {
     map = new google.maps.Map(document.getElementById("map"), mapOptions);
     document.getElementById("map").style.backgroundColor = "#5C5745";
 
-    sliderElem = $("#slider");
-    sliderElem.on("input", function () {
-        var overlay = map.overlayMapTypes.getAt(0);
-        if (overlay) {
-            overlay.setOpacity(sliderElem.val() / 100);
-        }
-    });
-
-    numberElem = $("#number");
-    categoryElem = $("#category");
-    fileNameElem = $("#fileName");
-    bibliographicReferenceElem = $("#bibliographicReference");
-    urlElem = $("#url");
-    alternateLinkElem = $("#alternateLink");
-
     buildSidebar();
 }
 
 google.maps.event.addDomListener(window, 'load', init);
 
-function changeMap(dataset) {
-    // Clear map over overlays.
-    map.overlayMapTypes.clear();
-
-    // Set up new tiles.
-    var tileUrl = dataset["File Name"].split(".");
-    tileUrl.pop(); // remove extension.
-    tileUrl = "tiles/" + tileUrl;
-    var overlay = new google.maps.ImageMapType({
-        getTileUrl: function (coord, zoom) {
-            return tileUrl + "/" + zoom + "/" + coord.x + "/" + (Math.pow(2,zoom)-coord.y-1) + ".png";
-        },
-        tileSize: new google.maps.Size(256, 256),
-        isPng: true,
+function toggleMap(dataset) {
+    // Get tile url
+    var tilesetName = dataset["File Name"].split(".");
+    tilesetName.pop(); // remove extension.
+    tilesetName = String(tilesetName);
+    var tileUrl = "tiles/" + tilesetName;
+    var foundIdx = null;
+    map.overlayMapTypes.forEach(function (elem, idx) {
+        console.log(elem.name);
+        if (elem.name == tilesetName) {
+            foundIdx = idx;
+            console.log("FOUND")
+        }
     });
-    map.overlayMapTypes.push(overlay);
+    console.log(foundIdx);
+    if (foundIdx !== null) {
+        console.log("Removing!")
+        // Remove existing tileset.
+        map.overlayMapTypes.removeAt(foundIdx);
+        $("#datasets > #" + tilesetName).remove();
+    } else {
+        // Make a new tileset.
+        var overlay = new google.maps.ImageMapType({
+            name: tilesetName,
+            getTileUrl: function (coord, zoom) {
+                return tileUrl + "/" + zoom + "/" + coord.x + "/" + (Math.pow(2,zoom)-coord.y-1) + ".png";
+            },
+            tileSize: new google.maps.Size(256, 256),
+            isPng: true,
+        });
+        map.overlayMapTypes.push(overlay);
+        // Add a Dataset entry.
+        var div = document.createElement("div");
+        $(div).attr("id", tilesetName);
 
-    // Data
-    numberElem.text(dataset["Number"]);
-    categoryElem.text(dataset["Category"]);
-    fileNameElem.text(dataset["File Name"]);
-    bibliographicReferenceElem.text(dataset["Bibliographic Reference"]);
-    urlElem.text(dataset["URL"]);
-    alternateLinkElem.text(dataset["Alternate Link"]);
+        var bibliographicReferenceElem = document.createElement("span");
+        $(bibliographicReferenceElem).text("Reference: " + dataset["Bibliographic Reference"]);
+        $(div).append(bibliographicReferenceElem);
+
+        var urlElem = document.createElement("span");
+        $(urlElem).text("URL: " + dataset["URL"]);
+        $(div).append(urlElem);
+
+        var alternateLinkElem = document.createElement("span");
+        $(alternateLinkElem).text("Alt: " + dataset["Alternate Link"]);
+        $(div).append(alternateLinkElem);
+
+        var sliderElem = document.createElement("input");
+        $(sliderElem).attr("type", "range");
+        $(sliderElem).attr("min", "0");
+        $(sliderElem).attr("max", "100");
+        $(sliderElem).on("input", function () {
+            var val = Number($(sliderElem).val()) / 100;
+            console.log("Changing " + val);
+            map.overlayMapTypes.forEach(function (elem, idx) {
+                if (elem.name == tilesetName) {
+                    console.log("Setting ", elem);
+                    elem.setOpacity(val);
+                }
+            });
+        });
+        $(div).append(sliderElem);
+
+        $("#datasets").append(div);
+    }
+
+}
+
+function toggleSidebar() {
+    console.log("Toggling sidebar");
+    $("#sidebar").toggle();
+}
+
+function toggleDatasets() {
+    console.log("Toggling sidebar");
+    $("#datasets").toggle();
 }
 
 function buildSidebar() {
@@ -87,15 +116,19 @@ function buildSidebar() {
 
             results.data.map(function (val) {
                 var li = document.createElement("li"),
-                    a  = document.createElement("a");
-                $(a).html(val["File Name"]);
-                // Populate data.
-                $(a).data("dataset", val);
-                $(a).attr("href", "#");
-                $(a).click(function () {
-                    changeMap($(this).data("dataset"));
+                    label = document.createElement("label"),
+                    checkbox  = document.createElement("input");
+                // Build checkbox.
+                $(checkbox).attr("type", "checkbox");
+                $(checkbox).data("dataset", val);
+                $(checkbox).click(function () {
+                    toggleMap($(this).data("dataset"));
                 });
-                $(li).append(a);
+                // Build label.
+                $(label).text(val["File Name"]);
+                // Build `li`
+                $(li).append(checkbox);
+                $(li).append(label);
                 // Add to category
                 if (!categories[val.Category]) {
                     categories[val.Category] = document.createElement("ul");

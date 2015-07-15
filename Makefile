@@ -15,7 +15,7 @@ $(TILE_DIR)/list.json:
 # This is lazy and only updates ones it actually needs to.
 $(TILE_DIR)/%: $(GEOTIFF_DIR)/%.tif
 	# Build the tiles.
-	gdal2tiles.py -r cubicspline -w google $< $@
+	gdal2tiles.py -r cubicspline -w none $< $@
 
 clean:
 	rm -r tiles/*
