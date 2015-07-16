@@ -66,24 +66,32 @@ main {
 
 #sidebarContainer {
     position: absolute;
-    width: 250px;
     height: 100%;
     z-index: 50;
     background: white;
-    left: -250px;
-    transition: left .75s, right .75s, top .75s, bottom .75s;
+    width: 400px;
+    left: -400px;
+    transition: left .75s, right .75s, top .75s, bottom .75s, width .75s;
 }
 
 #sidebarContainer.in {
     left: 0px;
 }
 
-#sidebar > ul > li > ul {
-    margin: 0;
-    float: left;
+#sidebar > ul {
     list-style: none;
+    list-style-position: inside;
+    padding-left: 10px;
+}
+
+#sidebar > ul > li > ul {
+    width: 400%;
+    margin: 0;
+    list-style: none;
+    padding-left: 10px;
 }
 
 #sidebar > ul > li > ul > li > input {
     float: left;
+    display: inline-block;
 }

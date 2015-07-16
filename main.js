@@ -33,10 +33,8 @@ function toggleMap(dataset) {
     var tileUrl = "tiles/" + tilesetName;
     var foundIdx = null;
     map.overlayMapTypes.forEach(function (elem, idx) {
-        console.log(elem.name);
         if (elem.name == tilesetName) {
             foundIdx = idx;
-            console.log("FOUND")
         }
     });
     console.log(foundIdx);
@@ -60,18 +58,6 @@ function toggleMap(dataset) {
         var div = document.createElement("div");
         $(div).attr("id", tilesetName);
 
-        var bibliographicReferenceElem = document.createElement("span");
-        $(bibliographicReferenceElem).text("Reference: " + dataset["Bibliographic Reference"]);
-        $(div).append(bibliographicReferenceElem);
-
-        var urlElem = document.createElement("span");
-        $(urlElem).text("URL: " + dataset["URL"]);
-        $(div).append(urlElem);
-
-        var alternateLinkElem = document.createElement("span");
-        $(alternateLinkElem).text("Alt: " + dataset["Alternate Link"]);
-        $(div).append(alternateLinkElem);
-
         var sliderElem = document.createElement("input");
         $(sliderElem).attr("type", "range");
         $(sliderElem).attr("min", "0");
@@ -79,15 +65,27 @@ function toggleMap(dataset) {
         $(sliderElem).attr("value", "100");
         $(sliderElem).on("input", function () {
             var val = Number($(sliderElem).val()) / 100;
-            console.log("Changing " + val);
             map.overlayMapTypes.forEach(function (elem, idx) {
                 if (elem.name == tilesetName) {
-                    console.log("Setting ", elem);
                     elem.setOpacity(val);
                 }
             });
         });
         $(div).append(sliderElem);
+
+        var bibliographicReferenceElem = document.createElement("span");
+        $(bibliographicReferenceElem).text("Reference: " + dataset["Bibliographic Reference"]);
+        $(div).append(bibliographicReferenceElem);
+
+        var urlElem = document.createElement("span");
+        $(urlElem).html("<a href=\""+dataset["URL"]+"\">Link</a>");
+        $(div).append(urlElem);
+
+        if (dataset["Alternate Link"]) {
+            var alternateLinkElem = document.createElement("span");
+            $(alternateLinkElem).html("<a href=\""+dataset["Alternate Link"]+"\">Alternate</a>");
+            $(div).append(alternateLinkElem);
+        }
 
         $("#datasets").append(div);
     }
