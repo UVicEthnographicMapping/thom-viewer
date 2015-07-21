@@ -77,13 +77,15 @@ function toggleMap(dataset) {
         $(bibliographicReferenceElem).text("Reference: " + dataset["Bibliographic Reference"]);
         $(div).append(bibliographicReferenceElem);
 
-        var urlElem = document.createElement("span");
-        $(urlElem).html("<a href=\""+dataset["URL"]+"\">Link</a>");
-        $(div).append(urlElem);
+        if (dataset["URL"]) {
+            var urlElem = document.createElement("span");
+            $(urlElem).html(" <a href=\""+dataset["URL"]+"\">Link</a>");
+            $(div).append(urlElem);
+        }
 
         if (dataset["Alternate Link"]) {
             var alternateLinkElem = document.createElement("span");
-            $(alternateLinkElem).html("<a href=\""+dataset["Alternate Link"]+"\">Alternate</a>");
+            $(alternateLinkElem).html(" <a href=\""+dataset["Alternate Link"]+"\">Alternate</a>");
             $(div).append(alternateLinkElem);
         }
 
