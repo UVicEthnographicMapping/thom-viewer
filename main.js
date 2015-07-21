@@ -30,7 +30,7 @@ function toggleMap(dataset) {
     var tilesetName = dataset["File Name"].split(".");
     tilesetName.pop(); // remove extension.
     tilesetName = String(tilesetName);
-    var tileUrl = "tiles/" + tilesetName;
+    var tileUrl = "tiles/" + dataset["Category"] + "/" + tilesetName;
     var foundIdx = null;
     map.overlayMapTypes.forEach(function (elem, idx) {
         if (elem.name == tilesetName) {
