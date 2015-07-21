@@ -58,6 +58,10 @@ function toggleMap(dataset) {
         var div = document.createElement("div");
         $(div).attr("id", tilesetName);
 
+        var title = document.createElement("span");
+        $(title).text(tilesetName);
+        $(div).append(title);
+
         var sliderElem = document.createElement("input");
         $(sliderElem).attr("type", "range");
         $(sliderElem).attr("min", "0");
