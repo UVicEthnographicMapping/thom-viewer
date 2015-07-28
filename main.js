@@ -78,7 +78,7 @@ function toggleMap(dataset) {
         $(div).append(sliderElem);
 
         var bibliographicReferenceElem = document.createElement("span");
-        $(bibliographicReferenceElem).text("Reference: " + dataset["Bibliographic Reference"]);
+        $(bibliographicReferenceElem).text("Source Document: " + dataset["Bibliographic Reference"]);
         $(div).append(bibliographicReferenceElem);
 
         if (dataset["URL"]) {
@@ -106,6 +106,11 @@ function toggleSidebar() {
 function toggleDatasets() {
     console.log("Toggling sidebar");
     $("#datasetsContainer").toggleClass("in");
+}
+
+function toggleInfobox() {
+    console.log("Toggling infobox");
+    $("#infoboxContainer").toggleClass("in");
 }
 
 function buildSidebar() {

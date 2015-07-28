@@ -14,18 +14,6 @@ main {
     padding: 0px;
 }
 
-#datasetsButton {
-    position: absolute;
-    right: 400px;
-    bottom: 110px;
-}
-
-#sidebarButton {
-    position: absolute;
-    right: -70px;
-    top: 325px;
-}
-
 #map {
     margin-left: 0px;
     padding: 0px;
@@ -35,7 +23,14 @@ main {
     height: 100%;
 }
 
-
+/******************/
+/* Datasets stuff */
+/******************/
+#datasetsButton {
+    position: absolute;
+    right: 400px;
+    bottom: 110px;
+}
 #datasetsContainer {
     position: absolute;
     height: 100px;
@@ -46,16 +41,23 @@ main {
     bottom: -100px;
     transition: left .75s, right .75s, top .75s, bottom .75s;
 }
-
 #datasetsContainer.in {
     bottom: 0px;
 }
-
 #datasets {
     height: 100%;
     top: 0px;
     bottom: 0px;
     overflow: scroll;
+}
+
+/*****************/
+/* Sidebar stuff */
+/*****************/
+#sidebarButton {
+    position: absolute;
+    right: -70px;
+    top: 325px;
 }
 #sidebar {
     height: 100%;
@@ -63,7 +65,6 @@ main {
     bottom: 0px;
     overflow: scroll;
 }
-
 #sidebarContainer {
     position: absolute;
     height: 100%;
@@ -73,25 +74,50 @@ main {
     left: -400px;
     transition: left .75s, right .75s, top .75s, bottom .75s, width .75s;
 }
-
 #sidebarContainer.in {
     left: 0px;
 }
-
 #sidebar > ul {
     list-style: none;
     list-style-position: inside;
     padding-left: 10px;
 }
-
 #sidebar > ul > li > ul {
     width: 400%;
     margin: 0;
     list-style: none;
     padding-left: 10px;
 }
-
 #sidebar > ul > li > ul > li > input {
     float: left;
     display: inline-block;
+}
+
+/*****************/
+/* Infobox stuff */
+/*****************/
+#infoboxButton {
+    position: absolute;
+    left: -70px;
+    top: 325px;
+}
+#infobox {
+    height: 100%;
+    top: 0px;
+    bottom: 0px;
+    overflow: scroll;
+    padding: 10px;
+}
+#infoboxContainer {
+    position: absolute;
+    height: 100%;
+    z-index: 50;
+    background: white;
+    width: 400px;
+    right: -400px;
+    transition: left .75s, right .75s, top .75s, bottom .75s, width .75s;
+    top: 0px;
+}
+#infoboxContainer.in {
+    right: 0px;
 }
