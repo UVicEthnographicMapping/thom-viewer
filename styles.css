@@ -121,3 +121,13 @@ main {
 #infoboxContainer.in {
     right: 0px;
 }
+
+#infoboxContainer .logo {
+    position: absolute;
+    bottom: 0px;
+    height: auto;
+}
+
+#infoboxContainer .logo img {
+    width: 100%;
+}
