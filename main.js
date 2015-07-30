@@ -46,7 +46,7 @@ function toggleMap(dataset) {
         console.log("Removing!")
         // Remove existing tileset.
         map.overlayMapTypes.removeAt(foundIdx);
-        $("#datasets > #" + tilesetName).remove();
+        $("#datasets > tbody > #" + tilesetName).remove();
     } else {
         // Make a new tileset.
         var overlay = new google.maps.ImageMapType({
@@ -59,12 +59,14 @@ function toggleMap(dataset) {
         });
         map.overlayMapTypes.push(overlay);
         // Add a Dataset entry.
-        var div = document.createElement("div");
-        $(div).attr("id", tilesetName);
+        var tr = document.createElement("tr");
+        $(tr).attr("id", tilesetName);
 
         var title = document.createElement("span");
         $(title).text(tilesetName);
-        $(div).append(title);
+        var td = document.createElement("td");
+        $(td).append(title);
+        $(tr).append(td);
 
         var sliderElem = document.createElement("input");
         $(sliderElem).attr("type", "range");
@@ -79,25 +81,33 @@ function toggleMap(dataset) {
                 }
             });
         });
-        $(div).append(sliderElem);
+        var td = document.createElement("td");
+        $(td).append(sliderElem);
+        $(tr).append(td);
 
         var bibliographicReferenceElem = document.createElement("span");
         $(bibliographicReferenceElem).text("Source Document: " + dataset["Bibliographic Reference"]);
-        $(div).append(bibliographicReferenceElem);
+        var td = document.createElement("td");
+        $(td).append(bibliographicReferenceElem);
+        $(tr).append(td);
 
         if (dataset["URL"]) {
             var urlElem = document.createElement("span");
             $(urlElem).html(" <a href=\""+dataset["URL"]+"\">Link</a>");
-            $(div).append(urlElem);
+            var td = document.createElement("td");
+            $(td).append(urlElem);
+            $(tr).append(td);
         }
 
         if (dataset["Alternate Link"]) {
             var alternateLinkElem = document.createElement("span");
             $(alternateLinkElem).html(" <a href=\""+dataset["Alternate Link"]+"\">Alternate</a>");
-            $(div).append(alternateLinkElem);
+            var td = document.createElement("td");
+            $(td).append(alternateLinkElem);
+            $(tr).append(td);
         }
 
-        $("#datasets").append(div);
+        $("#datasets").append(tr);
     }
 
 }

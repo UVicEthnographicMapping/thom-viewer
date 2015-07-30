@@ -25,7 +25,20 @@
                 <a href=# id=datasetsButton class="btn btn-primary" onclick="toggleDatasets()" data-toggle=tooltip data-placement=top title=Datasets>
                     <i class="glyphicon glyphicon-tag"></i>
                 </a>
-                <div id="datasets"></div>
+                <table id="datasets" class=table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Opacity</th>
+                            <th>Name</th>
+                            <th>Source</th>
+                            <th>Alt</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Filled by scripts. -->
+                    </tbody>
+                </table>
             </div>
             <div id=infoboxContainer class=in>
                 <a href=# id=infoboxButton class="btn btn-primary" onclick="toggleInfobox()" data-toggle=tooltip data-placement=left title=Infobox>
