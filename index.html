@@ -5,27 +5,36 @@
         <script type="text/javascript" src="lib/ExtDraggableObject.js"></script>
         <script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="lib/papaparse.min.js"></script>
+        <script type="text/javascript" src="lib/bootstrap.min.js"></script> <!-- Not using CDN because it's a security risk -->
         <script type="text/javascript" src="opacityControl.js"></script>
         <script type="text/javascript" src="main.js"></script>
-        <link rel="stylesheet" href="lib/normalize.css">
+        <!-- Use CDN bootstrap CSS. Not as risky since it's CSS. We get fonts free. -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <main>
             <div id=sidebarContainer>
-                <button id=sidebarButton onclick="toggleSidebar()">Sidebar</button>
+                <a href=# id=sidebarButton class="btn btn-primary" onclick="toggleSidebar()" data-toggle=tooltip data-placement=right title=List>
+                    <i class="glyphicon glyphicon-th-list"></i>
+                </a>
                 <div id=sidebar></div>
             </div>
             <div id=map></div>
             <div id=datasetsContainer>
-                <button id=datasetsButton onclick="toggleDatasets()">Datasets</button>
+                <a href=# id=datasetsButton class="btn btn-primary" onclick="toggleDatasets()" data-toggle=tooltip data-placement=top title=Datasets>
+                    <i class="glyphicon glyphicon-tag"></i>
+                </a>
                 <div id="datasets"></div>
             </div>
             <div id=infoboxContainer class=in>
-                <button id=infoboxButton onclick="toggleInfobox()">Infobox</button>
+                <a href=# id=infoboxButton class="btn btn-primary" onclick="toggleInfobox()" data-toggle=tooltip data-placement=left title=Infobox>
+                    <i class="glyphicon glyphicon-flag"></i>
+                </a>
                 <div id=infobox>
-                    <h1>Cartographic Legacies: Ethnographic Mapping in the Coast Salish World</h1>
-                    <h3>A project by Brian Thom, Department of Anthropology, University of Victoria</h3>
+                    <h1>Cartographic Legacies</h1>
+                    <h2>Ethnographic Mapping in the Coast Salish World</h2>
+                    <h3>A project by Brian Thom, Department of Anthropology</h3>
                     <p>These maps were scanned from a review of over 700 ethnographies written about Coast Salish peoples.</p>
                     <p>Browse thematically organized maps of the Coast Salish world drawn from ethnographies over the past 150 years.</p>
                     <p>Link to the original work, where available, or follow the bibliographic reference to find the work in your library.</p>

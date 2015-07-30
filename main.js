@@ -21,6 +21,10 @@ function init() {
     document.getElementById("map").style.backgroundColor = "#5C5745";
 
     buildSidebar();
+
+    var tooltips = $("[data-toggle=tooltip]");
+    tooltips.tooltip({ trigger: "hover", });
+
 }
 
 google.maps.event.addDomListener(window, 'load', init);
