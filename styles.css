@@ -29,16 +29,16 @@ main {
 #datasetsButton {
     position: absolute;
     right: 400px;
-    bottom: 100px;
+    bottom: 200px;
 }
 #datasetsContainer {
     position: absolute;
-    height: 100px;
+    height: 200px;
     width: 100%;
     z-index: 50;
     bottom: 0px;
     background: white;
-    bottom: -100px;
+    bottom: -200px;
     transition: left .75s, right .75s, top .75s, bottom .75s;
 }
 #datasetsContainer.in {
@@ -48,6 +48,10 @@ main {
     height: 100%;
     top: 0px;
     bottom: 0px;
+    overflow: scroll;
+}
+#datasetsWrapper {
+    height: 200px;
     overflow: scroll;
 }
 
