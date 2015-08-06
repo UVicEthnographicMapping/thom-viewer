@@ -62,12 +62,6 @@ function toggleMap(dataset) {
         var tr = document.createElement("tr");
         $(tr).attr("id", tilesetName);
 
-        var title = document.createElement("span");
-        $(title).text(tilesetName);
-        var td = document.createElement("td");
-        $(td).append(title);
-        $(tr).append(td);
-
         var sliderElem = document.createElement("input");
         $(sliderElem).attr("type", "range");
         $(sliderElem).attr("min", "0");
@@ -85,6 +79,12 @@ function toggleMap(dataset) {
         $(td).append(sliderElem);
         $(tr).append(td);
 
+        var number = document.createElement("span");
+        $(number).text(dataset["Number"]);
+        var td = document.createElement("td");
+        $(td).append(number);
+        $(tr).append(td);
+
         var bibliographicReferenceElem = document.createElement("span");
         $(bibliographicReferenceElem).text("Source Document: " + dataset["Bibliographic Reference"]);
         var td = document.createElement("td");
@@ -93,7 +93,7 @@ function toggleMap(dataset) {
 
         if (dataset["URL"]) {
             var urlElem = document.createElement("span");
-            $(urlElem).html(" <a href=\""+dataset["URL"]+"\">Link</a>");
+            $(urlElem).html(" <a target=_blank href=\""+dataset["URL"]+"\">Link</a>");
             var td = document.createElement("td");
             $(td).append(urlElem);
             $(tr).append(td);
@@ -101,7 +101,7 @@ function toggleMap(dataset) {
 
         if (dataset["Alternate Link"]) {
             var alternateLinkElem = document.createElement("span");
-            $(alternateLinkElem).html(" <a href=\""+dataset["Alternate Link"]+"\">Alternate</a>");
+            $(alternateLinkElem).html(" <a target=_blank href=\""+dataset["Alternate Link"]+"\">Alternate</a>");
             var td = document.createElement("td");
             $(td).append(alternateLinkElem);
             $(tr).append(td);
@@ -150,15 +150,15 @@ function buildSidebar() {
                     toggleMap($(this).data("dataset"));
                 });
                 // Build label.
-                $(label).text(val["File Name"]);
+                $(label).text(val["Number"] +" "+ val["Pretty Title"]);
                 // Build `li`
                 $(li).append(checkbox);
                 $(li).append(label);
                 // Add to category
-                if (!categories[val.Category]) {
-                    categories[val.Category] = document.createElement("ul");
+                if (!categories[val["Pretty Category"]]) {
+                    categories[val["Pretty Category"]] = document.createElement("ul");
                 }
-                $(categories[val.Category]).append(li);
+                $(categories[val["Pretty Category"]]).append(li);
             });
 
             // Build the heirarchical sidebar.

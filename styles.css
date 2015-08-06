@@ -131,6 +131,7 @@ main {
     position: absolute;
     bottom: 0px;
     height: auto;
+    left: 0;
 }
 
 #infoboxContainer .logo img {
