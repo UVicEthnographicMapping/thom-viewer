@@ -174,10 +174,10 @@ function buildSidebar() {
             var categoryElem = $(document.createElement("li"));
 
             // Build Link.
-            var linkElem = document.createElement("a");
-            $(linkElem).text(category["Pretty Category"]);
-            $(linkElem).attr("href", "#");
-            $(linkElem).click(function () {
+            var linkElem = $(document.createElement("a"));
+            linkElem.text(category["Pretty Category"]);
+            linkElem.attr("href", "#");
+            linkElem.click(function () {
                 $(this).siblings("ul").toggle();
             });
             categoryElem.append(linkElem);
@@ -212,48 +212,7 @@ function buildSidebar() {
             return categoryElem;
         }));
 
-        console.log(categoriesElem);
-
         var sidebarElem = $("#sidebar");
         sidebarElem.append(categoriesElem);
     });
-    // Pull and parse data from the csv.
-    // Papa.parse(DATA_LIST, {
-    //     download: true,
-    //     header: true,
-    //     dynamicTyping: true,
-    //     complete: function (results) {
-    //         // The list will be added to.
-    //         var list = document.createElement("ul");
-    //
-    //         var categories = {};
-    //
-    //         // Build a set of list elements and add them to respective categories.
-    //         results.data.map(function (val) {
-    //             var li = document.createElement("li"),
-    //                 label = document.createElement("label"),
-    //                 checkbox  = document.createElement("input");
-    //
-    //         });
-    //
-    //         // Build the heirarchical sidebar.
-    //         for (var category in categories) {
-    //             var sublist = document.createElement("li"),
-    //                 link = document.createElement("a");
-    //             // Link setup.
-    //             $(link).text(category);
-    //             $(link).attr("href", "#");
-    //             $(link).click(function () {
-    //                 $(this).siblings("ul").toggle();
-    //             });
-    //             // List setup.
-    //             $(sublist).append(link);
-    //             $(categories[category]).hide(); // Show on click.
-    //             $(sublist).append(categories[category]);
-    //             $(list).append(sublist);
-    //         }
-    //         var sidebar = $("#sidebar");
-    //         sidebar.append(list);
-    //     }
-    // });
 }
