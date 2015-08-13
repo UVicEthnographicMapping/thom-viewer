@@ -3,6 +3,7 @@ Andrew Hobden, 2015.
 MIT.
 ******************************************************************************/
 var DATA_LIST = "cartographic-legacies.csv";
+var CATEGORY_LIST = "categories.csv";
 
 var map;
 
@@ -31,7 +32,7 @@ google.maps.event.addDomListener(window, 'load', init);
 
 function toggleMap(dataset) {
     // Get tile url
-    var tilesetName = dataset["File Name"].split(".");
+    var tilesetName = dataset["TIF File"].split(".");
     tilesetName.pop(); // remove extension.
     tilesetName = String(tilesetName);
     var tileUrl = "tiles/" + dataset["Category"] + "/" + tilesetName;
@@ -75,26 +76,26 @@ function toggleMap(dataset) {
                 }
             });
         });
-        var td = document.createElement("td");
+        td = document.createElement("td");
         $(td).append(sliderElem);
         $(tr).append(td);
 
         var number = document.createElement("span");
         $(number).text(dataset["Number"]);
-        var td = document.createElement("td");
+        td = document.createElement("td");
         $(td).append(number);
         $(tr).append(td);
 
         var bibliographicReferenceElem = document.createElement("span");
         $(bibliographicReferenceElem).text("Source Document: " + dataset["Bibliographic Reference"]);
-        var td = document.createElement("td");
+        td = document.createElement("td");
         $(td).append(bibliographicReferenceElem);
         $(tr).append(td);
 
         if (dataset["URL"]) {
             var urlElem = document.createElement("span");
             $(urlElem).html(" <a target=_blank href=\""+dataset["URL"]+"\">Link</a>");
-            var td = document.createElement("td");
+            td = document.createElement("td");
             $(td).append(urlElem);
             $(tr).append(td);
         }
@@ -102,7 +103,7 @@ function toggleMap(dataset) {
         if (dataset["Alternate Link"]) {
             var alternateLinkElem = document.createElement("span");
             $(alternateLinkElem).html(" <a target=_blank href=\""+dataset["Alternate Link"]+"\">Alternate</a>");
-            var td = document.createElement("td");
+            td = document.createElement("td");
             $(td).append(alternateLinkElem);
             $(tr).append(td);
         }
@@ -127,58 +128,132 @@ function toggleInfobox() {
     $("#infoboxContainer").toggleClass("in");
 }
 
-function buildSidebar() {
-    // Pull and parse data from the csv.
-    Papa.parse(DATA_LIST, {
-        download: true,
-        header: true,
-        dynamicTyping: true,
-        complete: function (results) {
-            // The list will be added to.
-            var list = document.createElement("ul");
-            var categories = {};
+function getCategories() {
+    return new Promise(function (resolve, reject) {
+        Papa.parse(CATEGORY_LIST, {
+            download: true,
+            header: true,
+            dynamicTyping: true,
+            complete: function (results) {
+                return resolve(results);
+            }
+        });
+    });
+}
 
-            // Build a set of list elements and add them to respective categories.
-            results.data.map(function (val) {
-                var li = document.createElement("li"),
-                    label = document.createElement("label"),
-                    checkbox  = document.createElement("input");
+function getEntries() {
+    return new Promise(function (resolve, reject) {
+        Papa.parse(DATA_LIST, {
+            download: true,
+            header: true,
+            dynamicTyping: true,
+            complete: function (results) {
+                return resolve(results);
+            }
+        });
+    });
+}
+
+function buildSidebar() {
+    Promise.all([getEntries(), getCategories()])
+    .then(function populateCategories(results) {
+        var entries = results[0],
+            categories = results[1];
+
+        return categories.data.map(function (category) {
+            category.entries = entries.data.filter(function (entry) {
+                return entry["Pretty Category"] === category["Pretty Category"];
+            });
+            return category;
+        });
+    }).then(function buildHtml(categories) {
+        console.log(categories);
+        var categoriesElem = $(document.createElement("ul"));
+
+        categoriesElem.append(categories.map(function (category) {
+            var categoryElem = $(document.createElement("li"));
+
+            // Build Link.
+            var linkElem = document.createElement("a");
+            $(linkElem).text(category["Pretty Category"]);
+            $(linkElem).attr("href", "#");
+            $(linkElem).click(function () {
+                $(this).siblings("ul").toggle();
+            });
+            categoryElem.append(linkElem);
+
+            // Build sublist.
+            var entriesElem = $(document.createElement("ul"));
+            category.entries.map(function buildDOM(entry) {
+                // Build `li`
+                var liElem = $(document.createElement("li"));
+
                 // Build checkbox.
-                $(checkbox).attr("type", "checkbox");
-                $(checkbox).data("dataset", val);
-                $(checkbox).click(function () {
+                var checkboxElem = $(document.createElement("input"));
+                checkboxElem.attr("type", "checkbox");
+                checkboxElem.data("dataset", entry);
+                checkboxElem.click(function () {
                     toggleMap($(this).data("dataset"));
                 });
-                // Build label.
-                $(label).text(val["Number"] +" "+ val["Pretty Title"]);
-                // Build `li`
-                $(li).append(checkbox);
-                $(li).append(label);
-                // Add to category
-                if (!categories[val["Pretty Category"]]) {
-                    categories[val["Pretty Category"]] = document.createElement("ul");
-                }
-                $(categories[val["Pretty Category"]]).append(li);
-            });
+                liElem.append(checkboxElem);
 
-            // Build the heirarchical sidebar.
-            for (var category in categories) {
-                var sublist = document.createElement("li"),
-                    link = document.createElement("a");
-                // Link setup.
-                $(link).text(category);
-                $(link).attr("href", "#");
-                $(link).click(function () {
-                    $(this).siblings("ul").toggle();
-                });
-                // List setup.
-                $(sublist).append(link);
-                $(categories[category]).hide(); // Show on click.
-                $(sublist).append(categories[category]);
-                $(list).append(sublist);
-            }
-            var sidebar = $("#sidebar");
-            sidebar.append(list);
-        }
+                // Build label.
+                var labelElem = $(document.createElement("label"));
+                labelElem.text(entry["Number"] +" "+ entry["Pretty Title"]);
+                liElem.append(labelElem);
+
+                return liElem;
+            }).map(function appendEntries(entry) {
+                return entriesElem.append(entry);
+            });
+            entriesElem.hide(); // Show on click.
+            categoryElem.append(entriesElem);
+
+            return categoryElem;
+        }));
+
+        console.log(categoriesElem);
+
+        var sidebarElem = $("#sidebar");
+        sidebarElem.append(categoriesElem);
     });
+    // Pull and parse data from the csv.
+    // Papa.parse(DATA_LIST, {
+    //     download: true,
+    //     header: true,
+    //     dynamicTyping: true,
+    //     complete: function (results) {
+    //         // The list will be added to.
+    //         var list = document.createElement("ul");
+    //
+    //         var categories = {};
+    //
+    //         // Build a set of list elements and add them to respective categories.
+    //         results.data.map(function (val) {
+    //             var li = document.createElement("li"),
+    //                 label = document.createElement("label"),
+    //                 checkbox  = document.createElement("input");
+    //
+    //         });
+    //
+    //         // Build the heirarchical sidebar.
+    //         for (var category in categories) {
+    //             var sublist = document.createElement("li"),
+    //                 link = document.createElement("a");
+    //             // Link setup.
+    //             $(link).text(category);
+    //             $(link).attr("href", "#");
+    //             $(link).click(function () {
+    //                 $(this).siblings("ul").toggle();
+    //             });
+    //             // List setup.
+    //             $(sublist).append(link);
+    //             $(categories[category]).hide(); // Show on click.
+    //             $(sublist).append(categories[category]);
+    //             $(list).append(sublist);
+    //         }
+    //         var sidebar = $("#sidebar");
+    //         sidebar.append(list);
+    //     }
+    // });
 }
