@@ -212,7 +212,7 @@ function buildSidebar() {
                 labelElem.attr("data-placement", "bottom");
                 labelElem.attr("data-trigger", "hover");
                 labelElem.attr("data-html", "true");
-                labelElem.attr("title", "<img class=\"tooltip-image\" src=\"/jpg/" + entry["JPG File"] + "\">");
+                labelElem.attr("title", "<img class=\"tooltip-image\" src=\"jpg/" + entry["JPG File"] + "\">");
                 labelElem.tooltip();
                 liElem.append(labelElem);
 
