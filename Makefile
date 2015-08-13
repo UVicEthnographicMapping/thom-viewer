@@ -10,7 +10,7 @@ TILES = $(patsubst $(GEOTIFF_DIR)/%.tif,$(TILE_DIR)/%,$(GEOTIFFS))
 JPGS = $(wildcard $(JPG_DIR)/*.jpg) $(wildcard $(JPG_DIR)/**/*.jpg)
 SM_JPGS = $(patsubst $(JPG_DIR)/%.jpg,$(SM_JPG_DIR)/%.jpg,$(JPGS))
 
-all: tiles jpgs
+all: tilesets jpgs
 
 tilesets: $(TILE_DIR) $(TILES)
 jpgs: $(SM_JPG_DIR) $(SM_JPGS)
