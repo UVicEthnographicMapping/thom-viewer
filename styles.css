@@ -99,6 +99,7 @@ main {
 
 .tooltip-inner {
     max-width: none;
+    text-align: left;
 }
 
 img.tooltip-image {

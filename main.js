@@ -60,9 +60,10 @@ function toggleMap(dataset) {
         });
         map.overlayMapTypes.push(overlay);
         // Add a Dataset entry.
-        var tr = document.createElement("tr");
-        $(tr).attr("id", tilesetName);
+        var tr = $(document.createElement("tr"));
+        tr.attr("id", tilesetName);
 
+        // Build Slider
         var sliderElem = document.createElement("input");
         $(sliderElem).attr("type", "range");
         $(sliderElem).attr("min", "0");
@@ -78,34 +79,58 @@ function toggleMap(dataset) {
         });
         td = document.createElement("td");
         $(td).append(sliderElem);
-        $(tr).append(td);
+        tr.append(td);
 
+        // Build reference
+        var bibliographicReferenceElem = document.createElement("span");
+        $(bibliographicReferenceElem).text(dataset["Bibliographic Reference"]);
+        td = document.createElement("td");
+        $(td).append(bibliographicReferenceElem);
+        tr.append(td);
+
+        // Build Page Number
         var number = document.createElement("span");
         $(number).text(dataset["Number"]);
         td = document.createElement("td");
         $(td).append(number);
-        $(tr).append(td);
+        tr.append(td);
 
-        var bibliographicReferenceElem = document.createElement("span");
-        $(bibliographicReferenceElem).text("Source Document: " + dataset["Bibliographic Reference"]);
-        td = document.createElement("td");
-        $(td).append(bibliographicReferenceElem);
-        $(tr).append(td);
+        // Web link
 
         if (dataset["URL"]) {
             var urlElem = document.createElement("span");
             $(urlElem).html(" <a target=_blank href=\""+dataset["URL"]+"\">Link</a>");
             td = document.createElement("td");
             $(td).append(urlElem);
-            $(tr).append(td);
+            tr.append(td);
+        } else {
+            tr.append(document.createElement("td"));
         }
 
+        // Alt link
         if (dataset["Alternate Link"]) {
-            var alternateLinkElem = document.createElement("span");
-            $(alternateLinkElem).html(" <a target=_blank href=\""+dataset["Alternate Link"]+"\">Alternate</a>");
-            td = document.createElement("td");
-            $(td).append(alternateLinkElem);
-            $(tr).append(td);
+            var alternateLinkElem = $(document.createElement("span"));
+            alternateLinkElem.html(" <a target=_blank href=\""+dataset["Alternate Link"]+"\">Alternate</a>");
+            td = $(document.createElement("td"));
+            td.append(alternateLinkElem);
+            tr.append(td);
+        } else {
+            tr.append(document.createElement("td"));
+        }
+
+        // Download
+        if (dataset["JPG File"]) {
+            var downloadElem = $(document.createElement("a"));
+            downloadElem.addClass("btn");
+            downloadElem.addClass("btn-info");
+            downloadElem.attr("href", "jpgs/" + dataset["JPG File"]);
+            downloadElem.html("<i class='glyphicon glyphicon-download'></i>");
+            td = $(document.createElement("td"));
+            td.append(downloadElem);
+            console.log(downloadElem);
+            tr.append(td);
+        } else {
+            tr.append(document.createElement("td"));
         }
 
         $("#datasets").append(tr);
@@ -212,7 +237,7 @@ function buildSidebar() {
                 labelElem.attr("data-placement", "bottom");
                 labelElem.attr("data-trigger", "hover");
                 labelElem.attr("data-html", "true");
-                labelElem.attr("title", "<img class=\"tooltip-image\" src=\"jpg/" + entry["JPG File"] + "\">");
+                labelElem.attr("title", "<img class=\"tooltip-image\" src=\"sm_jpgs/" + entry["JPG File"] + "\">");
                 labelElem.tooltip();
                 liElem.append(labelElem);
 
