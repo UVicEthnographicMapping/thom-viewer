@@ -12,7 +12,7 @@ SM_JPGS = $(patsubst $(JPG_DIR)/%.jpg,$(SM_JPG_DIR)/%.jpg,$(JPGS))
 
 all: tiles jpgs
 
-tiles: $(TILE_DIR) $(TILES)
+tilesets: $(TILE_DIR) $(TILES)
 jpgs: $(SM_JPG_DIR) $(SM_JPGS)
 
 $(TILE_DIR):
@@ -21,7 +21,7 @@ $(TILE_DIR):
 # This is lazy and only updates ones it actually needs to.
 $(TILE_DIR)/%: $(GEOTIFF_DIR)/%.tif
 	# Build the tiles.
-	gdal2tiles.py -r cubicspline -z 3-9 -w none $< $@
+	gdal2tiles.py -r cubicspline -z 3-9 -w none "$<" "$@"
 
 $(SM_JPG_DIR):
 	mkdir -p $(SM_JPG_DIR)
@@ -31,4 +31,5 @@ $(SM_JPG_DIR)/%.jpg: $(JPG_DIR)/%.jpg
 	convert "$<" -resize 600x600\> "$@"
 
 clean:
-	rm -r tiles/*
+	rm -r $(TILE_DIR)/*
+	rm -r $(SM_JPG_DIR)/*
