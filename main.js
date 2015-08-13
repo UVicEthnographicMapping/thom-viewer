@@ -155,8 +155,10 @@ function getEntries() {
 }
 
 function buildSidebar() {
-    Promise.all([getEntries(), getCategories()])
-    .then(function populateCategories(results) {
+    Promise.all([
+        getEntries(),
+        getCategories()
+    ]).then(function populateCategories(results) {
         var entries = results[0],
             categories = results[1];
 
@@ -167,7 +169,6 @@ function buildSidebar() {
             return category;
         });
     }).then(function buildHtml(categories) {
-        console.log(categories);
         var categoriesElem = $(document.createElement("ul"));
 
         categoriesElem.append(categories.map(function (category) {
@@ -180,6 +181,12 @@ function buildSidebar() {
             linkElem.click(function () {
                 $(this).siblings("ul").toggle();
             });
+            // Setup Tooltip
+            linkElem.attr("data-toggle", "tooltip");
+            linkElem.attr("data-placement", "right");
+            linkElem.attr("data-trigger", "hover");
+            linkElem.attr("title", category["InfoWindow"]);
+            linkElem.tooltip();
             categoryElem.append(linkElem);
 
             // Build sublist.
@@ -200,6 +207,13 @@ function buildSidebar() {
                 // Build label.
                 var labelElem = $(document.createElement("label"));
                 labelElem.text(entry["Number"] +" "+ entry["Pretty Title"]);
+                // Tooltip
+                labelElem.attr("data-toggle", "tooltip");
+                labelElem.attr("data-placement", "bottom");
+                labelElem.attr("data-trigger", "hover");
+                labelElem.attr("data-html", "true");
+                labelElem.attr("title", "<img class=\"tooltip-image\" src=\"/jpg/" + entry["JPG File"] + "\">");
+                labelElem.tooltip();
                 liElem.append(labelElem);
 
                 return liElem;

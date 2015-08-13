@@ -97,6 +97,15 @@ main {
     display: inline-block;
 }
 
+.tooltip-inner {
+    max-width: none;
+}
+
+img.tooltip-image {
+    max-width: 600px;
+    max-height: 600px;
+}
+
 /*****************/
 /* Infobox stuff */
 /*****************/
