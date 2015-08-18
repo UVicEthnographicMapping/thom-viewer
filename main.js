@@ -15,7 +15,13 @@ function init() {
         mapTypeId: google.maps.MapTypeId.SATELLITE,
         streetViewControl:false,
         scaleControl: true,
-        overviewMapControl: true
+        panControlOptions: {
+            position: google.maps.ControlPosition.RIGHT_TOP,
+        },
+        zoomControlOptions: {
+            position: google.maps.ControlPosition.RIGHT_TOP,
+        },
+        overviewMapControl: true,
     };
 
     map = new google.maps.Map(document.getElementById("map"), mapOptions);
@@ -234,7 +240,8 @@ function buildSidebar() {
                 labelElem.text(entry["Number"] +" "+ entry["Pretty Title"]);
                 // Tooltip
                 labelElem.attr("data-toggle", "tooltip");
-                labelElem.attr("data-placement", "bottom");
+                labelElem.attr("data-placement", "auto top");
+                labelElem.attr("data-viewport", "main");
                 labelElem.attr("data-trigger", "hover");
                 labelElem.attr("data-html", "true");
                 labelElem.attr("title", "<img class=\"tooltip-image\" src=\"sm_jpgs/" + entry["JPG File"] + "\">");
@@ -255,3 +262,77 @@ function buildSidebar() {
         sidebarElem.append(categoriesElem);
     });
 }
+
+var getPlacementFunction = function (defaultPosition, width, height) {
+    return function (tip, element) {
+        var position, top, bottom, left, right;
+
+        var $element = $(element);
+        var boundTop = $(document).scrollTop();
+        var boundLeft = $(document).scrollLeft();
+        var boundRight = boundLeft + $(window).width();
+        var boundBottom = boundTop + $(window).height();
+
+        var pos = $.extend({}, $element.offset(), {
+            width: element.offsetWidth,
+            height: element.offsetHeight
+        });
+
+        var isWithinBounds = function (elPos) {
+            return boundTop < elPos.top && boundLeft < elPos.left && boundRight > (elPos.left + width) && boundBottom > (elPos.top + height);
+        };
+
+        var testTop = function () {
+            if (top === false) return false;
+            top = isWithinBounds({
+                top: pos.top - height,
+                left: pos.left + pos.width / 2 - width / 2
+            });
+            return top ? "top" : false;
+        };
+
+        var testBottom = function () {
+            if (bottom === false) return false;
+            bottom = isWithinBounds({
+                top: pos.top + pos.height,
+                left: pos.left + pos.width / 2 - width / 2
+            });
+            return bottom ? "bottom" : false;
+        };
+
+        var testLeft = function () {
+            if (left === false) return false;
+            left = isWithinBounds({
+                top: pos.top + pos.height / 2 - height / 2,
+                left: pos.left - width
+            });
+            return left ? "left" : false;
+        };
+
+        var testRight = function () {
+            if (right === false) return false;
+            right = isWithinBounds({
+                top: pos.top + pos.height / 2 - height / 2,
+                left: pos.left + pos.width
+            });
+            return right ? "right" : false;
+        };
+
+        switch (defaultPosition) {
+            case "top":
+                if (position = testTop()) return position;
+            case "bottom":
+                if (position = testBottom()) return position;
+            case "left":
+                if (position = testLeft()) return position;
+            case "right":
+                if (position = testRight()) return position;
+            default:
+                if (position = testTop()) return position;
+                if (position = testBottom()) return position;
+                if (position = testLeft()) return position;
+                if (position = testRight()) return position;
+                return defaultPosition;
+        }
+    }
+};
