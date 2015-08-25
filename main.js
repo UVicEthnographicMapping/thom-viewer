@@ -96,7 +96,7 @@ function toggleMap(dataset) {
 
         // Build Page Number
         var number = document.createElement("span");
-        $(number).text(dataset["Number"]);
+        $(number).text(dataset["Page #"]);
         td = document.createElement("td");
         $(td).append(number);
         tr.append(td);
@@ -105,7 +105,7 @@ function toggleMap(dataset) {
 
         if (dataset["URL"]) {
             var urlElem = document.createElement("span");
-            $(urlElem).html(" <a target=_blank href=\""+dataset["URL"]+"\">Link</a>");
+            $(urlElem).html(" <a target=blank href=\""+dataset["URL"]+"\">Link</a>");
             td = document.createElement("td");
             $(td).append(urlElem);
             tr.append(td);
@@ -116,7 +116,7 @@ function toggleMap(dataset) {
         // Alt link
         if (dataset["Alternate Link"]) {
             var alternateLinkElem = $(document.createElement("span"));
-            alternateLinkElem.html(" <a target=_blank href=\""+dataset["Alternate Link"]+"\">Alternate</a>");
+            alternateLinkElem.html(" <a target=blank href=\""+dataset["Alternate Link"]+"\">Alternate</a>");
             td = $(document.createElement("td"));
             td.append(alternateLinkElem);
             tr.append(td);
@@ -129,6 +129,7 @@ function toggleMap(dataset) {
             var downloadElem = $(document.createElement("a"));
             downloadElem.addClass("btn");
             downloadElem.addClass("btn-info");
+            downloadElem.attr("target", "blank");
             downloadElem.attr("href", "jpgs/" + dataset["JPG File"]);
             downloadElem.html("<i class='glyphicon glyphicon-download'></i>");
             td = $(document.createElement("td"));
