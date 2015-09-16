@@ -217,7 +217,7 @@ function buildSidebar() {
             linkElem.attr("data-toggle", "tooltip");
             linkElem.attr("data-placement", "right");
             linkElem.attr("data-trigger", "hover");
-            linkElem.attr("title", category["InfoWindow"]);
+            linkElem.attr("title", category["Info Window"]);
             linkElem.tooltip();
             categoryElem.append(linkElem);
 
@@ -238,7 +238,7 @@ function buildSidebar() {
 
                 // Build label.
                 var labelElem = $(document.createElement("label"));
-                labelElem.text(entry["Number"] +" "+ entry["Pretty Title"]);
+                labelElem.text(entry["Pretty Title"]);
                 // Tooltip
                 labelElem.attr("data-toggle", "tooltip");
                 labelElem.attr("data-placement", "auto top");
