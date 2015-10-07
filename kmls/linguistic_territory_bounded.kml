@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Linguistic Territory Bounded.kml</name>
+	<Schema name="Linguistic_Territory_Bounded" id="Linguistic_Territory_Bounded">
+		<SimpleField type="string" name="Name"></SimpleField>
+		<SimpleField type="string" name="Path"></SimpleField>
+		<SimpleField type="string" name="Driver"></SimpleField>
+		<SimpleField type="string" name="XYSize"></SimpleField>
+		<SimpleField type="string" name="Proj4"></SimpleField>
+		<SimpleField type="int" name="NumBands"></SimpleField>
+		<SimpleField type="string" name="BandTypes"></SimpleField>
+		<SimpleField type="string" name="ResSpatial"></SimpleField>
+	</Schema>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff00ffff</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Linguistic_Territory_Bounded</name>
+		<open>1</open>
+		<Placemark>
+			<name>1013_wray1997olympicnatnlparkthnooverviewandassessmentolypic.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">478 x 642</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">556.106121 x 556.106121</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-125.5218417338564,48.86247339845765,0 -121.896944657606,48.88478238568314,0 -121.9617641220647,45.67275985832541,0 -125.3737907082369,45.65280947297623,0 -125.5218417338564,48.86247339845765,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1054_ostapkowica2001useofcattailbysalishsalishgroups79.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">786 x 642</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">665.004075 x 665.004075</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-126.5275575414676,51.93759361705078,0 -118.9245510166818,51.9198752385545,0 -119.2366467930469,48.08899105803966,0 -126.2572157328378,48.10447096711987,0 -126.5275575414676,51.93759361705078,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1091_blancharddavenporteds2005contempcoastsalishartcclinguisticp6.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">501 x 643</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">870.043735 x 870.043735</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-127.2966842251408,50.92064229432222,0 -121.0917826161054,50.98415753529093,0 -121.2716717623868,45.95372483139477,0 -126.892684452838,45.90044667678136,0 -127.2966842251408,50.92064229432222,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1122_thompsonandegesdal2008salishmythsandlegendssalishlanguages.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">559 x 642</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">3012.208921 x 3012.208921</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-134.3419624463456,57.39987789510393,0 -106.4598999794328,56.8098272720658,0 -111.2650560117099,39.91695200732325,0 -130.986520101637,40.23934126217657,0 -134.3419624463456,57.39987789510393,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1161_roberts1975phdahistoryofthesinomishpugetsoundlanguges.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">444 x 569</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">575.867418 x 575.867418</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-124.2834697753518,49.76436420512792,0 -120.7337003794273,49.74930329588155,0 -120.8604290077179,46.80352847773218,0 -124.2116530663304,46.81711678995958,0 -124.2834697753518,49.76436420512792,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1166_kennedyandbouchar1083sliammonlifeindialanguagescirca1800.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">702 x 642</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">4875.687827 x 4875.687827</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-164.9316325732998,60.75769478066199,0 -96.97038139226525,65.56571546700033,0 -109.4950828991516,38.86780262571325,0 -148.0324699505897,36.89867636858664,0 -164.9316325732998,60.75769478066199,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1200_hilbertandbierwert1980waysoflushootseedpeoplelangareaindianlandsp5.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">617 x 672</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">813.465865 x 813.465865</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-125.7854348652107,50.17050732780183,0 -118.7602240657868,50.12646587680991,0 -119.1406743050897,45.22013292919123,0 -125.5350360767765,45.25724405563781,0 -125.7854348652107,50.17050732780183,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1231_.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">534 x 554</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">742.232262 x 742.232262</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-126.8819015889088,51.21496328644543,0 -121.2044808876618,51.26560717734652,0 -121.3345501051329,47.56859152637682,0 -126.6012973606744,47.52410858909192,0 -126.8819015889088,51.21496328644543,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1231_boaz1887thecoasttribesofbritishcolumbia.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">537 x 554</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">1275.179310 x 1275.179310</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-130.8663108292581,53.46816593156584,0 -120.5296449510084,53.7020510320549,0 -120.8407269012072,47.35393221440239,0 -129.884923645315,47.16695151486352,0 -130.8663108292581,53.46816593156584,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>542_baas1980map.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">617 x 643</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">3137.060350 x 3137.060350</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-140.4666350929349,59.17139971349996,0 -106.3106284005721,59.27657419738813,0 -111.6651218154005,41.64841810538113,0 -134.8806078173752,41.59254308675334,0 -140.4666350929349,59.17139971349996,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>542_boas1890onnortwesttribeslingmapbcp552.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">606 x 606</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">3814.388282 x 3814.388282</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-143.3383164467945,58.31017094348565,0 -103.4460293873531,58.43752979267405,0 -110.0638589293535,38.42321817901137,0 -136.4803138902096,38.36078433897124,0 -143.3383164467945,58.31017094348565,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>552bouchardankennedy1995reviewofnativeindiahistorycrabybayareasog.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">541 x 554</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">677.085671 x 677.085671</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-127.3888415964371,51.7718989042416,0 -122.0774015121082,51.85025257164958,0 -122.1401466275426,48.47703573007372,0 -127.091364417121,48.40745873863348,0 -127.3888415964371,51.7718989042416,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>588_collier1984culturalfermentationsalishlingdistribp15.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">606 x 554</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">1965.545883 x 1965.545883</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-130.6034277588553,54.564451916357,0 -112.218175508374,54.32048885516364,0 -114.1702899012413,44.667042104184,0 -129.2144674572358,44.84032272399029,0 -130.6034277588553,54.564451916357,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>676_hage1999markinguniversalskinshipsalish.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">705 x 642</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">2968.566883 x 2968.566883</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-141.2851408516571,55.82637862299484,0 -107.5288559304144,56.22300315131855,0 -111.9057353723512,39.51623443591753,0 -136.1755355615479,39.29579807217748,0 -141.2851408516571,55.82637862299484,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>735_jorgensen1969salishlangandcultmajorsalishuntisp5.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">439 x 510</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">3490.943353 x 3490.943353</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-133.0123161154235,56.96781967667397,0 -107.9240476329722,56.44946890380139,0 -112.0385953516867,40.82982097428658,0 -130.2344810374217,41.12655308773523,0 -133.0123161154235,56.96781967667397,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>787_lutz1999relatingtocountrylekwammenterrp20.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">629 x 480</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">90.146736 x 90.146736</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-123.6707717395779,48.70810110875589,0 -122.9000296100818,48.71001027667861,0 -122.9007925541173,48.32073373737703,0 -123.6656530629412,48.31885035883764,0 -123.6707717395779,48.70810110875589,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>860_richardson1979longhousetohomestedsnooksackangadjgroupsterritp9.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">707 x 462</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">253.024666 x 253.024666</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-123.5731402420002,49.44238868430746,0 -121.1059483586044,49.42829609715759,0 -121.1452673578125,48.37727737561355,0 -123.5612346739811,48.39086080042805,0 -123.5731402420002,49.44238868430746,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>909_suttles1954postcontactculturelummisalishlingdistp30.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">502 x 630</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">350.993493 x 350.993493</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-124.4200567700794,49.66502638685911,0 -121.9782863690349,49.66922671002583,0 -122.0177361879797,47.68025424687778,0 -124.3652365666864,47.6763361275726,0 -124.4200567700794,49.66502638685911,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>915_suttles1982productivityanditsconstraintscentralcoastsalishp68.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">728 x 630</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">385.668697 x 385.668697</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-125.0162603784328,50.00488448663889,0 -121.0980008149529,50.00681433213876,0 -121.1792003641872,47.82225894023373,0 -124.9301901605542,47.82047118976462,0 -125.0162603784328,50.00488448663889,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>915_suttles1982thekalkomelemsxwayxweycentralcoastsalishterrp59.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">677 x 505</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">491.921569 x 491.921569</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-125.3376912699057,50.33192731421116,0 -120.658244351222,50.33184549154402,0 -120.7614664892829,48.09901998342424,0 -125.2346479131751,48.09909564417649,0 -125.3376912699057,50.33192731421116,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>922_suttles1987culturaldiversityincoastsalishcontinuumnativelangofs.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">627 x 642</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">1171.599604 x 1171.599604</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-129.1228607440966,52.06148382489592,0 -118.3965048451097,52.13080622153004,0 -118.9760062076221,45.38336710099256,0 -128.3541903181078,45.32863313876687,0 -129.1228607440966,52.06148382489592,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>930_suttles1987coastsalishessaysnwcoastlangesinsidefrontcover.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">625 x 642</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">2421.595222 x 2421.595222</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-135.9320126526494,54.65757854576322,0 -112.3544060346483,54.88297500004489,0 -114.8895037667987,41.07729077599721,0 -132.875364295828,40.93844277793157,0 -135.9320126526494,54.65757854576322,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>930_suttles1987coastsalishessaysnwcoastlaungauagesbackcover.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">653 x 642</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">5086.276252 x 5086.276252</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-163.0818346107747,59.08274179967583,0 -100.5856572330793,63.8162514282611,0 -111.0398904229343,35.59182981356437,0 -146.8834272021975,33.77166725789706,0 -163.0818346107747,59.08274179967583,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>932_suttles1990handbknai7ctrlcstradterritoryvillagesitesp45.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">505 x 626</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">631.664119 x 631.664119</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-125.1732999936064,50.38753748244105,0 -120.6860418822391,50.38482321274604,0 -120.8430610092178,46.83022168895519,0 -125.025808527156,46.8326186245442,0 -125.1732999936064,50.38753748244105,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>932_suttles1990hnai7.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">576 x 569</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">311.159262 x 311.159262</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-124.5680273004218,49.73578885012451,0 -122.0806235562644,49.742753485681,0 -122.1094248779504,48.1502668535371,0 -124.5189210286662,48.14367987111686,0 -124.5680273004218,49.73578885012451,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>967_turnerandbell1971ethnobotanyofthecsvanislandcoastsaslishlingp65.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">677 x 528</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">1086.445768 x 1086.445768</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-130.1507771386218,52.91802178297528,0 -119.1921318557881,53.07257366782898,0 -119.5854889927643,47.92384330611225,0 -129.4167689237276,47.79496016303722,0 -130.1507771386218,52.91802178297528,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_03salishanlanguages.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">525 x 537</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">2051.213964 x 2051.213964</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-132.3145733875359,53.84196871783349,0 -115.9038560771387,53.99460475560026,0 -117.1879540138353,44.14795639898139,0 -130.6383654240499,44.039945259309,0 -132.3145733875359,53.84196871783349,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_bateshesshilbertlushootseeddictionaryarea.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">725 x 643</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">766.508910 x 766.508910</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-126.1824924219386,50.03333590845965,0 -118.426247107197,49.98676692387114,0 -118.7991166879267,45.56516639038788,0 -125.9225415925353,45.60507573513029,0 -126.1824924219386,50.03333590845965,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_bcheritageseriesournativepplss1v2.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">841 x 606</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">2759.990419 x 2759.990419</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-145.3876074313452,59.71097484725971,0 -103.3764496916391,60.17211081147729,0 -109.1382083915619,45.74952669754227,0 -138.9129009086422,45.47599049369889,0 -145.3876074313452,59.71097484725971,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_bennet1971indianfishingfraserrlinggroupsp7.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">453 x 643</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">1795.513754 x 1795.513754</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-129.4642792183486,57.00174728020852,0 -116.066609388317,56.97652495164174,0 -117.4966686794767,46.65594000850847,0 -128.1297598793435,46.67334803050235,0 -129.4642792183486,57.00174728020852,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_boas1896sprachenkarte.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">517 x 642</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">1459.179258 x 1459.179258</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-129.5987731131632,52.82514187833057,0 -118.3875570217446,52.91920417191187,0 -119.0992251293339,44.51476908778038,0 -128.5842284144313,44.44470394325397,0 -129.5987731131632,52.82514187833057,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_boas1896sprachenkartsalishcrop.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">790 x 643</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">1489.009113 x 1489.009113</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-135.9061635287286,50.94967603577874,0 -119.0813399536229,51.60145004138361,0 -119.6708221069233,43.00325604245318,0 -134.0115362242185,42.51899503966302,0 -135.9061635287286,50.94967603577874,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_boas1928languagesbaevol14centralsalishcrop.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">747 x 554</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">388.502887 x 388.502887</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-124.0484578257615,48.44249799456845,0 -120.1259182980229,48.41136825745512,0 -120.2294715488123,46.47706078000065,0 -124.0106298013722,46.50616250465819,0 -124.0484578257615,48.44249799456845,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_boas1928languagesBAEvol41.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">705 x 512</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">3314.709575 x 3314.709575</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-137.4606577656481,58.4741778203138,0 -98.15759319033575,56.78911757908594,0 -104.7800662234787,42.55557857740433,0 -133.3887674043882,43.55700448406867,0 -137.4606577656481,58.4741778203138,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_brotherton2008sabadebthegiftscsterritoriesppxix.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">452 x 554</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">1021.315307 x 1021.315307</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-127.1236571117458,50.98125951485721,0 -120.5440921463639,51.02827075529492,0 -120.7782300101235,45.9422417198147,0 -126.7312766793375,45.90288684097639,0 -127.1236571117458,50.98125951485721,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_Carlson1997nativestudiesstoltradterrlingboundsp13.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">797 x 627</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">508.026475 x 508.026475</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-125.4101856282718,50.29086908345829,0 -119.7271164489284,50.26976341656685,0 -119.9085746147241,47.40870367515272,0 -125.2764356147884,47.42779720436342,0 -125.4101856282718,50.29086908345829,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_figure1boundariesbrienfinaldec10.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">276 x 375</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">153.539054 x 153.539054</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-126.3929063587524,49.51847530042805,0 -125.8081967549169,49.53415884041061,0 -125.7789590400029,49.01685797177399,0 -126.3576065211471,49.00145628562345,0 -126.3929063587524,49.51847530042805,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_kennedy1993mathesislookingfortribescrtlcslangpp7.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">478 x 630</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">636.234187 x 636.234187</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-124.831602486177,50.49302727389263,0 -120.5444809279098,50.48153291808349,0 -120.7137182925134,46.87872429977178,0 -124.7053045286042,46.88885705905296,0 -124.831602486177,50.49302727389263,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_kewanandgriggs1991nativeindiansoffraserbasindistofsix.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_bounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">654 x 627</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">1499.832368 x 1499.832368</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-129.9982407065919,55.2201545635214,0 -114.5821081896268,55.12987316810766,0 -115.9805787600824,46.7490586461014,0 -128.831638255037,46.81602742758678,0 -129.9982407065919,55.2201545635214,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

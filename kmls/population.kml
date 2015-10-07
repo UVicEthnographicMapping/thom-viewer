@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Population.kml</name>
+	<open>1</open>
+	<Schema name="Population" id="Population">
+		<SimpleField type="string" name="Name"></SimpleField>
+		<SimpleField type="string" name="Path"></SimpleField>
+		<SimpleField type="string" name="Driver"></SimpleField>
+		<SimpleField type="string" name="XYSize"></SimpleField>
+		<SimpleField type="string" name="Proj4"></SimpleField>
+		<SimpleField type="int" name="NumBands"></SimpleField>
+		<SimpleField type="string" name="BandTypes"></SimpleField>
+		<SimpleField type="string" name="ResSpatial"></SimpleField>
+	</Schema>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffad0073</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffad0073</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Population</name>
+		<open>1</open>
+		<Placemark>
+			<name>1089_carlson2010powerofplaceproblemlowerfraser1830popdistribution.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Population">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\population</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">513 x 384</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">747.482060 x 747.482060</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-124.6910351721606,50.05713645372809,0 -119.3371213327027,50.01161808447285,0 -119.5198623106301,47.43446950195584,0 -124.6065016109376,47.47606039165292,0 -124.6910351721606,50.05713645372809,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>683harris1992frasercanyonencounterednativepopinfrasercanyon1878p17.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Population">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\population</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">377 x 627</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">111.454198 x 111.454198</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-121.8963301603075,50.1785114559422,0 -121.3080690452865,50.17143155405123,0 -121.3298712925349,49.54316630548399,0 -121.9105567259592,49.55009140218023,0 -121.8963301603075,50.1785114559422,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>683harris1992frasercanyonencounteredpopfromandersonrandspuzzumcreekp13.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Population">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\population</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">501 x 627</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">92.972647 x 92.972647</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-121.719446250231,49.97029461226639,0 -121.0702214423261,49.96130930160664,0 -121.0908712949401,49.43727847962864,0 -121.7331546957656,49.44609976614524,0 -121.719446250231,49.97029461226639,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_wynnokeds1992vanregionthelowermainland39.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Population">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\population</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">581 x 494</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">195.794924 x 195.794924</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-123.8351689861073,49.36926387035563,0 -122.2682585654188,49.36996482964452,0 -122.2808657719205,48.4999445123611,0 -123.8207802830213,48.49926458024424,0 -123.8351689861073,49.36926387035563,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_Wynnokeeds1992VanRegionwinter1977pop.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Population">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\population</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">513 x 417</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">116.487789 x 116.487789</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-123.6292855889191,49.34045788875086,0 -122.8066451648659,49.34200916660424,0 -122.8083365597492,48.90505528824051,0 -123.623781232508,48.90352757986069,0 -123.6292855889191,49.34045788875086,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

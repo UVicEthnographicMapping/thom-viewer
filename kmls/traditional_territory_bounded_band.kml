@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Traditional Territory Bounded Band.kml</name>
+	<Schema name="Traditional_Territory_Bounded_Band" id="Traditional_Territory_Bounded_Band">
+		<SimpleField type="string" name="Name"></SimpleField>
+		<SimpleField type="string" name="Path"></SimpleField>
+		<SimpleField type="string" name="Driver"></SimpleField>
+		<SimpleField type="string" name="XYSize"></SimpleField>
+		<SimpleField type="string" name="Proj4"></SimpleField>
+		<SimpleField type="int" name="NumBands"></SimpleField>
+		<SimpleField type="string" name="BandTypes"></SimpleField>
+		<SimpleField type="string" name="ResSpatial"></SimpleField>
+	</Schema>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffaaff</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffaaff</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Traditional_Territory_Bounded_Band</name>
+		<open>1</open>
+		<Placemark>
+			<name>1168_roy1999makinghistoryvisiblemusqueamplacena.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Band">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\traditional_territory_bounded_band</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">897 x 577</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">145.090508 x 145.090508</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-123.9354283937019,49.69192103544908,0 -122.1309288215898,49.69243801095519,0 -122.1440775103379,48.93947679579382,0 -123.9212760840306,48.93897329506238,0 -123.9354283937019,49.69192103544908,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>741_kennedyandbouchard1083sliammonlifeterritoriesp15.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Band">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\traditional_territory_bounded_band</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">661 x 634</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">714.516066 x 714.516066</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-129.5429250034809,52.40480372822809,0 -122.5951230923247,52.58539384951838,0 -122.6285838880496,48.51153559650362,0 -129.0063020173336,48.35510174785205,0 -129.5429250034809,52.40480372822809,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_cowichanplacenamesmaplegal.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Band">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\traditional_territory_bounded_band</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">944 x 510</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">383.021327 x 383.021327</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-124.9812527467231,49.94997485203029,0 -119.9424823776887,49.92658211179881,0 -120.0483236567215,48.17180279537661,0 -124.9125965128161,48.19380020726136,0 -124.9812527467231,49.94997485203029,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_mohsetal2008kwehkwuchhummtwoodsidespiritualforestmagmetchealisbandtradte.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Band">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\traditional_territory_bounded_band</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">450 x 539</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">190.915034 x 190.915034</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-122.5500382052781,50.01676848376598,0 -121.3511915498284,50.00592575176344,0 -121.3820426502713,49.08071194720705,0 -122.5584616909182,49.0912079472946,0 -122.5500382052781,50.01676848376598,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

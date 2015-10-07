@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Linguistic Territory Unbounded.kml</name>
+	<open>1</open>
+	<Schema name="Linguistic_Territory_Unbounded" id="Linguistic_Territory_Unbounded">
+		<SimpleField type="string" name="Name"></SimpleField>
+		<SimpleField type="string" name="Path"></SimpleField>
+		<SimpleField type="string" name="Driver"></SimpleField>
+		<SimpleField type="string" name="XYSize"></SimpleField>
+		<SimpleField type="string" name="Proj4"></SimpleField>
+		<SimpleField type="int" name="NumBands"></SimpleField>
+		<SimpleField type="string" name="BandTypes"></SimpleField>
+		<SimpleField type="string" name="ResSpatial"></SimpleField>
+	</Schema>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffaa55</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffffaa55</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Linguistic_Territory_Unbounded</name>
+		<open>1</open>
+		<Placemark>
+			<name>745_kennedy2000phdthreadstothepastcslanguagep4.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Unbounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_unbounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">548 x 661</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">1162.949061 x 1162.949061</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-130.0272192190265,54.09702544539842,0 -120.264843712297,54.27144223796083,0 -120.6412066741431,47.36537346908652,0 -129.066868287596,47.22877175641121,0 -130.0272192190265,54.09702544539842,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>861_richardson1982controlofprodresrouces.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Linguistic_Territory_Unbounded">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\linguistic_territory_unbounded</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">438 x 510</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">7146.089460 x 7146.089460</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-154.1363225492821,61.4668879009873,0 -93.44696056678092,61.85793231807751,0 -107.1685856256129,31.27077015445344,0 -139.8199523916064,31.14177971551803,0 -154.1363225492821,61.4668879009873,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

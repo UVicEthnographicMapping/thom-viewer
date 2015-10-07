@@ -145,6 +145,22 @@ function toggleMap(dataset) {
 
 }
 
+var kmlSet = {};
+function toggleKml(category) {
+    if (!kmlSet[category]) {
+        // Create it.
+        kmlSet[category] = new google.maps.KmlLayer({
+            url: window.location + "/kmls/" + category + ".kml",
+            map: map,
+        });
+        console.log(kmlSet[category]);
+    } else {
+        // Remove it.
+        kmlSet[category].setMap(null);
+        delete kmlSet[category];
+    }
+}
+
 function toggleSidebar() {
     console.log("Toggling sidebar");
     $("#sidebarContainer").toggleClass("in");
@@ -206,10 +222,18 @@ function buildSidebar() {
         categoriesElem.append(categories.map(function (category) {
             var categoryElem = $(document.createElement("li"));
 
+            // Build checkbox.
+            var kmlCheckboxElem = $(document.createElement("input"));
+            kmlCheckboxElem.attr("type", "checkbox");
+            kmlCheckboxElem.data("category", category["Category"]);
+            kmlCheckboxElem.click(function () {
+                toggleKml($(this).data("category"));
+            });
+            categoryElem.append(kmlCheckboxElem);
+
             // Build Link.
             var linkElem = $(document.createElement("a"));
             linkElem.text(category["Pretty Category"]);
-            linkElem.attr("href", "#");
             linkElem.click(function () {
                 $(this).siblings("ul").toggle();
             });

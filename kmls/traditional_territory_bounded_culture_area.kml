@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Traditional Territory Bounded Culture Area.kml</name>
+	<Schema name="Traditional_Territory_Bounded_Culture_Area" id="Traditional_Territory_Bounded_Culture_Area">
+		<SimpleField type="string" name="Name"></SimpleField>
+		<SimpleField type="string" name="Path"></SimpleField>
+		<SimpleField type="string" name="Driver"></SimpleField>
+		<SimpleField type="string" name="XYSize"></SimpleField>
+		<SimpleField type="string" name="Proj4"></SimpleField>
+		<SimpleField type="int" name="NumBands"></SimpleField>
+		<SimpleField type="string" name="BandTypes"></SimpleField>
+		<SimpleField type="string" name="ResSpatial"></SimpleField>
+	</Schema>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Traditional_Territory_Bounded_Culture_Area</name>
+		<open>1</open>
+		<Placemark>
+			<name>1073_miller2007beofgoodmindcsterritoryp1.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\traditional_territory_bounded_culture_area</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">562 x 634</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">1695.980960 x 1695.980960</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-131.8194961085487,52.47560643004195,0 -117.7499020601939,52.68877309647545,0 -118.644809402967,43.04784595327313,0 -130.3278301368617,42.89557913604536,0 -131.8194961085487,52.47560643004195,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>1172_angelbeckmclay2011battlemaplebaycsterrtoryp362.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\traditional_territory_bounded_culture_area</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">592 x 624</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">1471.802224 x 1471.802224</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-130.4567649546608,52.42746999521163,0 -117.6211577206704,52.54066584771839,0 -118.4280230443384,44.30906802332599,0 -129.3429719483102,44.22419482025282,0 -130.4567649546608,52.42746999521163,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>502_deur1999salmonsedentandcultnwctribaldistrib131.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\traditional_territory_bounded_culture_area</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">498 x 599</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">5980.899709 x 5980.899709</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-160.5915937210443,63.23198126383426,0 -96.76161150738599,66.05628670625143,0 -110.2605792906692,35.3940905306024,0 -142.6588286148785,34.4448619741487,0 -160.5915937210443,63.23198126383426,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>529_bennet1971indianfishingfraserrethnicdivp6.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\traditional_territory_bounded_culture_area</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">458 x 599</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">1903.721193 x 1903.721193</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-130.102442631097,56.74061356991052,0 -115.8345678633954,56.736990700852,0 -117.2877368009351,46.54723576430722,0 -128.6618588054329,46.54974989104002,0 -130.102442631097,56.74061356991052,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>529_bennet1971indianfishinggeogregionsp10.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\traditional_territory_bounded_culture_area</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">425 x 599</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">1910.654552 x 1910.654552</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-129.6421144144474,56.98664429884572,0 -116.2682061698645,56.98183086661683,0 -117.6480809763386,46.74771130178361,0 -128.2803842497307,46.75104386295285,0 -129.6421144144474,56.98664429884572,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>773_leece1998mathesiscsmoutaingoathorncracletscsregionp151.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\traditional_territory_bounded_culture_area</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">480 x 634</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">1839.468239 x 1839.468239</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-130.3627397833503,53.56692058454721,0 -117.0107180463266,53.643888755014,0 -118.1296849520676,43.19828606810397,0 -128.9909627050891,43.14493280044493,0 -130.3627397833503,53.56692058454721,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>782_lincoln1991coastsalishcanoestylep23.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\traditional_territory_bounded_culture_area</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">536 x 634</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">2985.125585 x 2985.125585</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-138.8744402221695,54.84846684934306,0 -113.710941144188,55.53965180657561,0 -116.2756488671695,38.66877904288952,0 -134.5848550848976,38.28541249530093,0 -138.8744402221695,54.84846684934306,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>897_smith1967cultureareaandculturedepthbellacoolaterrp87.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\traditional_territory_bounded_culture_area</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">834 x 599</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">1675.260726 x 1675.260726</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-135.4984471377745,54.58922795513403,0 -113.7634472312893,54.88517971942127,0 -115.3641631669978,45.95693172362763,0 -133.3561857498842,45.74093914675823,0 -135.4984471377745,54.58922795513403,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_arrowsmith1857a6mapnam.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\traditional_territory_bounded_culture_area</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">461 x 599</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">4560.475008 x 4560.475008</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-149.7023223457794,65.0447268397746,0 -103.3185801819282,66.17989360970925,0 -112.374722765292,42.38495842030489,0 -137.7835514728651,41.91656376107581,0 -149.7023223457794,65.0447268397746,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_bcheritageseriesoutnativeppless1v2coastsalishtraditionaltarritory.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\traditional_territory_bounded_culture_area</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">696 x 624</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">744.770655 x 744.770655</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-127.7033630495524,51.6095468659079,0 -120.2123935827903,51.67074121434548,0 -120.440806699531,47.49511009378414,0 -127.3189642573774,47.44226250857633,0 -127.7033630495524,51.6095468659079,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_indianaffairs1072geogdivoftheindians.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\traditional_territory_bounded_culture_area</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">834 x 599</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">2044.367204 x 2044.367204</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-136.2868659786753,57.56010781631256,0 -107.7563114983449,57.33398502250243,0 -111.0672994078978,46.6259715800932,0 -133.3775042576606,46.77954005804628,0 -136.2868659786753,57.56010781631256,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>NIB_Indianaffairs1972geogdivoftheindianssalishcrop.tif</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
+					<SimpleData name="Path">Z:\Cartographic Legacies Project\CartographicLegacies_Scan_05Jun2015\traditional_territory_bounded_culture_area</SimpleData>
+					<SimpleData name="Driver">GTiff</SimpleData>
+					<SimpleData name="XYSize">739 x 509</SimpleData>
+					<SimpleData name="Proj4">+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs</SimpleData>
+					<SimpleData name="NumBands">3</SimpleData>
+					<SimpleData name="BandTypes">B1(Byte),B2(Byte),B3(Byte)</SimpleData>
+					<SimpleData name="ResSpatial">731.761509 x 731.761509</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-128.1802119782858,51.55638633107952,0 -120.373196981308,51.6414359996853,0 -120.5493967517807,48.29471715309856,0 -127.8340036791337,48.21911150108492,0 -128.1802119782858,51.55638633107952,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
