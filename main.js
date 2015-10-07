@@ -149,8 +149,9 @@ var kmlSet = {};
 function toggleKml(category) {
     if (!kmlSet[category]) {
         // Create it.
+        var location = String(window.location).slice(0, -1);
         kmlSet[category] = new google.maps.KmlLayer({
-            url: window.location + "/kmls/" + category + ".kml",
+            url: location + "/kmls/" + category + ".kml",
             map: map,
         });
         console.log(kmlSet[category]);
