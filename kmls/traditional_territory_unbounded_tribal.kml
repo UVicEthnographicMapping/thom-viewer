@@ -58,7 +58,7 @@
 		<name>Traditional_Territory_Unbounded_Tribal</name>
 		<open>1</open>
 		<Placemark>
-			<name>1014_wright1991atimeofgatheringtriballocationssuttles1985p34.tif</name>
+			<name>Tribal Locations (Wright 1991)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Tribal">
@@ -82,7 +82,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1161_roberts1975phdahistoryoftheswinomishethnicfieldaroundskagitp26.tif</name>
+			<name>Map of Skagit and Other Ethnic Groups (Roberts 1975) </name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Tribal">
@@ -106,7 +106,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1171_Ebert2011MCthesistowardsabetterunderstandingcssbeateda.tif</name>
+			<name>Pacific Northwest Native Groups (Ebert 2001)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Tribal">
@@ -130,7 +130,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1192_swanton1952indiantribesofnacstsalsihtribeboundariesnp.tif</name>
+			<name>Tribal Boundaries (Swanton 1952)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Tribal">
@@ -154,7 +154,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>489_allen1976intragrougtiespubsoundsalishp162.tif</name>
+			<name>Coast Salish Culture Groups (Allen 1976)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Tribal">
@@ -178,7 +178,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>523_barnett1938coastsalishcanp120.tif</name>
+			<name>The Coast Salish of Canada (Barnett 1938)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Tribal">
@@ -202,7 +202,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>556_boxberger1993lightningboldtsstoloandlumip3.tif</name>
+			<name>Sto:lo and Lummi Peoples (Boxberger 1994)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Tribal">
@@ -226,7 +226,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>577_carlson1997thestoloincanadaspacificcoasthistorycontemporarystoloband.tif</name>
+			<name>Stó:lō Traditional Territory (Carlson 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Tribal">
@@ -250,7 +250,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>585_codere1948swaixwemuthkwaliuttandsalishterrp7.tif</name>
+			<name>Middle Fraser River Area (Codere 1948)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Tribal">
@@ -274,7 +274,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>622_dufresne1984mathesisthesalishsxwaixwsalishterritoryp207.tif</name>
+			<name>Salish Territory (Dufresne 1996)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Tribal">
@@ -298,7 +298,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>680_hanson1972ecologyoftaitterrethnicgroupsinfraserp3.tif</name>
+			<name>Central Coast Salish Ethnic Groups (Hanson 1972)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Tribal">
@@ -322,7 +322,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>782_lincoln1991coastsalishcanoestribesofthecentralandsouth.tif</name>
+			<name>Central and Southern Coast Salish Tribes (Lincoln 1991)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Tribal">
@@ -346,7 +346,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>789_maclachlan1988fortlangleyjournalstribelocationsp168.tif</name>
+			<name>Location of Tribes (Maclachlan 1998)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Tribal">
@@ -370,7 +370,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>853_perez1997cultchangeamongsalishcoastsalishterrp11.tif</name>
+			<name>Traditional Coastal Salish Territory (Perez 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Tribal">
@@ -394,7 +394,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>861_richardson1982controlprodresourcenwcnwcindgrou.tif</name>
+			<name>Indian Groups and Cultural Subareas (Richardson 1982)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Tribal">
@@ -418,7 +418,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>891_smith1949indiansoftheurbannwcsterritoryp5.tif</name>
+			<name>Coast Salish Territory (Smith 1949)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Tribal">
@@ -442,7 +442,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>910_suttles1986katzieethnonotesp9.tif</name>
+			<name>Katzie and Surrounding Tribes (Suttles 1955)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Tribal">
@@ -466,7 +466,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_gunther19881945ethnobotanofwesternwashingtonindiantribeswesternwashingtonp6.tif</name>
+			<name>Indian Tribes of Western Washington (Gunther 1973)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Tribal">
@@ -490,7 +490,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_Twedell1984ComponentialAnalysisofTribe_p71.tif</name>
+			<name>Geographic Locations of Indian Groups (Twedell 1984)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Tribal">

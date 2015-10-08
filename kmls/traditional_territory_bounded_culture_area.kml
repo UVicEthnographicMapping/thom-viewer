@@ -58,7 +58,7 @@
 		<name>Traditional_Territory_Bounded_Culture_Area</name>
 		<open>1</open>
 		<Placemark>
-			<name>1073_miller2007beofgoodmindcsterritoryp1.tif</name>
+			<name>Coast Salish World (Miller 2007)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
@@ -82,7 +82,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1172_angelbeckmclay2011battlemaplebaycsterrtoryp362.tif</name>
+			<name>Coast Salish Territories (Angelbeck and McLay 2011)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
@@ -106,7 +106,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>502_deur1999salmonsedentandcultnwctribaldistrib131.tif</name>
+			<name>Tribal Distribution in the Northwest Coast (Deur 1999) </name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
@@ -130,7 +130,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>529_bennet1971indianfishingfraserrethnicdivp6.tif</name>
+			<name>Fraser River Indians: Ethnic Divisions (Bennett 1975)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
@@ -154,7 +154,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>529_bennet1971indianfishinggeogregionsp10.tif</name>
+			<name>Fraser River Indians: Geographical Divisions (Bennett 1975)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
@@ -178,7 +178,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>773_leece1998mathesiscsmoutaingoathorncracletscsregionp151.tif</name>
+			<name>Coast Salish Cultural Distribution (Leece 1995)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
@@ -202,7 +202,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>782_lincoln1991coastsalishcanoestylep23.tif</name>
+			<name>Coast Salish Canoe Styles (Lincoln 1991)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
@@ -226,7 +226,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>897_smith1967cultureareaandculturedepthbellacoolaterrp87.tif</name>
+			<name>Bella Coola Territory (Smith 1967)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
@@ -250,7 +250,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_arrowsmith1857a6mapnam.tif</name>
+			<name>Aboriginal Map of North America (Arrowsmith 1857)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
@@ -274,7 +274,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_bcheritageseriesoutnativeppless1v2coastsalishtraditionaltarritory.tif</name>
+			<name>Home of the Coast Salish (Pickford and Flucke 1952)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
@@ -298,7 +298,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_indianaffairs1072geogdivoftheindians.tif</name>
+			<name>Geographical Division of BC Indians (Office of the Superintendent of Indian Affairs 1872)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">
@@ -322,7 +322,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_Indianaffairs1972geogdivoftheindianssalishcrop.tif</name>
+			<name>Geographical Division of BC Indians - Detail (Office of the Superintendent of Indian Affairs 1872)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Culture_Area">

@@ -57,7 +57,7 @@
 	<Folder>
 		<name>Archaeological_Siteskml</name>
 		<Placemark>
-			<name>1051mclay2004preservearchehrsoutgulfissouthgulfislsites.tif</name>
+			<name>Gulf Island Archaeological Sites (McLay 2004)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Archaeological_Siteskml">
@@ -81,7 +81,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1073miller2007bogmcsarchsites.tif</name>
+			<name>Archaeological Sites, Forts, and Cities (Miller 2007)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Archaeological_Siteskml">
@@ -105,7 +105,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1073miller2007bogmdefensivesitesincsregion.tif</name>
+			<name>Defensive Sites (Miller 2007)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Archaeological_Siteskml">
@@ -129,7 +129,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1204_boxberger2000kennewickloc.tif</name>
+			<name>Kennewick Man Location (Boxberger 2000)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Archaeological_Siteskml">
@@ -153,7 +153,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1206Brooks1997klallanandchemakumplacenames.tif</name>
+			<name>Klallam and Chemakum Place Names (Brooks 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Archaeological_Siteskml">
@@ -177,7 +177,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>618Duff1953theupperstaloindiansarchsitespp31.tif</name>
+			<name>Tait Area Villages and Archaeological Sites (Duff 1952)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Archaeological_Siteskml">
@@ -201,7 +201,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>888smith1946petroglyphcomplexescolumbiafrasier.tif</name>
+			<name>Petroglyph Sites (Smith 1946)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Archaeological_Siteskml">
@@ -225,7 +225,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>890smith1947housetypesofmidfraserriverpithjousesites.tif</name>
+			<name>Middle Fraser Pithouse Sites (Smith 1947)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Archaeological_Siteskml">
@@ -249,7 +249,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_ArcasConsultingArchaeologiesLtd_1991March_ArchInvestigationsTsawwassenBCVol1_Site_pp2.tif</name>
+			<name>Tsawwassen Archaeological Site (Bouchard and Kennedy 1991)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Archaeological_Siteskml">
@@ -273,7 +273,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_attourgen2007hulqtreatygroup.tif</name>
+			<name>Hul'qumi'num Treaty Group Archaeological Sites (Hul'qumi'num Treaty Group 2007)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Archaeological_Siteskml">
@@ -297,7 +297,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_carlson1983indacttradofnwcgeodivision.tif</name>
+			<name>Archaeological Sites and Culture Areas (Calson 1983)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Archaeological_Siteskml">

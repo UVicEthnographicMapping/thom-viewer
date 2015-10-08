@@ -59,7 +59,7 @@
 		<name>Population</name>
 		<open>1</open>
 		<Placemark>
-			<name>1089_carlson2010powerofplaceproblemlowerfraser1830popdistribution.tif</name>
+			<name>Fraser River Population Distribution (Carlson 2010)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Population">
@@ -83,7 +83,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>683harris1992frasercanyonencounterednativepopinfrasercanyon1878p17.tif</name>
+			<name>Fraser Canyon Native Population (Harris 1992)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Population">
@@ -107,7 +107,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>683harris1992frasercanyonencounteredpopfromandersonrandspuzzumcreekp13.tif</name>
+			<name>Fraser River Population (Harris 1992)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Population">
@@ -131,7 +131,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_wynnokeds1992vanregionthelowermainland39.tif</name>
+			<name>Population Distribution (Harris 1992)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Population">
@@ -155,7 +155,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_Wynnokeeds1992VanRegionwinter1977pop.tif</name>
+			<name>Native Population (Harris 1992)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Population">

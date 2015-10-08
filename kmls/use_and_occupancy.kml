@@ -57,7 +57,7 @@
 	<Folder>
 		<name>Use_and_Occupancy</name>
 		<Placemark>
-			<name>1161_roberts1975HistorySkagitsalmonruns.tif</name>
+			<name>Salmon Runs and Swinomish Fishing (Roberts 1975)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">
@@ -81,7 +81,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1187_Neary2003CowichanFishingsitesandreserves.tif</name>
+			<name>Cowichan Fishing Territories (Neary 2003)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">
@@ -105,7 +105,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>3345_Norman2013WCTshellfishharviest.tif</name>
+			<name>Boundary Bay Shellfish Harvesting (Norman 2013)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">
@@ -129,7 +129,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>490_Aberly_2005map13bendspec.tif</name>
+			<name>Endangered Species Map (Aberley 2004)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">
@@ -153,7 +153,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>717_hunn1999ethnocourtsquaxintriebeFG.tif</name>
+			<name>Squaxin Island Fishing Grounds (Hunn 1999)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">
@@ -177,7 +177,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>717_Hunn1999_squaxintribusealfishinggrounds.tif</name>
+			<name>Squaxin Island Fishing Grounds (Hunn 1999)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">
@@ -201,7 +201,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>912_suttles1974csandwwiisamish.tif</name>
+			<name>Territory of the Samish (Suttles 1974)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">
@@ -225,7 +225,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>912_suttles1974cswwiisaanichfishing.tif</name>
+			<name>Territory of the Saanich (Suttles 1974)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">
@@ -249,7 +249,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>912_suttles1974reefnetandsalmoncourse.tif</name>
+			<name>Reef Net Locations (Suttles 1974)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">
@@ -273,7 +273,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>912_suttles1974semiahoofishing.tif</name>
+			<name>Territory of the Semiahmoo (Suttles 1974)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">
@@ -297,7 +297,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>912_suttles1974sonishfish.tif</name>
+			<name>Territory of the Songish (Suttles 1974)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">
@@ -321,7 +321,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>912_suttles1974sookeklallam.tif</name>
+			<name>Becher Bay Klallam and Sooke Territory (Suttles 1974)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">
@@ -345,7 +345,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>912_Suttles1974WwashIlummi.tif</name>
+			<name>Territory of the Lummi (Suttles 1974)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">
@@ -369,7 +369,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_Mohsetal2008kwehkwuchhumsprittualforest.tif</name>
+			<name>Chehalis Spiritually Sensitive Areas (Mohs 2008)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">
@@ -393,7 +393,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_sencotenplacenamesreefnetsitesmap.tif</name>
+			<name>SENĆOŦEN Reef Net Sites (Sencot'en Alliance 2002)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">
@@ -417,7 +417,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_tobias2009herbgeorgemaptawaltun.tif</name>
+			<name>Tsleil-Waututh Map Biography (Tobias 2009)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">
@@ -441,7 +441,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_tobias2009traditionalusesite.tif</name>
+			<name>Tsleil-Waututh Traditional Use Sites (Tobias 2009)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">
@@ -465,7 +465,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_tobias2009tseilwaututhallcatgories.tif</name>
+			<name>Tsleil-Waututh Hodgepodge Map (Tobias 2009)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">
@@ -489,7 +489,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_tobias2009tsleilwaututhsalmonkillsitesp85.tif</name>
+			<name>Tsleil-Waututh Salmon Fishing Sites (Tobias 2009)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">
@@ -513,7 +513,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_tobiastseilwaututhfishkillsites.tif</name>
+			<name>Tsleil-Waututh Fishing Sites (Tobias 2009)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Use_and_Occupancy">

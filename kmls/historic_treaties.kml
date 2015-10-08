@@ -58,7 +58,7 @@
 		<name>Historic_Treaties</name>
 		<open>1</open>
 		<Placemark>
-			<name>gibbstribesmap1855.tif</name>
+			<name>Culture Areas (Gibbs 1855)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Historic_Treaties">
@@ -82,7 +82,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>roberts1975phdswinomishskagitreserves.tif</name>
+			<name>Point Elliott Treaty and Reservations (Roberts 1975)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Historic_Treaties">
@@ -106,7 +106,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>wilson1969fortvictreatiessonghees.tif</name>
+			<name>Fort Victoria Treaties (Duff 1969)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Historic_Treaties">
@@ -130,7 +130,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>wray1997olypmicnatilparkoverviewassessmenttreaties.tif</name>
+			<name>Olympic Peninsula Treaties (Wray 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Historic_Treaties">
@@ -154,7 +154,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>wright1991timeofgatheringusreservestriballand.tif</name>
+			<name>Washington Tribal Lands (Wright 1990)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Historic_Treaties">

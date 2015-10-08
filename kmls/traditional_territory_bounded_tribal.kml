@@ -95,7 +95,7 @@
 	<Folder>
 		<name>Traditional_Territory_Bounded_Tribal</name>
 		<Placemark>
-			<name>1013_wray1997.tif</name>
+			<name>Cultural Use Areas (Wray 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -119,7 +119,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1060_rozen1976teachersguidetoindiantalesnwbcnativedistribofth.tif</name>
+			<name>Distribution of Ethnic Groups (Rozen 1976)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -143,7 +143,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1073_miller2007beofgoodmindstolotraditionalterritoryp247.tif</name>
+			<name>Stó:lō Territory (Miller 2007)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -167,7 +167,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1073_miller2007beofgoodmindteittribalboundariesp172.tif</name>
+			<name>Boundaries of Teit Territory (Miller 2007)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -191,7 +191,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1089_carlton2010powerofplaceproblemoftimechilliwackp119.tif</name>
+			<name>Chilliwack Migration (Carlson 2010)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -215,7 +215,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1120_Adamson2009folktalesofthecoastsaliswashtribinsidefrontcover.tif</name>
+			<name>Western Tribes of Washington (Adamson 2009)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -239,7 +239,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1161_roberts1975p47.tif</name>
+			<name>The Skagit Region (Roberts 1975)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -263,7 +263,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1161_roberts1975phdahistoryoftheswinomishskaitregionp22.tif</name>
+			<name>The Skagit Region's Setting (Roberts 1975)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -287,7 +287,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1231_boas1887redrawn.tif</name>
+			<name>Island Hul'qumi'num Ethnological Map (Boas 1887, redrawn by Thom 2005)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -311,7 +311,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>508_amoss1978coastsalishspiritdancingnooksackterrp2.tif</name>
+			<name>Territory of the Nooksack and Adjacent Groups (Amoss 1982)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -335,7 +335,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>552_bouchardandkennedy1995reviewofnativeindianhistorycraigbayareamuseummap.tif</name>
+			<name>Local Tribes and Regional Groups - Map 1 (Bouchard 1995)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -359,7 +359,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>552_bouchardandkennedy1995revofnatindhiscraigbay3rdinlist.tif</name>
+			<name>Local Tribes and Regional Groups - Map 2 (Bouchard 1995)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -383,7 +383,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>552_Bouchardandkennedy1995revofnatindhiscraigbayareaoldboastpart2.tif</name>
+			<name>Vancouver Island Indians - Map 2 (Bouchard 1995)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -407,7 +407,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>552_bouchardandkennedy1995revofnatindhistcraigbayareaolboasmappart1.tif</name>
+			<name>Vancouver Island Indians - Map 1 (Bouchard 1995)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -431,7 +431,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>578carlson1997nativestudiesstoltradterrlingboundsp3.tif</name>
+			<name>Approximate Xwélmexw Territory (Carlson 1997)</name>
 			<styleUrl>#m_ylw-pushpin0</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -455,7 +455,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>618_Duff1952.tif</name>
+			<name>Stalo and Adjacent Tribes (Duff 1952)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -479,7 +479,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>634_elmendorf1989nwcskokomishtwanacommunp77.tif</name>
+			<name>Twana Local Communities (Elmendorf 1989)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -503,7 +503,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>652_gallaway1983.tif</name>
+			<name>Territory of the Noosack and Adjacent Groups (Galloway 1983)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -527,7 +527,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>658_gibbsweserwashington1854.tif</name>
+			<name>Tribes of Western Washington (Gibbs 1877)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -551,7 +551,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>675_Haeberlinandgunther1975indiansofpugsountribdistrp8.tif</name>
+			<name>Puget Sound Tribes (Haeberlin and Gunther 1930)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -575,7 +575,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>785_lultz1999relatingtocountrylekwammenterrp20.tif</name>
+			<name>Territories of the Lekwammen (Lutz 1999)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -599,7 +599,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>818_miller1992nativehealingpsoundlushootseedareap1.tif</name>
+			<name>Lushootseed Area (Miller 1992)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -623,7 +623,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>834_olsen1962wateroverthewheelhistoricchemaninusvalleyfrontinsert.tif</name>
+			<name>The Historic Chemainus Valley (Olsen 1962)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -647,7 +647,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>860_richardson1979nooksaklonghousehomsteads.tif</name>
+			<name>Territory of the Nooksack and Adjacent Groups (Richardson 1979)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -671,7 +671,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>871_rozen1985redreawn.tif</name>
+			<name>Halkomelem Territories (Rozen 1985)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -695,7 +695,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>904_stern1934thelummindiansofnwwashingtonp125.tif</name>
+			<name>The Territory of the Lummi Indians (Stern 1934)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -719,7 +719,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>908_suttles1951redrawn.tif</name>
+			<name>Territories of the Straits Salish (Suttles 1951, redrawn by Thom 2005)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -743,7 +743,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>912_suttles1974coastsaiilishandwesterwashindiaandterrp60.tif</name>
+			<name>Territory of the Straits Peoples (Suttles 1974)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -767,7 +767,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>915_suttles1982productivityanditsconstraintscentralcoastsalishp68.tif</name>
+			<name>Locations of the Central Coast Salish (Suttles 1982)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -791,7 +791,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>953_thrushandkeller1997iseewhatihavedoneskallamp173.tif</name>
+			<name>The Peoples of Xwelas (Thrush and Keller 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -815,7 +815,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>elmenandkroeber1992structureoftwanaculturetwanaterritoryp49.tif</name>
+			<name>Twana Territory and Sites (Elmendorf 1993)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -839,7 +839,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>elmendofandkrober1992structureoftwanaculturetwanalocationp2.tif</name>
+			<name>Location of Twana and Yurok (Elmendorf 1993)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -863,7 +863,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>elmendorfandkroeber1992structureoftwannacultureadjacentethicalandlinguisticp185.tif</name>
+			<name>Ethnic and Linguistic Groups (Elmendorf 1993)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -887,7 +887,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_attourngen2007hulqtreatygroupreddrawbasthalaterrp40.tif</name>
+			<name>Island Hul'qumi'num Ethnological Map (Hul'qumi'num Treaty Group 2007)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -911,7 +911,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_bouchardandkennedy1995reviewofnativeindianhistorycraigbayareamuseummappar1p92.tif</name>
+			<name>Distribution of Native Indian Ethnic Groups (Bouchard 1995)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -935,7 +935,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_coul1996atravellersguittoabbc.tif</name>
+			<name>Halq'emeylem (and Stó:lō) Territories (Coull 1996)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -959,7 +959,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_coull1986atravellersguidetoaboriginalbcaboriginalbritishcolumbiapX.tif</name>
+			<name>Aboriginal British Columbia (Coull 1996)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -983,7 +983,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_joejoeandrozenndplacenamesofquwutsunpeoplditidahttradte.tif</name>
+			<name>Ditidaht Traditional Territory (Rozen 1985)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -1007,7 +1007,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_jointtitleboas1887.tif</name>
+			<name>Culture Areas (Boas 1887)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -1031,7 +1031,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_mouney1594distributionoftribes.tif</name>
+			<name>Distribution of Tribes in Upper Columbia Region (Mooney 1894)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -1055,7 +1055,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_Mouney1594distributionoftribessalishcrop.tif</name>
+			<name>Distribution of Tribes in Upper Columbia Region - Detail (Mooney 1894)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -1079,7 +1079,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_powell1876indtribesofwashterritory.tif</name>
+			<name>Distribution of Tribes in Washington (Powell 1876)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -1103,7 +1103,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_richarsonandgalloway2011nooksackplacnames.tif</name>
+			<name>Territory of the Noocksack and Adjacent Groups (Galloway 1983)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">
@@ -1127,7 +1127,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_Twedell1984ComponentialAnalysisofTribe_p71.tif</name>
+			<name>Tribal and Linguistic Distribution (Twedell 1984)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Tribal">

@@ -58,7 +58,7 @@
 		<name>First_Nation_Place_Names</name>
 		<open>1</open>
 		<Placemark>
-			<name>1042Kinkade1997cowlitzplacenamesmap1pg259.tif</name>
+			<name>Cowlitz Place Names - Map 1 (Kinkade 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -82,7 +82,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1042kinkade1997cowlitzplacenamesmap2pg260.tif</name>
+			<name>Cowlitz Place Names - Map 2 (Kinkade 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -106,7 +106,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1089Carlson2010poppotkatzieplacenamesp137.tif</name>
+			<name>Katzie Place Names (Carlson 2010)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -130,7 +130,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1198hudson1984foragininganewhopeterritoriesofhopeindians.tif</name>
+			<name>Territories of the Hope Indians (Hudson 1984)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -154,7 +154,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1213galvin2005thishauntedplacehulqminumplacnam.tif</name>
+			<name>Hul'qumi'num' Place Names (Glavin 2005)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -178,7 +178,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1216Rozen1977thehalkomenumplacesoncowichanriverp11.tif</name>
+			<name>Cowichan River Place Names - Map 2 (Rozen 1977)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -202,7 +202,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1216rozen1977thehalkomenumplacesoncowichanriverp9.tif</name>
+			<name>Cowichan River Place Names - Map 1 (Rozen 1977)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -226,7 +226,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1222Theseceltbandndmapoftraditionalhomesitesnppartone.tif</name>
+			<name>Sechelt Place Names - Map 1 (Sechelt Indian Band N.d.)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -250,7 +250,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1222thesecheltbandndmapoftraditionalhomesitesnppart2.tif</name>
+			<name>Sechelt Place Names - Map 2 (Sechelt Indian Band N.d.)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -274,7 +274,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>585codere1948swaixwemythplacenamesp5.tif</name>
+			<name>Middle Fraser Swai'xwe Place Names (Codere 1948)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -298,7 +298,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>741kennedyandbouchard1083shamonlifeshamonplacenames.tif</name>
+			<name>Sliammon Place Names (Kennedy and Bouchard 1983)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -322,7 +322,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>741kennedyandbouchard1083sliammonlifehomalcoplacenamesp150.tif</name>
+			<name>Homalco Place Names (Kennedy and Bouchard 1983)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -346,7 +346,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>741kennedyandbouchard1083sliammonlifisComoxplacnamesp168.tif</name>
+			<name>Island Comox Place Names (Kennedy and Bouchard 1983)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -370,7 +370,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>741kenneyandbouchard1083sliammonlifeklahooseplacenamesp156.tif</name>
+			<name>Klahoose Place Names (Kennedy and Bouchard 1983)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -394,7 +394,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>782lincol1991coastsalishcanoespre1850housesitesp36.tif</name>
+			<name>Pre-1950 House Sites (Lincoln 1991)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -418,7 +418,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>795mathes1995withkhatsahlanovan2ndoneinlist.tif</name>
+			<name>Indian Names for Familiar Places (Matthews 1955)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -442,7 +442,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>795matthews1955conversationswithkhatstahlanovan1stone.tif</name>
+			<name>Vancouver Indian Names (Matthews 1955)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -466,7 +466,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>796macdonald1992vanvishistsitesandvillagesvan1850p10.tif</name>
+			<name>"Vancouver" in the 1850s - Map 1 (MacDonald 1992)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -490,7 +490,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>796Macdonald1992vanvisualhistorysiteandvillvan1850part2.tif</name>
+			<name>"Vancouver" in the 1850s - Map 2 (MacDonald 1992)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -514,7 +514,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>936_Suttles1986katzieenthonotesplacenameskatziep16.tif</name>
+			<name>Places in Katzie Territory (Suttles 1986)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -538,7 +538,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>936_suttles1996lingevidenceforburrardinlethalknamesinhowsoundp296.tif</name>
+			<name>Howe Sound Place Names (Suttles 1996)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -562,7 +562,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>936_suttles1996papers31stconferencesalishlanguageslin.tif</name>
+			<name>East Burrard Inlet Place Names (Suttles 1996)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -586,7 +586,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>936_suttles1996papers31stconferencesalishlaugnesp25.tif</name>
+			<name>West Burrard Inlet Place Names (Suttles 1996)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -610,7 +610,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>990_wells1966squamishlegendssquamishplacenamesp15approx.tif</name>
+			<name>Home-Land of the First People: Squamish (Wells 1966)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -634,7 +634,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>995_wells1987thechilliwacksandtheirneighboursnooksakgeop149.tif</name>
+			<name>Nooksack Geography (Wells 1987)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -658,7 +658,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>995_wells1987thechilliwacksandtheirneighbourssquamishlegelndsp169.tif</name>
+			<name>Squamish Legends (Wells 1987)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -682,7 +682,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_angelbeckmclay2011battlemaplybaybattleplacenames.tif</name>
+			<name>Battle of Maple Bay Place Names (Angelbeck and McLay 2011)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -706,7 +706,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_arcasconsulachltd1991marivesttwasbcp162.tif</name>
+			<name>Tsawwassen Place Names (Bouchard and Kennedy 1991)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -730,7 +730,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_attourngen2007hulqgtreaygroupvaldesislyackvills0003.tif</name>
+			<name>Valdes Island Place Names (Hul'qumi'num Treaty Group 2007)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -754,7 +754,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_carlson1997stoloincanpaccaoshalqnamerespart2.tif</name>
+			<name>Halq'eméylem Place Names - Map 2 (Carlson 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -778,7 +778,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_carlson1997thestolincanapaccoasthisthalqnamrespar1ins.tif</name>
+			<name>Halq'eméylem Place Names - Map 1 (Carlson 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -802,7 +802,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_Carlson1997thestoloincanpaccoashiststolodiseaseplacenames.tif</name>
+			<name>Stó:lō Disease Place Names (Carlson 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -826,7 +826,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_chris-paulWSANECmap.tif</name>
+			<name>W̱SÁNEĆ Place Names (Paul 2005)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -850,7 +850,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_guerinplacenamesmapletter.tif</name>
+			<name>Chemainus First Nation Place Names (Guerin 1996)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -874,7 +874,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_hayes2005histatlasofvan.tif</name>
+			<name>Vancouver Place Names (Hayes 1947)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -898,7 +898,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_Oliver1997traditionalusestudy765hopeprincetonhighwaystolovillageshaleqemelemplace.tif</name>
+			<name>Halq'eméylem Place Names (Oliver 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -922,7 +922,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_placenames.tif</name>
+			<name>Halq'eméylem Place Names (Carlson 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -946,7 +946,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_placenames3.tif</name>
+			<name>Halq'eméylem Place Names (Carlson 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -970,7 +970,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_richarsonandgalloway2011nooksackplacenamesplacenamesM.tif</name>
+			<name>Nooksack Place Names (Richardson and Galloway 2011)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -994,7 +994,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_squamishnation2011squamishenglishdictionarysquamishterritory.tif</name>
+			<name>Squamish Territory (Squamish Nation Education Department 2011)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -1018,7 +1018,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_suttles2004musquemreferencegrammarmusqterrp567.tif</name>
+			<name>Musqueam Territory (Suttles 2004)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -1042,7 +1042,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_thiusoloc1859usboundarycommission.tif</name>
+			<name>US Boundary Commission Map (Thiusoloc 1859)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">
@@ -1066,7 +1066,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_wilson1969fortvictreatiessongheesplacenamesp28.tif</name>
+			<name>Songhees Place Names (Duff 1969)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#First_Nation_Place_Names">

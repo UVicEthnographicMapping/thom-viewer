@@ -58,7 +58,7 @@
 		<name>Traditional_Territory_Unbounded_Bands</name>
 		<open>1</open>
 		<Placemark>
-			<name>1067_wilke2002onetoomanymathesishulquminumterritroeeiesp106.tif</name>
+			<name>Hul'qumi'num Territories (Wilke 2006)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Bands">
@@ -82,7 +82,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1198hudson1984foraginganewhopeterritoriesofhopeindias.tif</name>
+			<name>Territories of the Hope Indians (Hudson 1984)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Bands">
@@ -106,7 +106,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>911_suttles1957middlefraserctrlnwcoasttribalboundariesp158.tif</name>
+			<name>Tribes of the Central Northwest Coast (Suttles 1957)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Bands">
@@ -130,7 +130,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>911_suttles1957middlefrasertribesoflowerfraserandgeorgiastraitp159.tif</name>
+			<name>Tribes of the Lower Fraser River and Georgia Strait (Suttles 1957)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Bands">
@@ -154,7 +154,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_coul1996atravellersguidetoaboriginalbcshishaldsliammonterrp86.tif</name>
+			<name>Shíshálh and Sliammon Territories (Coull 1996)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Bands">
@@ -178,7 +178,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_coull1996atravellersguidetoaboriginalbckwakwakawakwterrp54.tif</name>
+			<name>Kwakwaka'wakw Territories (Coull 1996)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Bands">
@@ -202,7 +202,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_coull1996atravellersguidetoaboriginalbcsquamishterritorryp80.tif</name>
+			<name>Squamish Territories (Coull 1996)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Bands">
@@ -226,7 +226,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_coull1996atravellersguidtoaboriginalbcnuuchahhutlthterrit.tif</name>
+			<name>Nuu-chah-nulth Territories (Coull 1996)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Bands">
@@ -250,7 +250,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_coull1996travelguidstratsterritoreies.tif</name>
+			<name>Straits Territories (Coull 1996)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Unbounded_Bands">

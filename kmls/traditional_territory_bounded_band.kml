@@ -58,7 +58,7 @@
 		<name>Traditional_Territory_Bounded_Band</name>
 		<open>1</open>
 		<Placemark>
-			<name>1168_roy1999makinghistoryvisiblemusqueamplacena.tif</name>
+			<name>Musqueam Place Names (Roy 1999)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Band">
@@ -82,7 +82,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>741_kennedyandbouchard1083sliammonlifeterritoriesp15.tif</name>
+			<name>Northern Coast Salish Territories (Kennedy and Bouchard 1983)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Band">
@@ -106,7 +106,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_cowichanplacenamesmaplegal.tif</name>
+			<name>Cowichan Tribes Ancestral Territory (Cowichan Tribes 1999)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Band">
@@ -130,7 +130,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_mohsetal2008kwehkwuchhummtwoodsidespiritualforestmagmetchealisbandtradte.tif</name>
+			<name>Chehalis Traditional Territory (Mohs 2008)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Traditional_Territory_Bounded_Band">

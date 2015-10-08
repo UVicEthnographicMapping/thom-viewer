@@ -59,7 +59,7 @@
 		<name>Linguistic_Territory_Unbounded</name>
 		<open>1</open>
 		<Placemark>
-			<name>745_kennedy2000phdthreadstothepastcslanguagep4.tif</name>
+			<name>Coast Salish Languages (Kennedy 2000)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Unbounded">
@@ -83,7 +83,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>861_richardson1982controlofprodresrouces.tif</name>
+			<name>Indian Groups and Cultural Subareas (Richardson 1982)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Unbounded">

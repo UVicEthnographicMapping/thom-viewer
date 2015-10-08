@@ -79,7 +79,7 @@
 		<name>Reserves_Homesteads_AB</name>
 		<open>1</open>
 		<Placemark>
-			<name>891smith1949indiansofurbannwseabirdresp186.tif</name>
+			<name>Seabird Island Houses (Smith 1949)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_REP">
@@ -103,7 +103,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>531bierwert1986phdtracerinthemidlinesseabirdisreservep217.tif</name>
+			<name>Seabird Island Reserve (Bierwert 1986)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_REP">
@@ -127,7 +127,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>531bierwert1986phdtraveryinthemidlinesskwahreservep22.tif</name>
+			<name>Skwah Reserve (Bierwert 1986)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_REP">
@@ -151,7 +151,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1167mitchell1976phdthesiswomenpovertyandhousingtsartlin.tif</name>
+			<name>Tsartlip Indian Reserve (Mitchell 1976)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_REP">
@@ -175,7 +175,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1161roberts_1975phdahistoryoftheswinomishswinomishreserv.tif</name>
+			<name>Swinomish Reservations and Alienated Land (Roberts 1975)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_REP">
@@ -199,7 +199,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1013wray1997olympicnatnlparkethnooverviewandassessment.tif</name>
+			<name>Hoh Tribe Fishing Places (Wray 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -223,7 +223,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>531bierwert1986phdtraceryinthemidlinesscowlitzandskowk.tif</name>
+			<name>Scowlitz and Skowkale Reserves (Bierwert 1986)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -247,7 +247,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1013_wray1997olympicnatnlparkethonooverviewandassessmentfishingplacesinsertpartssssss.tif</name>
+			<name>Quileute Tribe Fishing Places (Wray 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -271,7 +271,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1013_wray1997olympnatnparkethnooverassolyppenn.tif</name>
+			<name>Olympic Peninsula Reservations (Wray 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -295,7 +295,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1026_grdon2008nonreservationstsalndsp55.tif</name>
+			<name>Tsawwassen First Nation Lands (Gordon 2008)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -319,7 +319,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1066_turnerandhebda1990contuseofbarkvanisresp61.tif</name>
+			<name>Study Area Reserves (Turner and Hebda 1990)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -343,7 +343,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1089_Carlson2010poppotvalereserves.tif</name>
+			<name>Yale Indian Reserves (Carlson 2010)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -367,7 +367,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1089_Carlsonpoppotlowerfraserriverpg.tif</name>
+			<name>Lower Fraser Indian Reserves (Carlson 2010)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -391,7 +391,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1089_Carlsonpoppotvancouverareareserves.tif</name>
+			<name>Vancouver Indian Reserves (Carlson 2010)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -415,7 +415,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1089_Carlton2010powerofplaceoftimechiliwackareareservs.tif</name>
+			<name>Chilliwack Indian Reserves (Carlson 2010)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -439,7 +439,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1163_Mooney1974phdurbanandreseveindianeconomicsgvt.tif</name>
+			<name>Victoria Indian Reserves (Mooney 1974)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -463,7 +463,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1167_mitchel1976phdthesiswomenpovandhousetsartlipreserp44.tif</name>
+			<name>Tsartlip Indian Reserves (Mitchell 1976)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -487,7 +487,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1167_mitchel1976phdthesiswomenpovertyandhousingsouthvanislandresp69.tif</name>
+			<name>Southern Vancouver Island Indian Reserves (Mitchell 1976)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -511,7 +511,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1167_mitchell1976phdthesiswomenpovertyandhouseingsaanichrserve.tif</name>
+			<name>Saanich Peninsula Indian Reserves (Mitchell 1976)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -535,7 +535,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>3339_Egan2013towardsharedownershipsevanisresp39.tif</name>
+			<name>Vancouver Island Indian Reserves (Egan 2013)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -559,7 +559,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>3339_egan2013towardsharedownershiptwassen.tif</name>
+			<name>Tsawwassen Treaty Settlement Lands (Egan 2013)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -583,7 +583,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>664_Grorsline1992shadowsofourancestorskallamreserves1stpageinsert.tif</name>
+			<name>Klallam Reservations (Gorsline 1992)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -607,7 +607,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>747_Kew1970phdcscermoniallifevanarearesep10.tif</name>
+			<name>Vancouver Indian Reserves (Kew 1970)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -631,7 +631,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>785_Lutz1999relatingtothecount.tif</name>
+			<name>Songhees Reserves (Lutz 1999)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -655,7 +655,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>860Richardson1979longhousestohomseteads.tif</name>
+			<name>Nooksack Permanent Settlements (Richardson 1979)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -679,7 +679,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>883_simonsendavishaggarty1995saninstudyrepooffnconsulsanresp3.tif</name>
+			<name>Saanich Inlet Indian Reserves (Simonsen et al. 1995)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -703,7 +703,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_attourngen2007hulqtreatygroupchemanous.tif</name>
+			<name>Chemainus Indian Reserves (Hul'qumi'num Treaty Group 2007)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -727,7 +727,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_Carlson1997thestolocanapaccoasthiststoloreserve.tif</name>
+			<name>Stó:lō Reserves (Carlson 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -751,7 +751,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_smith1969thepuyallupreservatoinp46.tif</name>
+			<name>Puyallup Reservation (Smith 1940)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">
@@ -775,7 +775,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_wilke2002onetoomanymathesisnanaimo1860p107.tif</name>
+			<name>Map of Nanaimo Country (Wilke 2006)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_AB">

@@ -57,7 +57,7 @@
 	<Folder>
 		<name>Reserves_Homesteads_REP</name>
 		<Placemark>
-			<name>1026_gordon2008noreservationstsawresp55.tif</name>
+			<name>Tsawwassen Reserve and Settlement Lands (Gordon 2008)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_REP">
@@ -81,7 +81,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1026_gordon2008noreservationtsalandsp55.tif</name>
+			<name>Tsawwassen Lands (Gordon 2008)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_REP">
@@ -105,7 +105,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1161_roberts1975phdahistoryoftheswinomishswinomishreservep230.tif</name>
+			<name>Swinomish Reservation and Fidalgo Island (Roberts 1975)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_REP">
@@ -129,7 +129,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>498_brown2005fishforthemselvesstolotraterrp243.tif</name>
+			<name>Stó:lō Traditional Territory (Brown 2005)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_REP">
@@ -153,7 +153,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>529_bennet1971indianfishingfraserindiansp5.tif</name>
+			<name>Fraser River Indians (Bennett et al. 1973)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_REP">
@@ -177,7 +177,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>909_suttles1954postcontactculturelummilummireservationp60.tif</name>
+			<name>The Lummi Indian Reservation (Suttles 1954)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_REP">
@@ -201,7 +201,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>995_wells1987thechilliwacksandtheirneighbourslandmarksfrominterviewsp14.tif</name>
+			<name>The Chilliwacks and Their Neighbours (Wells 1987)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Reserves_Homesteads_REP">

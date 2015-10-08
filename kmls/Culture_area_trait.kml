@@ -59,7 +59,7 @@
 		<name>Culture_Area_Trait</name>
 		<open>1</open>
 		<Placemark>
-			<name>588Collier1984culturalfermentationallegedprophetdancedistribp5.tif</name>
+			<name>Distribution of Prophet Dance (Collier 1984)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Culture_Area_Trait">
@@ -83,7 +83,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_benet1971indianfishingcultareas.tif</name>
+			<name>Fraser River Cultural Areas (Bennett 1973)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Culture_Area_Trait">
@@ -107,7 +107,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_dufrense1984thesalishsxwaixwdistribution.tif</name>
+			<name>Sxwaixwe Distribution (Dufresne 1996)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Culture_Area_Trait">
@@ -131,7 +131,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_jorgensen1980saltaddedtofood385.tif</name>
+			<name>Salt Added to Food (Jorgensen 1980)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Culture_Area_Trait">

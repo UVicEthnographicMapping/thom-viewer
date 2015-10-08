@@ -58,7 +58,7 @@
 		<name>Movement</name>
 		<open>1</open>
 		<Placemark>
-			<name>1073_Miller2007MovementsToFraserRiver.tif</name>
+			<name>Movements to Fraser River (Miller 2007)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">
@@ -82,7 +82,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1089carlson2010powerofplaceoftimelowerfraserxexalsp6.tif</name>
+			<name>The Journeys of the Transformer (Carlson 2010)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">
@@ -106,7 +106,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1089carlson2010powerofplaceoftimemystictunnelsp11.tif</name>
+			<name>Mystic Tunnels (Carlson 2010)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">
@@ -130,7 +130,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1089carlson2010powerofplaceproblemoftimefloodstoresp82.tif</name>
+			<name>Flood Stories (Carlson 2010)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">
@@ -154,7 +154,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1089_Carlson2010famine.tif</name>
+			<name>Famine Movements Map (Carlson 2010)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">
@@ -178,7 +178,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1089_Carlson2010KwantlenRoute.tif</name>
+			<name>Kwantlen Movements (Carlson 2010)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">
@@ -202,7 +202,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1089_carlson2010poiwerofplaceoftimealan.tif</name>
+			<name>The Abandonment of Alámex (Carlson 2010)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">
@@ -226,7 +226,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1089_Carlson2010SlaveMovement.tif</name>
+			<name>Movement of Slaves and Slave Owners (Carlson 2010)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">
@@ -250,7 +250,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1089_Carlson2010TaitTribeEmergence.tif</name>
+			<name>Boundaries of Teit Territory (Carlson 2010)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">
@@ -274,7 +274,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1100_kennedy2007map.tif</name>
+			<name>Overlapping Marriage Fields (Kennedy 2007)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">
@@ -298,7 +298,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1166_kennedy1993TribeMarriageAreas.tif</name>
+			<name>Overlapping Marriage Areas (Kennedy 1995)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">
@@ -322,7 +322,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1204_Boxberger_2000_ReviewTradHist_tradenetworkp19.tif</name>
+			<name>Trade Networks (Boxberger 2000)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">
@@ -346,7 +346,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>2719_Suttles1987MarriageAReasandTies.tif</name>
+			<name>Marriage Areas and Ties (Suttles 1987)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">
@@ -370,7 +370,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>3345_Norman2012TransboundRGovernSalishGahterings.tif</name>
+			<name>Coast Salish Gatherings (Norman 2012)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">
@@ -394,7 +394,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>3345_norman2012TRGcanoejourneywatermonitoring.tif</name>
+			<name>Canoe and Water Monitoring Routes (Norman 2012)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">
@@ -418,7 +418,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>577_Carlson1997TheStoloincanadaspacifichistory.tif</name>
+			<name>Stó:lō Trade Relationships (Carlson 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">
@@ -442,7 +442,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_10intergentiesmapgoodcopy.tif</name>
+			<name>Intergenerational Ties (Carlson 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">
@@ -466,7 +466,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_barnettmapfinal.tif</name>
+			<name>Group Exploitation Areas (Barnett 1955)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">
@@ -490,7 +490,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_barret_exploitation_redraw.tif</name>
+			<name>Group Exploitation Areas (redraw of Barnett 1955 by Thom 2005)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">
@@ -514,7 +514,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_commtrans.tif</name>
+			<name>Stó:lō Transportation Routes (Carlson 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Movement">

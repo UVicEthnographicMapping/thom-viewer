@@ -58,7 +58,7 @@
 		<name>Linguistic_Territory_Bounded</name>
 		<open>1</open>
 		<Placemark>
-			<name>1013_wray1997olympicnatnlparkthnooverviewandassessmentolypic.tif</name>
+			<name>Languages and Language Families (Wray 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -82,7 +82,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1054_ostapkowica2001useofcattailbysalishsalishgroups79.tif</name>
+			<name>Salish Groups and Places (Ostapkowicz et al. 2001)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -106,7 +106,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1091_blancharddavenporteds2005contempcoastsalishartcclinguisticp6.tif</name>
+			<name>Coast Salish Tribal Areas (Blanchard and Davenport 2005)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -130,7 +130,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1122_thompsonandegesdal2008salishmythsandlegendssalishlanguages.tif</name>
+			<name>Salishan Languages (Thompson and Egesdal 2008)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -154,7 +154,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1161_roberts1975phdahistoryofthesinomishpugetsoundlanguges.tif</name>
+			<name>Languages of Puget Sound and the Gulf of Georgia (Roberts 1975)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -178,7 +178,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1166_kennedyandbouchar1083sliammonlifeindialanguagescirca1800.tif</name>
+			<name>Indian Languages (Kennedy and Bouchard 1980)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -202,7 +202,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1200_hilbertandbierwert1980waysoflushootseedpeoplelangareaindianlandsp5.tif</name>
+			<name>Lushootseed Language Area (Hilbert and Bierwert 1980)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -226,7 +226,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1231_.tif</name>
+			<name>Distribution of Indian Languages - Detail (Boas 1887)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -250,7 +250,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1231_boaz1887thecoasttribesofbritishcolumbia.tif</name>
+			<name>Distribution of Indian Languages (Boas 1887)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -274,7 +274,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>542_baas1980map.tif</name>
+			<name>Linguistic Map of British Columbia (Boas 1890)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -298,7 +298,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>542_boas1890onnortwesttribeslingmapbcp552.tif</name>
+			<name>Linguistic Map of British Columbia (Boas 1890)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -322,7 +322,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>552bouchardankennedy1995reviewofnativeindiahistorycrabybayareasog.tif</name>
+			<name>Language Areas (Bouchard 1995)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -346,7 +346,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>588_collier1984culturalfermentationsalishlingdistribp15.tif</name>
+			<name>Coast Salish and Neighboring Tribes (Collier 1984)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -370,7 +370,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>676_hage1999markinguniversalskinshipsalish.tif</name>
+			<name>Major Salish Units (Hage 1999)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -394,7 +394,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>735_jorgensen1969salishlangandcultmajorsalishuntisp5.tif</name>
+			<name>Major Salish Units (Jorgensen 1969)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -418,7 +418,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>787_lutz1999relatingtocountrylekwammenterrp20.tif</name>
+			<name>Territories of the Lekwammen (Lutz 1999)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -442,7 +442,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>860_richardson1979longhousetohomestedsnooksackangadjgroupsterritp9.tif</name>
+			<name>Territory of the Nooksack and Adjacent Groups (Richardson 1979)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -466,7 +466,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>909_suttles1954postcontactculturelummisalishlingdistp30.tif</name>
+			<name>Territories of the Straits Tribes (Suttles 1954)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -490,7 +490,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>915_suttles1982productivityanditsconstraintscentralcoastsalishp68.tif</name>
+			<name>Locations of the Central Coast Salish (Suttles 1987)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -514,7 +514,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>915_suttles1982thekalkomelemsxwayxweycentralcoastsalishterrp59.tif</name>
+			<name>Central Coast Salish Territories (Suttles 1982)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -538,7 +538,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>922_suttles1987culturaldiversityincoastsalishcontinuumnativelangofs.tif</name>
+			<name>Languages of Puget Sound and the Gulf of Georgia (Suttles 1987)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -562,7 +562,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>930_suttles1987coastsalishessaysnwcoastlangesinsidefrontcover.tif</name>
+			<name>The Coast Salish and Their Neighbors (Suttles 1987)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -586,7 +586,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>930_suttles1987coastsalishessaysnwcoastlaungauagesbackcover.tif</name>
+			<name>The Northwest Coast (Suttles 1987)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -610,7 +610,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>932_suttles1990handbknai7ctrlcstradterritoryvillagesitesp45.tif</name>
+			<name>Central Coast Salish Language Groups and Villages (Suttles 1990)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -634,7 +634,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>932_suttles1990hnai7.tif</name>
+			<name>Central Coast Salish Language Groups and Villages - Detail (Suttles 1990)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -658,7 +658,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>967_turnerandbell1971ethnobotanyofthecsvanislandcoastsaslishlingp65.tif</name>
+			<name>Coast Salish Linguistic Divisions (Turner and Bell 1971)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -682,7 +682,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_03salishanlanguages.tif</name>
+			<name>Northwest Coast Native Languages (Suttles and Suttles 1985)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -706,7 +706,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_bateshesshilbertlushootseeddictionaryarea.tif</name>
+			<name>Lushootseed Area (Bates et al. 1994)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -730,7 +730,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_bcheritageseriesournativepplss1v2.tif</name>
+			<name>Culture Distribution Map (Pickford and Flucke 1952)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -754,7 +754,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_bennet1971indianfishingfraserrlinggroupsp7.tif</name>
+			<name>Fraser River Linguistic Groupings (Bennett 1975)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -778,7 +778,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_boas1896sprachenkarte.tif</name>
+			<name>Language Map - Sprachenkarte (Boas 1896)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -802,7 +802,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_boas1896sprachenkartsalishcrop.tif</name>
+			<name>Language Map - Sprachenkarte - Detail (Boas 1896)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -826,7 +826,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_boas1928languagesbaevol14centralsalishcrop.tif</name>
+			<name>Distribution of Salish Dialects - Detail (Boas 1928)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -850,7 +850,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_boas1928languagesBAEvol41.tif</name>
+			<name>Distribution of Salish Dialects (Boas 1928)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -874,7 +874,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_brotherton2008sabadebthegiftscsterritoriesppxix.tif</name>
+			<name>Coast Salish Territories and Languages (Brotherton et al. 2008)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -898,7 +898,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_Carlson1997nativestudiesstoltradterrlingboundsp13.tif</name>
+			<name>Approximate Xwélmexw Territory (Carlson 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -922,7 +922,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_figure1boundariesbrienfinaldec10.tif</name>
+			<name>Coast Salish Territories (Thom 2005)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -946,7 +946,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_kennedy1993mathesislookingfortribescrtlcslangpp7.tif</name>
+			<name>Central Coast Salish (Kennedy 1995)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">
@@ -970,7 +970,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_kewanandgriggs1991nativeindiansoffraserbasindistofsix.tif</name>
+			<name>Language Groups in the Fraser Basin (Kew and Griggs 1991)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Linguistic_Territory_Bounded">

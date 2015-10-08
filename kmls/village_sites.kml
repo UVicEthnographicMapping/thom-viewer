@@ -58,7 +58,7 @@
 		<name>Village_Sites</name>
 		<open>1</open>
 		<Placemark>
-			<name>1161_roberta1975phdhistoryswinomishwintervillageskagitp48.tif</name>
+			<name>Skagit Region Villages (Roberts 1975)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -82,7 +82,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>1186neary2003cowichanfisheriesapxB.tif</name>
+			<name>Fraser River Fisheries (Neary 2003)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -106,7 +106,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>498_brown2005fishforthemselvesstolo.tif</name>
+			<name>Stó:lō Traditional Territory (Brown 2005)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -130,7 +130,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>523_barnett1938coastsalishcanp120.tif</name>
+			<name>The Coast Salish of Canada (Barnett 1938)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -154,7 +154,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>558_boyd2001pdthsschangiscomingcontempklallam44.tif</name>
+			<name>Klallam Communities (Boyd 2001)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -178,7 +178,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>596_collins1974valleyofthespiritesupp.tif</name>
+			<name>Upper Skagit Villages (Collins 1974)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -202,7 +202,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>618_duff1953theupperstaloindianschilliwackpilatvillagesandarchsites.tif</name>
+			<name>Upper Stalo Villages (Duff 1952)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -226,7 +226,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>665_grant1857royalgeogjournal27volvanismap.tif</name>
+			<name>Map of Vancouver Island (Grant 1857)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -250,7 +250,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>717_hunn1999enthnobiocourtsquaxintribfishinggroundsp10.tif</name>
+			<name>Squaxin Island Fishing Grounds (Hunn 1999)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -274,7 +274,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>747Kew1970phdcsceremoniallifemusquemvillagep47.tif</name>
+			<name>Musqueam Village (Kew 1970)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -298,7 +298,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>747_kew1970phdcsceremoniallifecsvillagep145.tif</name>
+			<name>Inter-Visiting Coast Salish Villages (Kew 1970) </name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -322,7 +322,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>766_lane1953padcomparanalstuudynwcoast.tif</name>
+			<name>Cowichan Territory (Lane 1953)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -346,7 +346,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>795_mathews1955convwthkhaktsahlanoburrardhoweindvillp8.tif</name>
+			<name>Territory of the Squamich Peoples (Matthews 1955)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -370,7 +370,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>796macdonald_1992_vancouveravisualhistorymusqueamvillage.tif</name>
+			<name>Musqueam Village (MacDonald 1992)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -394,7 +394,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>796_macdonald1992vanavishistfraserdeltaregion1850p13.tif</name>
+			<name>Fraser River Delta Villages (MacDonald 1992)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -418,7 +418,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>867_rozen1977halkomenummainindivillag8.tif</name>
+			<name>South Vancouver Island Villages (Rozen 1977)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -442,7 +442,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>891smith1949indiansofurbannwbobbchildrenhomesteadp226.tif</name>
+			<name>Bobb Children Homestead (Smith 1949)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -466,7 +466,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>891smith1949indiansofurbannwharrischildrenhomseteadp211.tif</name>
+			<name>Harris Children Homestead (Smith 1949)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -490,7 +490,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>893_smith1950nooksackchilliwackand.tif</name>
+			<name>Central Coast Salish Villages (Smith 1950)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -514,7 +514,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>989_wells1966squamishlegendsburrardinletp2.tif</name>
+			<name>Burrard Inlet Indian Villages - Map 2 (Wells 1966)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -538,7 +538,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>989_wells1966squamishlegensburrardinletvillagep1.tif</name>
+			<name>Burrard Inlet Indian Villages - Map 1 (Wells 1966)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -562,7 +562,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_elemendorandkroeber1992strucoftwanacultvillagsites.tif</name>
+			<name>Twana Winter-Village Community (Elmendorf 1993)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -586,7 +586,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_Gordon_1854_ShinglePointWarVillageMap.tif</name>
+			<name>Nhingle Point War Villages (Gordon 1854)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -610,7 +610,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_hayes2005historicalatlasofvanhalqemehlem.tif</name>
+			<name>Halq'eméylem Places (Hayes 2005)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -634,7 +634,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_joejoeandrozenplacenamesquwwtsunppleditidahttradterr99.tif</name>
+			<name>Ditidaht Traditional Territory (Abel et al. N.d.)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -658,7 +658,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_Marshall_19997_ThoseWhoFell_p56.tif</name>
+			<name>Nowichan Villages and Weirs (Marshall 1999)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -682,7 +682,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_SMITH1958findingaidlowerfrserrivrbox3.tif</name>
+			<name>Lower Fraser River (Smith N.d.)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -706,7 +706,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_smith1969thepuyallupnisqualyvilsitep8.tif</name>
+			<name>Puget Sound Village Sites (Smith 1940)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
@@ -730,7 +730,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<name>NIB_villages.tif</name>
+			<name>Stó:lō Settlement Sites (Carlson 1997)</name>
 			<styleUrl>#m_ylw-pushpin</styleUrl>
 			<ExtendedData>
 				<SchemaData schemaUrl="#Village_Sites">
