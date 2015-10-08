@@ -235,19 +235,21 @@ function buildSidebar() {
             var categoryElem = $(document.createElement("li"));
 
             // Build checkbox.
-            var kmlCheckboxElem = $(document.createElement("input"));
-            kmlCheckboxElem.attr("type", "checkbox");
+            var kmlCheckboxElem = $(document.createElement("span"));
+            kmlCheckboxElem.addClass("glyphicon glyphicon-eye-close btn btn-sm");
             kmlCheckboxElem.data("category", category["Category"]);
             kmlCheckboxElem.click(function () {
                 toggleKml($(this).data("category"));
+                $(this).toggleClass("glyphicon-eye-close glyphicon-eye-open btn-primary");
             });
             categoryElem.append(kmlCheckboxElem);
 
             // Build Link.
-            var linkElem = $(document.createElement("a"));
-            linkElem.text(category["Pretty Category"]);
+            var linkElem = $(document.createElement("span"));
+            linkElem.html('<i class="btn btn-sm glyphicon glyphicon-folder-close"></i>' + category["Pretty Category"]);
             linkElem.click(function () {
                 $(this).siblings("ul").toggle();
+                $(this).find("i.btn").toggleClass("glyphicon-folder-close glyphicon-folder-open btn-primary");
             });
             // Setup Tooltip
             linkElem.attr("data-toggle", "tooltip");
@@ -264,26 +266,31 @@ function buildSidebar() {
                 var liElem = $(document.createElement("li"));
 
                 // Build checkbox.
-                var checkboxElem = $(document.createElement("input"));
-                checkboxElem.attr("type", "checkbox");
-                checkboxElem.data("dataset", entry);
-                checkboxElem.click(function () {
+                var linkElem = $(document.createElement("span"));
+
+                linkElem.html("<i class=\"btn btn-sm glyphicon glyphicon-eye-close\"></i>" + entry["Pretty Title"]);
+                linkElem.data("dataset", entry);
+                // Tooltip
+                linkElem.attr("data-toggle", "tooltip");
+                linkElem.attr("data-placement", "auto top");
+                linkElem.attr("data-viewport", "main");
+                linkElem.attr("data-trigger", "hover");
+                linkElem.attr("data-html", "true");
+                linkElem.attr("title", "<img class=\"tooltip-image\" src=\"sm_jpgs/" + entry["JPG File"] + "\">");
+                linkElem.tooltip();
+                linkElem.click(function () {
                     toggleMap($(this).data("dataset"));
+                    $(this).find("i").toggleClass("glyphicon-eye-open glyphicon-eye-close btn-primary");
                 });
-                liElem.append(checkboxElem);
 
                 // Build label.
                 var labelElem = $(document.createElement("label"));
-                labelElem.text(entry["Pretty Title"]);
-                // Tooltip
-                labelElem.attr("data-toggle", "tooltip");
-                labelElem.attr("data-placement", "auto top");
-                labelElem.attr("data-viewport", "main");
-                labelElem.attr("data-trigger", "hover");
-                labelElem.attr("data-html", "true");
-                labelElem.attr("title", "<img class=\"tooltip-image\" src=\"sm_jpgs/" + entry["JPG File"] + "\">");
-                labelElem.tooltip();
-                liElem.append(labelElem);
+                labelElem.text();
+                linkElem.append(labelElem);
+
+                liElem.append(linkElem);
+
+
 
                 return liElem;
             }).map(function appendEntries(entry) {
@@ -293,7 +300,7 @@ function buildSidebar() {
             categoryElem.append(entriesElem);
 
             return categoryElem;
-        }));
+        }))
 
         var sidebarElem = $("#sidebar");
         sidebarElem.append(categoriesElem);
