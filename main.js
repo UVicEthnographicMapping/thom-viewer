@@ -70,15 +70,15 @@ function toggleMap(dataset) {
         tr.attr("id", tilesetName);
 
         // Build the removal box.
-        var checkboxElem = $(document.createElement("input"));
-        checkboxElem.attr("type", "checkbox");
-        checkboxElem.data("dataset", dataset);
-        checkboxElem.prop('checked', true);
-        checkboxElem.click(function () {
+        var buttonElem = $(document.createElement("button"));
+        buttonElem.addClass("btn btn-xs btn-danger glyphicon glyphicon-remove");
+        buttonElem.data("dataset", dataset);
+        buttonElem.prop('checked', true);
+        buttonElem.click(function () {
             toggleMap($(this).data("dataset"));
         });
         td = document.createElement("td");
-        $(td).append(checkboxElem);
+        $(td).append(buttonElem);
         tr.append(td);
 
         // Build Slider
@@ -117,7 +117,7 @@ function toggleMap(dataset) {
 
         if (dataset["URL"]) {
             var urlElem = document.createElement("span");
-            $(urlElem).html(" <a target=blank href=\""+dataset["URL"]+"\">Link</a>");
+            $(urlElem).html(" <a target=blank href=\""+dataset["URL"]+"\"><i class=\"btn btn-default btn-xs glyphicon glyphicon-link\"></i></a>");
             td = document.createElement("td");
             $(td).append(urlElem);
             tr.append(td);
@@ -128,7 +128,7 @@ function toggleMap(dataset) {
         // Alt link
         if (dataset["Alternate Link"]) {
             var alternateLinkElem = $(document.createElement("span"));
-            alternateLinkElem.html(" <a target=blank href=\""+dataset["Alternate Link"]+"\">Alternate</a>");
+            alternateLinkElem.html(" <a target=blank href=\""+dataset["Alternate Link"]+"\"><i class=\"btn btn-default btn-xs glyphicon glyphicon-link\"></i></a>");
             td = $(document.createElement("td"));
             td.append(alternateLinkElem);
             tr.append(td);
@@ -139,8 +139,7 @@ function toggleMap(dataset) {
         // Download
         if (dataset["JPG File"]) {
             var downloadElem = $(document.createElement("a"));
-            downloadElem.addClass("btn");
-            downloadElem.addClass("btn-info");
+            downloadElem.addClass("btn btn-xs btn-default");
             downloadElem.attr("target", "blank");
             downloadElem.attr("href", "jpgs/" + dataset["JPG File"]);
             downloadElem.html("<i class='glyphicon glyphicon-download'></i>");

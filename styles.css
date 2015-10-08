@@ -50,9 +50,11 @@ main {
     bottom: 0px;
     overflow: scroll;
 }
+
 #datasets th {
     vertical-align: top !important;
 }
+
 #datasetsWrapper {
     height: 200px;
     overflow: scroll;
