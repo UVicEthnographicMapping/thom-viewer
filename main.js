@@ -69,6 +69,18 @@ function toggleMap(dataset) {
         var tr = $(document.createElement("tr"));
         tr.attr("id", tilesetName);
 
+        // Build the removal box.
+        var checkboxElem = $(document.createElement("input"));
+        checkboxElem.attr("type", "checkbox");
+        checkboxElem.data("dataset", dataset);
+        checkboxElem.prop('checked', true);
+        checkboxElem.click(function () {
+            toggleMap($(this).data("dataset"));
+        });
+        td = document.createElement("td");
+        $(td).append(checkboxElem);
+        tr.append(td);
+
         // Build Slider
         var sliderElem = document.createElement("input");
         $(sliderElem).attr("type", "range");
