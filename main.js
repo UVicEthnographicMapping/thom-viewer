@@ -50,10 +50,14 @@ function toggleMap(dataset) {
     });
     console.log(foundIdx);
     if (foundIdx !== null) {
-        console.log("Removing!")
+        console.log("Removing!");
         // Remove existing tileset.
         map.overlayMapTypes.removeAt(foundIdx);
-        $("#datasets > tbody > #" + tilesetName).remove();
+        $("#datasets > tbody > tr").map(function () {
+            if ($(this).data("dataset") === tilesetName) {
+                this.remove();
+            }
+        });
     } else {
         // Make a new tileset.
         var overlay = new google.maps.ImageMapType({
@@ -67,7 +71,7 @@ function toggleMap(dataset) {
         map.overlayMapTypes.push(overlay);
         // Add a Dataset entry.
         var tr = $(document.createElement("tr"));
-        tr.attr("id", tilesetName);
+        tr.data("dataset", tilesetName);
 
         // Build the removal box.
         var buttonElem = $(document.createElement("button"));
@@ -151,7 +155,7 @@ function toggleMap(dataset) {
             tr.append(document.createElement("td"));
         }
 
-        $("#datasets").append(tr);
+        $("#datasets > tbody").append(tr);
     }
 
 }
