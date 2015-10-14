@@ -244,6 +244,7 @@ function buildSidebar() {
             // Build checkbox.
             var kmlCheckboxElem = $(document.createElement("span"));
             kmlCheckboxElem.addClass("glyphicon glyphicon-eye-close btn btn-sm");
+            kmlCheckboxElem.attr("style", "background-color: #" + category["Colour"]);
             kmlCheckboxElem.data("category", category["Category"]);
             kmlCheckboxElem.click(function () {
                 toggleKml($(this).data("category"));
