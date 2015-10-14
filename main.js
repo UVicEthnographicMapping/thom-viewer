@@ -1,6 +1,9 @@
 /*******************************************************************************
-Andrew Hobden, 2015.
-MIT.
+A project for Brian Thom of the University of Victoria Ethnographic Mapping Lab
+Learn more about the lab: http://ethnographicmapping.uvic.ca/
+Explore the project: http://ethnomap.uvic.ca/
+
+`main.js` by Andrew Hobden, 2015, MIT licensed.
 ******************************************************************************/
 var DATA_LIST = "cartographic-legacies.csv";
 var CATEGORY_LIST = "categories.csv";
