@@ -169,7 +169,7 @@ function toggleKml(category) {
         // Create it.
         var location = String(window.location).slice(0, -1);
         kmlSet[category] = new google.maps.KmlLayer({
-            url: location + "/kmls/" + category + ".kml",
+            url: location + "/kmls/" + encodeURIComponent(category) + ".kml",
             map: map,
         });
         console.log(kmlSet[category]);
