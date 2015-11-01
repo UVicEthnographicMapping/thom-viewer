@@ -241,10 +241,15 @@ function buildSidebar() {
         categoriesElem.append(categories.map(function (category) {
             var categoryElem = $(document.createElement("li"));
 
+            // Build color hint.
+            var hintElem = $(document.createElement("span"));
+            hintElem.addClass("btn-xs btn glyphicon glyphicon-eye-close");
+            hintElem.attr("style", "background-color: #" + category["Colour"] + "; color: transparent !important;");
+            categoryElem.append(hintElem);
+
             // Build checkbox.
             var kmlCheckboxElem = $(document.createElement("span"));
-            kmlCheckboxElem.addClass("glyphicon glyphicon-eye-close btn btn-sm");
-            kmlCheckboxElem.attr("style", "background-color: #" + category["Colour"]);
+            kmlCheckboxElem.addClass("glyphicon glyphicon-eye-close btn btn-xs btn-default");
             kmlCheckboxElem.data("category", category["Category"]);
             kmlCheckboxElem.click(function () {
                 toggleKml($(this).data("category"));
@@ -254,7 +259,7 @@ function buildSidebar() {
 
             // Build Link.
             var linkElem = $(document.createElement("span"));
-            linkElem.html('<i class="btn btn-sm glyphicon glyphicon-folder-close"></i>' + category["Pretty Category"]);
+            linkElem.html('<i class="btn btn-xs btn-default glyphicon glyphicon-folder-close"></i>' + category["Pretty Category"]);
             linkElem.click(function () {
                 $(this).siblings("ul").toggle();
                 $(this).find("i.btn").toggleClass("glyphicon-folder-close glyphicon-folder-open btn-primary");
@@ -276,7 +281,7 @@ function buildSidebar() {
                 // Build checkbox.
                 var linkElem = $(document.createElement("span"));
 
-                linkElem.html("<i class=\"btn btn-sm glyphicon glyphicon-eye-close\"></i>" + entry["Pretty Title"]);
+                linkElem.html("<i class=\"btn btn-xs btn-default glyphicon glyphicon-eye-close\"></i>" + entry["Pretty Title"]);
                 linkElem.data("dataset", entry);
                 // Tooltip
                 linkElem.attr("data-toggle", "tooltip");
