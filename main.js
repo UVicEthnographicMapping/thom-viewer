@@ -231,7 +231,7 @@ function buildSidebar() {
 
         return categories.data.map(function (category) {
             category.entries = entries.data.filter(function (entry) {
-                return entry["Pretty Category"] === category["Pretty Category"];
+                return entry["Category"] === category["Category"];
             });
             return category;
         });
