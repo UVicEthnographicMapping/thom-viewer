@@ -35,6 +35,7 @@ function init() {
     var tooltips = $("[data-toggle=tooltip]");
     tooltips.tooltip({ trigger: "hover", });
 
+    $(".modal").modal();
 }
 
 google.maps.event.addDomListener(window, 'load', init);
@@ -188,11 +189,6 @@ function toggleSidebar() {
 function toggleDatasets() {
     console.log("Toggling sidebar");
     $("#datasetsContainer").toggleClass("in");
-}
-
-function toggleInfobox() {
-    console.log("Toggling infobox");
-    $("#infoboxContainer").toggleClass("in");
 }
 
 function getCategories() {
