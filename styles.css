@@ -32,10 +32,17 @@ main {
     bottom: 200px;
 }
 #datasetsContainer {
+    border-radius: 2px;
+    background-clip: padding-box;
+    box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3);
+    margin-left: 420px;
     position: absolute;
     height: 200px;
-    width: 100%;
-    z-index: 50;
+    width: unset;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    overflow: initial;
     bottom: 0px;
     background: white;
     bottom: -200px;
@@ -58,6 +65,8 @@ main {
 #datasetsWrapper {
     height: 200px;
     overflow: scroll;
+    margin-left: 20px;
+    width: 100%;
 }
 
 /*****************/
@@ -75,6 +84,10 @@ main {
     overflow: scroll;
 }
 #sidebarContainer {
+    border-radius: 2px;
+    background-clip: padding-box;
+    box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
     position: absolute;
     height: 100%;
     z-index: 50;
@@ -102,6 +115,10 @@ main {
     display: inline-block;
 }
 
+#categories {
+    padding-top: 50px;
+}
+
 .tooltip-inner {
     max-width: none;
     text-align: left;
@@ -110,4 +127,29 @@ main {
 img.tooltip-image {
     max-width: 600px;
     max-height: 600px;
+}
+
+.gm-button {
+    cursor: pointer;
+    direction: ltr;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-family: Roboto,Arial,sans-serif;
+    -moz-user-select: none;
+    font-size: 11px;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 2px;
+    background-clip: padding-box;
+    box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3);
+    min-width: 37px;
+    font-weight: 500;
+}
+
+.gm-button:hover {
+    background-color: #EBEBEB;
 }

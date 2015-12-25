@@ -31,11 +31,30 @@ function init() {
     document.getElementById("map").style.backgroundColor = "#5C5745";
 
     buildSidebar();
+    toggleInfobox();
 
     var tooltips = $("[data-toggle=tooltip]");
     tooltips.tooltip({ trigger: "hover", });
 
-    $(".modal").modal();
+    // Add new buttons
+    var categoriesButton = document.createElement("div");
+    $(categoriesButton).text("Browse Library");
+    $(categoriesButton).click(toggleSidebar);
+    $(categoriesButton).toggleClass("gm-button");
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(categoriesButton);
+
+    var mapsButton = document.createElement("div");
+    $(mapsButton).text("Selected Maps");
+    $(mapsButton).click(toggleDatasets);
+    $(mapsButton).toggleClass("gm-button");
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(mapsButton);
+
+    var infoButton = document.createElement("div");
+    $(infoButton).text("Project Info");
+    $(infoButton).click(toggleInfobox)
+    $(infoButton).toggleClass("gm-button");
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(infoButton);
+
 }
 
 google.maps.event.addDomListener(window, 'load', init);
@@ -191,6 +210,11 @@ function toggleDatasets() {
     $("#datasetsContainer").toggleClass("in");
 }
 
+function toggleInfobox() {
+    console.log("Toggling infobox");
+    $("#infoboxContainer").modal("toggle");
+}
+
 function getCategories() {
     return new Promise(function (resolve, reject) {
         Papa.parse(CATEGORY_LIST, {
@@ -233,6 +257,7 @@ function buildSidebar() {
         });
     }).then(function buildHtml(categories) {
         var categoriesElem = $(document.createElement("ul"));
+        categoriesElem.attr("id", "categories");
 
         categoriesElem.append(categories.map(function (category) {
             var categoryElem = $(document.createElement("li"));
@@ -262,7 +287,7 @@ function buildSidebar() {
             });
             // Setup Tooltip
             linkElem.attr("data-toggle", "tooltip");
-            linkElem.attr("data-placement", "right");
+            linkElem.attr("data-placement", "auto bottom");
             linkElem.attr("data-trigger", "hover");
             linkElem.attr("title", category["Info Window"]);
             linkElem.tooltip();
@@ -281,7 +306,7 @@ function buildSidebar() {
                 linkElem.data("dataset", entry);
                 // Tooltip
                 linkElem.attr("data-toggle", "tooltip");
-                linkElem.attr("data-placement", "auto top");
+                linkElem.attr("data-placement", "auto right");
                 linkElem.attr("data-viewport", "main");
                 linkElem.attr("data-trigger", "hover");
                 linkElem.attr("data-html", "true");
