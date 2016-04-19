@@ -65,15 +65,14 @@ function toggleMap(dataset) {
     tilesetName.pop(); // remove extension.
     tilesetName = String(tilesetName);
     var tileUrl = "tiles/" + dataset["Category"] + "/" + tilesetName;
+    // Before loading the map let's make sure we don't already have it loaded.
     var foundIdx = null;
     map.overlayMapTypes.forEach(function (elem, idx) {
         if (elem.name == tilesetName) {
             foundIdx = idx;
         }
     });
-    console.log(foundIdx);
     if (foundIdx !== null) {
-        console.log("Removing!");
         // Remove existing tileset.
         map.overlayMapTypes.removeAt(foundIdx);
         $("#datasets > tbody > tr").map(function () {
@@ -141,7 +140,6 @@ function toggleMap(dataset) {
         tr.append(td);
 
         // Web link
-
         if (dataset["URL"]) {
             var urlElem = document.createElement("span");
             $(urlElem).html(" <a target=blank href=\""+dataset["URL"]+"\"><i class=\"btn btn-default btn-xs glyphicon glyphicon-link\"></i></a>");
@@ -247,8 +245,7 @@ function buildSidebar() {
         getCategories()
     ]).then(function populateCategories(results) {
         var entries = results[0],
-            categories = results[1];
-
+        categories = results[1];
         return categories.data.map(function (category) {
             category.entries = entries.data.filter(function (entry) {
                 return entry["Category"] === category["Category"];
@@ -341,6 +338,7 @@ function buildSidebar() {
     });
 }
 
+// This is a function utilized by tooltips to determine their best suited position.
 var getPlacementFunction = function (defaultPosition, width, height) {
     return function (tip, element) {
         var position, top, bottom, left, right;
