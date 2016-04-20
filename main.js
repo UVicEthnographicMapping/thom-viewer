@@ -177,6 +177,9 @@ function toggleMap(dataset) {
         }
 
         $("#datasets > tbody").append(tr);
+
+        // It's good to do this for new users.
+        toggleDatasets();
     }
 
 }
