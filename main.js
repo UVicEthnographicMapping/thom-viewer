@@ -7,9 +7,11 @@ Explore the project: http://ethnomap.uvic.ca/
 ******************************************************************************/
 var DATA_LIST = "cartographic-legacies.csv";
 var CATEGORY_LIST = "categories.csv";
+var BOUNDS_LIST = "boundaries.csv";
 
-var map;
+var map, data;
 
+// Fired when page is fully loaded.
 function init() {
     // Map options for example map
     var mapOptions = {
@@ -30,8 +32,10 @@ function init() {
     map = new google.maps.Map(document.getElementById("map"), mapOptions);
     document.getElementById("map").style.backgroundColor = "#5C5745";
 
-    buildSidebar();
     toggleInfobox();
+
+    data = getData();
+    data.then(buildSidebar);
 
     var tooltips = $("[data-toggle=tooltip]");
     tooltips.tooltip({ trigger: "hover", });
@@ -56,7 +60,6 @@ function init() {
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(infoButton);
 
 }
-
 google.maps.event.addDomListener(window, 'load', init);
 
 function toggleMap(dataset) {
@@ -91,6 +94,16 @@ function toggleMap(dataset) {
             isPng: true,
         });
         map.overlayMapTypes.push(overlay);
+
+        console.log(dataset);
+
+        map.fitBounds({
+            east: dataset["East"],
+            west: dataset["West"],
+            south: dataset["South"] ,
+            north: dataset["North"]
+        });
+
         // Add a Dataset entry.
         var tr = $(document.createElement("tr"));
         tr.data("dataset", tilesetName);
@@ -185,6 +198,7 @@ function toggleMap(dataset) {
 }
 
 var kmlSet = {};
+// Toggles the KML layers for a given category.
 function toggleKml(category) {
     if (!kmlSet[category]) {
         // Create it.
@@ -216,6 +230,41 @@ function toggleInfobox() {
     $("#infoboxContainer").modal("toggle");
 }
 
+function getData() {
+    return Promise.all([
+        getEntries(),
+        getCategories(),
+        getBounds()
+    ]).then(function (results) {
+        // Yes this is a slow operation and it really sucks.
+        var entries = results[0],
+            categories = results[1],
+            bounds = results[2];
+
+        return categories.data.map(function (category) {
+            category.entries = entries.data.filter(function (entry) {
+                return entry["Category"] === category["Category"];
+            }).map(function (entry) {
+                // Populate the bounds.
+                var chosen = bounds.data.find(function (row) {
+                    return row["TIF File"] == entry["TIF File"];
+                });
+                // Sometimes the future sucks and computers don't work.
+                if (chosen) {
+                    entry["East"] = chosen["East"];
+                    entry["West"] = chosen["West"];
+                    entry["South"] = chosen["South"];
+                    entry["North"] = chosen["North"];
+                }
+                // Return it.
+                return entry;
+            });
+            return category;
+        });
+    })
+}
+
+// Fetches the category list from the server.
 function getCategories() {
     return new Promise(function (resolve, reject) {
         Papa.parse(CATEGORY_LIST, {
@@ -242,103 +291,101 @@ function getEntries() {
     });
 }
 
-function buildSidebar() {
-    Promise.all([
-        getEntries(),
-        getCategories()
-    ]).then(function populateCategories(results) {
-        var entries = results[0],
-        categories = results[1];
-        return categories.data.map(function (category) {
-            category.entries = entries.data.filter(function (entry) {
-                return entry["Category"] === category["Category"];
-            });
-            return category;
+function getBounds() {
+    return new Promise(function (resolve, reject) {
+        Papa.parse(BOUNDS_LIST, {
+            download: true,
+            header: true,
+            dynamicTyping: true,
+            complete: function (results) {
+                return resolve(results);
+            }
         });
-    }).then(function buildHtml(categories) {
-        var categoriesElem = $(document.createElement("ul"));
-        categoriesElem.attr("id", "categories");
+    });
+}
 
-        categoriesElem.append(categories.map(function (category) {
-            var categoryElem = $(document.createElement("li"));
+// This function builds the info sidebar.
+function buildSidebar(categories) {
+    var categoriesElem = $(document.createElement("ul"));
+    categoriesElem.attr("id", "categories");
 
-            // Build color hint.
-            var hintElem = $(document.createElement("span"));
-            hintElem.addClass("btn-xs btn glyphicon glyphicon-eye-close");
-            hintElem.attr("style", "background-color: #" + category["Colour"] + "; color: transparent !important;");
-            categoryElem.append(hintElem);
+    categoriesElem.append(categories.map(function (category) {
+        var categoryElem = $(document.createElement("li"));
+
+        // Build color hint.
+        var hintElem = $(document.createElement("span"));
+        hintElem.addClass("btn-xs btn glyphicon glyphicon-eye-close");
+        hintElem.attr("style", "background-color: #" + category["Colour"] + "; color: transparent !important;");
+        categoryElem.append(hintElem);
+
+        // Build checkbox.
+        var kmlCheckboxElem = $(document.createElement("span"));
+        kmlCheckboxElem.addClass("glyphicon glyphicon-eye-close btn btn-xs btn-default");
+        kmlCheckboxElem.data("category", category["Category"]);
+        kmlCheckboxElem.click(function () {
+            toggleKml($(this).data("category"));
+            $(this).toggleClass("glyphicon-eye-close glyphicon-eye-open btn-primary");
+        });
+        categoryElem.append(kmlCheckboxElem);
+
+        // Build Link.
+        var linkElem = $(document.createElement("span"));
+        linkElem.html('<i class="btn btn-xs btn-default glyphicon glyphicon-folder-close"></i>' + category["Pretty Category"]);
+        linkElem.click(function () {
+            $(this).siblings("ul").toggle();
+            $(this).find("i.btn").toggleClass("glyphicon-folder-close glyphicon-folder-open btn-primary");
+        });
+        // Setup Tooltip
+        linkElem.attr("data-toggle", "tooltip");
+        linkElem.attr("data-placement", "auto bottom");
+        linkElem.attr("data-trigger", "hover");
+        linkElem.attr("title", category["Info Window"]);
+        linkElem.tooltip();
+        categoryElem.append(linkElem);
+
+        // Build sublist.
+        var entriesElem = $(document.createElement("ul"));
+        category.entries.map(function buildDOM(entry) {
+            // Build `li`
+            var liElem = $(document.createElement("li"));
 
             // Build checkbox.
-            var kmlCheckboxElem = $(document.createElement("span"));
-            kmlCheckboxElem.addClass("glyphicon glyphicon-eye-close btn btn-xs btn-default");
-            kmlCheckboxElem.data("category", category["Category"]);
-            kmlCheckboxElem.click(function () {
-                toggleKml($(this).data("category"));
-                $(this).toggleClass("glyphicon-eye-close glyphicon-eye-open btn-primary");
-            });
-            categoryElem.append(kmlCheckboxElem);
-
-            // Build Link.
             var linkElem = $(document.createElement("span"));
-            linkElem.html('<i class="btn btn-xs btn-default glyphicon glyphicon-folder-close"></i>' + category["Pretty Category"]);
-            linkElem.click(function () {
-                $(this).siblings("ul").toggle();
-                $(this).find("i.btn").toggleClass("glyphicon-folder-close glyphicon-folder-open btn-primary");
-            });
-            // Setup Tooltip
+
+            linkElem.html("<i class=\"btn btn-xs btn-default glyphicon glyphicon-eye-close\"></i>" + entry["Pretty Title"]);
+            linkElem.data("dataset", entry);
+            // Tooltip
             linkElem.attr("data-toggle", "tooltip");
-            linkElem.attr("data-placement", "auto bottom");
+            linkElem.attr("data-placement", "auto right");
+            linkElem.attr("data-viewport", "main");
             linkElem.attr("data-trigger", "hover");
-            linkElem.attr("title", category["Info Window"]);
+            linkElem.attr("data-html", "true");
+            linkElem.attr("title", "<img class=\"tooltip-image\" src=\"sm_jpgs/" + entry["JPG File"] + "\">");
             linkElem.tooltip();
-            categoryElem.append(linkElem);
-
-            // Build sublist.
-            var entriesElem = $(document.createElement("ul"));
-            category.entries.map(function buildDOM(entry) {
-                // Build `li`
-                var liElem = $(document.createElement("li"));
-
-                // Build checkbox.
-                var linkElem = $(document.createElement("span"));
-
-                linkElem.html("<i class=\"btn btn-xs btn-default glyphicon glyphicon-eye-close\"></i>" + entry["Pretty Title"]);
-                linkElem.data("dataset", entry);
-                // Tooltip
-                linkElem.attr("data-toggle", "tooltip");
-                linkElem.attr("data-placement", "auto right");
-                linkElem.attr("data-viewport", "main");
-                linkElem.attr("data-trigger", "hover");
-                linkElem.attr("data-html", "true");
-                linkElem.attr("title", "<img class=\"tooltip-image\" src=\"sm_jpgs/" + entry["JPG File"] + "\">");
-                linkElem.tooltip();
-                linkElem.click(function () {
-                    toggleMap($(this).data("dataset"));
-                    $(this).find("i").toggleClass("glyphicon-eye-open glyphicon-eye-close btn-primary");
-                });
-
-                // Build label.
-                var labelElem = $(document.createElement("label"));
-                labelElem.text();
-                linkElem.append(labelElem);
-
-                liElem.append(linkElem);
-
-
-
-                return liElem;
-            }).map(function appendEntries(entry) {
-                return entriesElem.append(entry);
+            linkElem.click(function () {
+                toggleMap($(this).data("dataset"));
+                $(this).find("i").toggleClass("glyphicon-eye-open glyphicon-eye-close btn-primary");
             });
-            entriesElem.hide(); // Show on click.
-            categoryElem.append(entriesElem);
 
-            return categoryElem;
-        }))
+            // Build label.
+            var labelElem = $(document.createElement("label"));
+            labelElem.text();
+            linkElem.append(labelElem);
 
-        var sidebarElem = $("#sidebar");
-        sidebarElem.append(categoriesElem);
-    });
+            liElem.append(linkElem);
+
+            return liElem;
+        }).map(function appendEntries(entry) {
+            return entriesElem.append(entry);
+        });
+        entriesElem.hide(); // Show on click.
+        categoryElem.append(entriesElem);
+
+        return categoryElem;
+    }))
+
+    var sidebarElem = $("#sidebar");
+    sidebarElem.append(categoriesElem);
 }
 
 // This is a function utilized by tooltips to determine their best suited position.

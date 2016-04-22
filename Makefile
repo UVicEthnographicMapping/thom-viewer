@@ -10,7 +10,7 @@ TILES = $(patsubst $(GEOTIFF_DIR)/%.tif,$(TILE_DIR)/%,$(GEOTIFFS))
 JPGS = $(wildcard $(JPG_DIR)/*.jpg) $(wildcard $(JPG_DIR)/**/*.jpg)
 SM_JPGS = $(patsubst $(JPG_DIR)/%.jpg,$(SM_JPG_DIR)/%.jpg,$(JPGS))
 
-all: tilesets jpgs
+all: tilesets jpgs bounds
 
 tilesets: $(TILE_DIR) $(TILES)
 jpgs: $(SM_JPG_DIR) $(SM_JPGS)
@@ -27,9 +27,14 @@ $(SM_JPG_DIR):
 	mkdir -p $(SM_JPG_DIR)
 
 $(SM_JPG_DIR)/%.jpg: $(JPG_DIR)/%.jpg
-	# Reize
+	# Resize
 	convert "$<" -resize 600x600\> "$@"
+
+.PHONY: bounds
+bounds:
+	exec ./bounds.sh
 
 clean:
 	rm -r $(TILE_DIR)/*
 	rm -r $(SM_JPG_DIR)/*
+	rm boundaries.csv
