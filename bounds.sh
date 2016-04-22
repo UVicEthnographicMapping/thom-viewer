@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#! /bin/bash
 
 OUTPUT_FILE=boundaries.csv
 
