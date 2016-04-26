@@ -195,28 +195,11 @@ function toggleMap(dataset) {
             tr.append(document.createElement("td"));
         }
 
+        // Finally add it to the datasets.
         $("#datasets > tbody").append(tr);
 
         // It's good to do this for new users.
         toggleDatasets();
-    }
-}
-
-var kmlSet = {};
-// Toggles the KML layers for a given category.
-function toggleKml(category) {
-    if (!kmlSet[category]) {
-        // Create it.
-        var location = String(window.location).slice(0, -1);
-        kmlSet[category] = new google.maps.KmlLayer({
-            url: location + "/kmls/" + encodeURIComponent(category) + ".kml",
-            map: map,
-        });
-        console.log(kmlSet[category]);
-    } else {
-        // Remove it.
-        kmlSet[category].setMap(null);
-        delete kmlSet[category];
     }
 }
 
@@ -256,10 +239,15 @@ function getData() {
                 });
                 // Sometimes the future sucks and computers don't work.
                 if (chosen) {
-                    entry["East"] = chosen["East"];
-                    entry["West"] = chosen["West"];
-                    entry["South"] = chosen["South"];
-                    entry["North"] = chosen["North"];
+                    entry["East"] = Number(chosen["East"]);
+                    entry["West"] = Number(chosen["West"]);
+                    entry["South"] = Number(chosen["South"]);
+                    entry["North"] = Number(chosen["North"]);
+                } else {
+                    entry["East"] = 0;
+                    entry["West"] = 0;
+                    entry["South"] = 0;
+                    entry["North"] = 0;
                 }
                 // Return it.
                 return entry;
@@ -323,21 +311,17 @@ function buildSidebar(categories) {
     categoriesElem.append(categories.map(function (category) {
         var categoryElem = $(document.createElement("li"));
 
-        // Build color hint.
-        var hintElem = $(document.createElement("span"));
-        hintElem.addClass("btn-xs btn glyphicon glyphicon-eye-close");
-        hintElem.attr("style", "background-color: #" + category["Colour"] + "; color: transparent !important;");
-        categoryElem.append(hintElem);
-
         // Build checkbox.
-        var kmlCheckboxElem = $(document.createElement("span"));
-        kmlCheckboxElem.addClass("glyphicon glyphicon-eye-close btn btn-xs btn-default");
-        kmlCheckboxElem.data("category", category["Category"]);
-        kmlCheckboxElem.click(function () {
-            toggleKml($(this).data("category"));
+        var boundsElem = $(document.createElement("span"));
+        boundsElem.addClass("glyphicon glyphicon-eye-close btn btn-xs btn-default");
+        boundsElem.data("category", category["Category"]);
+        boundsElem.click(function () {
+            category.entries.map(function (entry) {
+                toggleBoundsRectangle(entry);
+            });
             $(this).toggleClass("glyphicon-eye-close glyphicon-eye-open btn-primary");
         });
-        categoryElem.append(kmlCheckboxElem);
+        categoryElem.append(boundsElem);
 
         // Build Link.
         var linkElem = $(document.createElement("span"));
@@ -352,6 +336,17 @@ function buildSidebar(categories) {
         linkElem.attr("data-trigger", "hover");
         linkElem.attr("title", category["Info Window"]);
         linkElem.tooltip();
+
+        linkElem.hover(function () {
+            category.entries.map(function (entry) {
+                toggleBoundsRectangle(entry);
+            });
+        }, function () {
+            category.entries.map(function (entry) {
+                toggleBoundsRectangle(entry);
+            });
+        });
+
         categoryElem.append(linkElem);
 
         // Build sublist.
@@ -377,6 +372,12 @@ function buildSidebar(categories) {
                 toggleMap($(this).data("dataset"));
                 $(this).find("i").toggleClass("glyphicon-eye-open glyphicon-eye-close btn-primary");
             });
+            // in, then out
+            linkElem.hover(function () {
+                toggleBoundsRectangle($(this).data("dataset"));
+            }, function () {
+                toggleBoundsRectangle($(this).data("dataset"));
+            });
 
             // Build label.
             var labelElem = $(document.createElement("label"));
@@ -397,6 +398,33 @@ function buildSidebar(categories) {
 
     var sidebarElem = $("#sidebar");
     sidebarElem.append(categoriesElem);
+}
+
+/*
+ * Mouseover event for sidebar items to show rectable preview.
+ */
+ // We need to keep a little state object to remember what is visible.
+var boundsRectangles = {}
+function toggleBoundsRectangle(dataset) {
+    var title = dataset["TIF File"];
+    if (boundsRectangles[title]) {
+        // Exists, remove it.
+        boundsRectangles[title].setMap(null);
+        delete boundsRectangles[title];
+    } else {
+        // Need to add it.
+        var bounds = {
+            north: dataset["North"],
+            south: dataset["South"],
+            west: dataset["West"],
+            east: dataset["East"],
+        };
+        console.log(bounds);
+        boundsRectangles[title] =  new google.maps.Rectangle({
+            bounds: bounds,
+        });
+        boundsRectangles[title].setMap(map);
+    }
 }
 
 /*
