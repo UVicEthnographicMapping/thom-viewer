@@ -1,17 +1,20 @@
-/*******************************************************************************
-A project for Brian Thom of the University of Victoria Ethnographic Mapping Lab
-Learn more about the lab: http://ethnographicmapping.uvic.ca/
-Explore the project: http://ethnomap.uvic.ca/
+/*
+ * A project for Brian Thom of the University of Victoria Ethnographic Mapping Lab
+ * Learn more about the lab: http://ethnographicmapping.uvic.ca/
+ * Explore the project: http://ethnomap.uvic.ca/
+ *
+ * `main.js` by Andrew Hobden, 2015, MIT licensed.
+*/
 
-`main.js` by Andrew Hobden, 2015, MIT licensed.
-******************************************************************************/
 var DATA_LIST = "cartographic-legacies.csv";
 var CATEGORY_LIST = "categories.csv";
 var BOUNDS_LIST = "boundaries.csv";
 
 var map, data;
 
-// Fired when page is fully loaded.
+/*
+ * Initialization. runs on loaded.
+ */
 function init() {
     // Map options for example map
     var mapOptions = {
@@ -62,6 +65,9 @@ function init() {
 }
 google.maps.event.addDomListener(window, 'load', init);
 
+/*
+ *  Functions for events.
+ */
 function toggleMap(dataset) {
     // Get tile url
     var tilesetName = dataset["TIF File"].split(".");
@@ -194,7 +200,6 @@ function toggleMap(dataset) {
         // It's good to do this for new users.
         toggleDatasets();
     }
-
 }
 
 var kmlSet = {};
@@ -264,6 +269,10 @@ function getData() {
     })
 }
 
+/*
+ * CSV Asset Acquisition Function  Squad
+ */
+
 // Fetches the category list from the server.
 function getCategories() {
     return new Promise(function (resolve, reject) {
@@ -304,7 +313,9 @@ function getBounds() {
     });
 }
 
-// This function builds the info sidebar.
+/*
+ * This function builds the info sidebar.
+  */
 function buildSidebar(categories) {
     var categoriesElem = $(document.createElement("ul"));
     categoriesElem.attr("id", "categories");
@@ -388,7 +399,9 @@ function buildSidebar(categories) {
     sidebarElem.append(categoriesElem);
 }
 
-// This is a function utilized by tooltips to determine their best suited position.
+/*
+ * This is a function utilized by tooltips to determine their best suited position.
+ */
 var getPlacementFunction = function (defaultPosition, width, height) {
     return function (tip, element) {
         var position, top, bottom, left, right;
