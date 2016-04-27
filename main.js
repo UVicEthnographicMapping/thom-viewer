@@ -69,6 +69,8 @@ google.maps.event.addDomListener(window, 'load', init);
  *  Functions for events.
  */
 function toggleMap(dataset) {
+    // Set the icon.
+    $("li[file='"+dataset["TIF File"]+"'] i").toggleClass("glyphicon-eye-open glyphicon-eye-close btn-primary");
     // Get tile url
     var tilesetName = dataset["TIF File"].split(".");
     tilesetName.pop(); // remove extension.
@@ -199,21 +201,33 @@ function toggleMap(dataset) {
         $("#datasets > tbody").append(tr);
 
         // It's good to do this for new users.
-        toggleDatasets();
+        toggleDatasets(true);
     }
 }
 
-function toggleSidebar() {
+function toggleSidebar(optional_state) {
     console.log("Toggling sidebar");
-    $("#sidebarContainer").toggleClass("in");
+    if (optional_state === true) {
+        $("#sidebarContainer").addClass("in");
+    } else if (optional_state === false) {
+        $("#sidebarContainer").removeClass("in");
+    } else {
+        $("#sidebarContainer").toggleClass("in");
+    }
 }
 
-function toggleDatasets() {
-    console.log("Toggling sidebar");
-    $("#datasetsContainer").toggleClass("in");
+function toggleDatasets(optional_state) {
+    console.log("Toggling Datasets");
+    if (optional_state === true) {
+        $("#datasetsContainer").addClass("in");
+    } else if (optional_state === false) {
+        $("#datasetsContainer").removeClass("in");
+    } else {
+        $("#datasetsContainer").toggleClass("in");
+    }
 }
 
-function toggleInfobox() {
+function toggleInfobox(optional_state) {
     console.log("Toggling infobox");
     $("#infoboxContainer").modal("toggle");
 }
@@ -317,7 +331,7 @@ function buildSidebar(categories) {
         boundsElem.data("category", category["Category"]);
         boundsElem.click(function () {
             category.entries.map(function (entry) {
-                toggleBoundsRectangle(entry);
+                toggleBoundsRectangle(entry, true);
             });
             $(this).toggleClass("glyphicon-eye-close glyphicon-eye-open btn-primary");
         });
@@ -343,7 +357,7 @@ function buildSidebar(categories) {
             });
         }, function () {
             category.entries.map(function (entry) {
-                toggleBoundsRectangle(entry, true);
+                toggleBoundsRectangle(entry, false);
             });
         });
 
@@ -354,6 +368,7 @@ function buildSidebar(categories) {
         category.entries.map(function buildDOM(entry) {
             // Build `li`
             var liElem = $(document.createElement("li"));
+            liElem.attr("file", entry["TIF File"]);
 
             // Build checkbox.
             var linkElem = $(document.createElement("span"));
@@ -370,7 +385,6 @@ function buildSidebar(categories) {
             linkElem.tooltip();
             linkElem.click(function () {
                 toggleMap($(this).data("dataset"));
-                $(this).find("i").toggleClass("glyphicon-eye-open glyphicon-eye-close btn-primary");
             });
             // in, then out
             linkElem.hover(function () {
@@ -382,15 +396,15 @@ function buildSidebar(categories) {
                 category.entries.map(function (entry) {
                     toggleBoundsRectangle(entry, false);
                 });
-                toggleBoundsRectangle($(this).data("dataset"), true);
+                toggleBoundsRectangle($(this).data("dataset"), false);
             });
 
             // Build label.
-            var labelElem = $(document.createElement("label"));
+            var labelElem = $(document.createElement("span"));
             labelElem.text();
-            linkElem.append(labelElem);
+            labelElem.append(linkElem);
 
-            liElem.append(linkElem);
+            liElem.append(labelElem);
 
             return liElem;
         }).map(function appendEntries(entry) {
