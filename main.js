@@ -339,11 +339,11 @@ function buildSidebar(categories) {
 
         linkElem.hover(function () {
             category.entries.map(function (entry) {
-                toggleBoundsRectangle(entry);
+                toggleBoundsRectangle(entry, true);
             });
         }, function () {
             category.entries.map(function (entry) {
-                toggleBoundsRectangle(entry);
+                toggleBoundsRectangle(entry, true);
             });
         });
 
@@ -374,9 +374,15 @@ function buildSidebar(categories) {
             });
             // in, then out
             linkElem.hover(function () {
-                toggleBoundsRectangle($(this).data("dataset"));
+                category.entries.map(function (entry) {
+                    toggleBoundsRectangle(entry, false);
+                });
+                toggleBoundsRectangle($(this).data("dataset"), true);
             }, function () {
-                toggleBoundsRectangle($(this).data("dataset"));
+                category.entries.map(function (entry) {
+                    toggleBoundsRectangle(entry, false);
+                });
+                toggleBoundsRectangle($(this).data("dataset"), true);
             });
 
             // Build label.
@@ -405,13 +411,14 @@ function buildSidebar(categories) {
  */
  // We need to keep a little state object to remember what is visible.
 var boundsRectangles = {}
-function toggleBoundsRectangle(dataset) {
+function toggleBoundsRectangle(dataset, state) {
     var title = dataset["TIF File"];
     if (boundsRectangles[title]) {
         // Exists, remove it.
         boundsRectangles[title].setMap(null);
         delete boundsRectangles[title];
-    } else {
+    }
+    if (state === true) {
         // Need to add it.
         var bounds = {
             north: dataset["North"],
@@ -419,10 +426,11 @@ function toggleBoundsRectangle(dataset) {
             west: dataset["West"],
             east: dataset["East"],
         };
-        console.log(bounds);
         boundsRectangles[title] =  new google.maps.Rectangle({
             bounds: bounds,
+            clickable: true
         });
+        boundsRectangles[title].addListener("click", function () { toggleMap(dataset); });
         boundsRectangles[title].setMap(map);
     }
 }
