@@ -62,6 +62,12 @@ function init() {
     $(infoButton).toggleClass("gm-button");
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(infoButton);
 
+    // var searchButton = document.createElement("div");
+    // $(searchButton).text("Search Box");
+    // $(searchButton).click(toggleSearchRectangle)
+    // $(searchButton).toggleClass("gm-button");
+    // map.controls[google.maps.ControlPosition.TOP_LEFT].push(searchButton);
+
 }
 google.maps.event.addDomListener(window, 'load', init);
 
@@ -331,7 +337,7 @@ function buildSidebar(categories) {
         boundsElem.data("category", category["Category"]);
         boundsElem.click(function () {
             category.entries.map(function (entry) {
-                toggleBoundsRectangle(entry, true);
+                toggleBoundsRectangle(entry);
             });
             $(this).toggleClass("glyphicon-eye-close glyphicon-eye-open btn-primary");
         });
@@ -350,16 +356,6 @@ function buildSidebar(categories) {
         linkElem.attr("data-trigger", "hover");
         linkElem.attr("title", category["Info Window"]);
         linkElem.tooltip();
-
-        linkElem.hover(function () {
-            category.entries.map(function (entry) {
-                toggleBoundsRectangle(entry, true);
-            });
-        }, function () {
-            category.entries.map(function (entry) {
-                toggleBoundsRectangle(entry, false);
-            });
-        });
 
         categoryElem.append(linkElem);
 
@@ -427,12 +423,15 @@ function buildSidebar(categories) {
 var boundsRectangles = {}
 function toggleBoundsRectangle(dataset, state) {
     var title = dataset["TIF File"];
-    if (boundsRectangles[title]) {
+    var did_exist = boundsRectangles[title] !== undefined;
+
+    if (did_exist) {
         // Exists, remove it.
         boundsRectangles[title].setMap(null);
         delete boundsRectangles[title];
     }
-    if (state === true) {
+
+    if (state === true || did_exist === false) {
         // Need to add it.
         var bounds = {
             north: dataset["North"],
@@ -447,6 +446,39 @@ function toggleBoundsRectangle(dataset, state) {
         boundsRectangles[title].addListener("click", function () { toggleMap(dataset); });
         boundsRectangles[title].setMap(map);
     }
+}
+
+/*
+ * Toggles the searching rectangle.
+ */
+var searchRectangle = new google.maps.Rectangle({
+    clickable: true,
+    draggable: true,
+    editable: true,
+});
+searchRectangle.addListener('bounds_changed', searchBounds);
+
+function toggleSearchRectangle() {
+    console.log("Search Rectanble");
+    if (searchRectangle.getMap() === null) {
+        console.log("Should be on");
+        var center = map.center;
+        var bounds = {
+            north: center.lat() + 5,
+            south: center.lat() - 5,
+            east: center.lng() + 5,
+            west: center.lng() - 5,
+        };
+        searchRectangle.setBounds(bounds);
+        searchRectangle.setMap(map);
+    } else {
+        searchRectangle.setMap(null);
+    }
+}
+
+function searchBounds() {
+    var bounds = searchRectangle.getBounds();
+    console.log(bounds);
 }
 
 /*
