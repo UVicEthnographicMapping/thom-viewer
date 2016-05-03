@@ -115,8 +115,9 @@ main {
     display: inline-block;
 }
 
-#categories {
-    padding-top: 50px;
+ul#categories > li {
+    padding-top: 10px;
+    padding-left: 15px;
 }
 #preview {
     max-width: 100%;
@@ -138,6 +139,19 @@ main {
 #preview > div.in {
     opacity: 1.0;
 }
+
+.description {
+    max-height: 0px;
+    overflow: hidden;
+    -webkit-transition: max-height 1s ease-in-out;
+    -moz-transition: max-height 1s ease-in-out;
+    -o-transition: max-height 1s ease-in-out;
+    transition: max-height 1s ease-in-out;
+}
+.description.in {
+    max-height: 100vh;
+}
+
 
 .tooltip-inner {
     max-width: none;

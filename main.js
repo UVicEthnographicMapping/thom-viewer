@@ -354,17 +354,19 @@ function chooseCategory(category) {
 
         linkElem.html("<i class=\"btn btn-xs btn-default glyphicon glyphicon-eye-close\"></i>" + entry["Pretty Title"]);
         linkElem.data("dataset", entry);
-        // Tooltip
-        // linkElem.attr("data-toggle", "tooltip");
-        // linkElem.attr("data-placement", "auto right");
-        // linkElem.attr("data-viewport", "main");
-        // linkElem.attr("data-trigger", "hover");
-        // linkElem.attr("data-html", "true");
-        // linkElem.attr("title", "<img class=\"tooltip-image\" src=\"sm_jpgs/" + entry["JPG File"] + "\">");
-        // linkElem.tooltip();
         linkElem.click(function () {
             toggleMap($(this).data("dataset"));
         });
+        map.overlayMapTypes.forEach(function (elem, idx) {
+            var tilesetName = entry["TIF File"].split(".");
+            tilesetName.pop(); // remove extension.
+            tilesetName = String(tilesetName);
+            if (elem.name == tilesetName) {
+                // Set the icon.
+                linkElem.find("i").toggleClass("glyphicon-eye-open glyphicon-eye-close btn-primary");
+            }
+        });
+
         // in, then out
         linkElem.hover(function () {
             $("#cf2").css('background-image', 'url(' +  "sm_jpgs/" + entry["JPG File"] + ')');
@@ -416,14 +418,22 @@ function categoryList(categories) {
     categoriesElem.append(categories.map(function (category) {
         var categoryElem = $(document.createElement("li"));
 
+        // Setup description
+        var descriptionElem = $(document.createElement("div"));
+        descriptionElem.toggleClass("description");
+        descriptionElem.text(category["Info Window"]);
+
         // Build checkbox.
         var boundsElem = $(document.createElement("span"));
-        boundsElem.addClass("glyphicon glyphicon-eye-close");
+        boundsElem.addClass("glyphicon glyphicon-info-sign");
         boundsElem.data("category", category["Category"]);
+        boundsElem.click(function () {
+            descriptionElem.toggleClass("in");
+        });
         categoryElem.append(boundsElem);
 
         // Build Link.
-        var linkElem = $(document.createElement("span"));
+        var linkElem = $(document.createElement("strong"));
         linkElem.text(category["Pretty Category"]);
         linkElem.hover(function () {
             category.entries.map(function (entry) {
@@ -437,14 +447,10 @@ function categoryList(categories) {
         linkElem.click(function () {
             chooseCategory(category);
         });
-        // Setup Tooltip
-        linkElem.attr("data-toggle", "tooltip");
-        linkElem.attr("data-placement", "auto bottom");
-        linkElem.attr("data-trigger", "hover");
-        linkElem.attr("title", category["Info Window"]);
-        linkElem.tooltip();
 
         categoryElem.append(linkElem);
+        categoryElem.append("<br>");
+        categoryElem.append(descriptionElem);
 
         return categoryElem;
     }));
