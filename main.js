@@ -38,7 +38,7 @@ function init() {
     toggleInfobox();
 
     data = getData();
-    data.then(buildSidebar);
+    data.then(categoryList);
 
     var tooltips = $("[data-toggle=tooltip]");
     tooltips.tooltip({ trigger: "hover", });
@@ -322,9 +322,94 @@ function getBounds() {
 }
 
 /*
- * This function builds the info sidebar.
-  */
-function buildSidebar(categories) {
+ * Fired when the user chooses a category sidebar.
+ * This changes the sidebar to contain that category's data sets.
+ */
+function chooseCategory(category) {
+
+    var previewElem = $(document.createElement("div"));
+    previewElem.attr("id", "preview");
+    var cf1Elem = $(document.createElement("div"));
+    cf1Elem.attr("id", "cf1");
+    cf1Elem.css('background-image', 'url(placeholder.jpg)');
+    cf1Elem.toggleClass('in');
+    previewElem.append(cf1Elem);
+    var cf2Elem = $(document.createElement("div"));
+    cf2Elem.attr("id", "cf2");
+    cf2Elem.css('background-image', '');
+    previewElem.append(cf2Elem);
+
+    var entriesElem = $(document.createElement("ul"));
+    entriesElem.attr("id", "entries");
+
+    category.entries.map(function buildDOM(entry) {
+        // Ensure it's off.
+        toggleBoundsRectangle(entry, false);
+        // Build `li`
+        var liElem = $(document.createElement("li"));
+        liElem.attr("file", entry["TIF File"]);
+
+        // Build checkbox.
+        var linkElem = $(document.createElement("span"));
+
+        linkElem.html("<i class=\"btn btn-xs btn-default glyphicon glyphicon-eye-close\"></i>" + entry["Pretty Title"]);
+        linkElem.data("dataset", entry);
+        // Tooltip
+        // linkElem.attr("data-toggle", "tooltip");
+        // linkElem.attr("data-placement", "auto right");
+        // linkElem.attr("data-viewport", "main");
+        // linkElem.attr("data-trigger", "hover");
+        // linkElem.attr("data-html", "true");
+        // linkElem.attr("title", "<img class=\"tooltip-image\" src=\"sm_jpgs/" + entry["JPG File"] + "\">");
+        // linkElem.tooltip();
+        linkElem.click(function () {
+            toggleMap($(this).data("dataset"));
+        });
+        // in, then out
+        linkElem.hover(function () {
+            $("#cf2").css('background-image', 'url(' +  "sm_jpgs/" + entry["JPG File"] + ')');
+            $("#cf2").toggleClass('in');
+
+            category.entries.map(function (entry) {
+                toggleBoundsRectangle(entry, false);
+            });
+            toggleBoundsRectangle($(this).data("dataset"), true);
+        }, function () {
+            $("#cf2").toggleClass('in');
+            category.entries.map(function (entry) {
+                toggleBoundsRectangle(entry, false);
+            });
+            toggleBoundsRectangle($(this).data("dataset"), false);
+        });
+
+        // Build label.
+        var labelElem = $(document.createElement("span"));
+        labelElem.text();
+        labelElem.append(linkElem);
+
+        liElem.append(labelElem);
+
+        return liElem;
+    }).map(function appendEntries(entry) {
+        return entriesElem.append(entry);
+    });
+
+    var backElem = $(document.createElement("li"));
+    backElem.html("<span><i class=\"glyphicon glyphicon-arrow-left\"></i>Go back...</span>");
+    backElem.click(function () { data.then(categoryList); });
+    entriesElem.append(backElem);
+
+
+    var sidebarElem = $("#sidebar");
+    sidebarElem.html(previewElem);
+    sidebarElem.append(entriesElem);
+}
+
+/*
+ * Fired when the user either goes back or on init.
+ * This changes the sidebar to contain the list of categories.
+ */
+function categoryList(categories) {
     var categoriesElem = $(document.createElement("ul"));
     categoriesElem.attr("id", "categories");
 
@@ -333,22 +418,24 @@ function buildSidebar(categories) {
 
         // Build checkbox.
         var boundsElem = $(document.createElement("span"));
-        boundsElem.addClass("glyphicon glyphicon-eye-close btn btn-xs btn-default");
+        boundsElem.addClass("glyphicon glyphicon-eye-close");
         boundsElem.data("category", category["Category"]);
-        boundsElem.click(function () {
-            category.entries.map(function (entry) {
-                toggleBoundsRectangle(entry);
-            });
-            $(this).toggleClass("glyphicon-eye-close glyphicon-eye-open btn-primary");
-        });
         categoryElem.append(boundsElem);
 
         // Build Link.
         var linkElem = $(document.createElement("span"));
-        linkElem.html('<i class="btn btn-xs btn-default glyphicon glyphicon-folder-close"></i>' + category["Pretty Category"]);
+        linkElem.text(category["Pretty Category"]);
+        linkElem.hover(function () {
+            category.entries.map(function (entry) {
+                toggleBoundsRectangle(entry, true);
+            });
+        }, function () {
+            category.entries.map(function (entry) {
+                toggleBoundsRectangle(entry, false);
+            });
+        });
         linkElem.click(function () {
-            $(this).siblings("ul").toggle();
-            $(this).find("i.btn").toggleClass("glyphicon-folder-close glyphicon-folder-open btn-primary");
+            chooseCategory(category);
         });
         // Setup Tooltip
         linkElem.attr("data-toggle", "tooltip");
@@ -359,61 +446,11 @@ function buildSidebar(categories) {
 
         categoryElem.append(linkElem);
 
-        // Build sublist.
-        var entriesElem = $(document.createElement("ul"));
-        category.entries.map(function buildDOM(entry) {
-            // Build `li`
-            var liElem = $(document.createElement("li"));
-            liElem.attr("file", entry["TIF File"]);
-
-            // Build checkbox.
-            var linkElem = $(document.createElement("span"));
-
-            linkElem.html("<i class=\"btn btn-xs btn-default glyphicon glyphicon-eye-close\"></i>" + entry["Pretty Title"]);
-            linkElem.data("dataset", entry);
-            // Tooltip
-            linkElem.attr("data-toggle", "tooltip");
-            linkElem.attr("data-placement", "auto right");
-            linkElem.attr("data-viewport", "main");
-            linkElem.attr("data-trigger", "hover");
-            linkElem.attr("data-html", "true");
-            linkElem.attr("title", "<img class=\"tooltip-image\" src=\"sm_jpgs/" + entry["JPG File"] + "\">");
-            linkElem.tooltip();
-            linkElem.click(function () {
-                toggleMap($(this).data("dataset"));
-            });
-            // in, then out
-            linkElem.hover(function () {
-                category.entries.map(function (entry) {
-                    toggleBoundsRectangle(entry, false);
-                });
-                toggleBoundsRectangle($(this).data("dataset"), true);
-            }, function () {
-                category.entries.map(function (entry) {
-                    toggleBoundsRectangle(entry, false);
-                });
-                toggleBoundsRectangle($(this).data("dataset"), false);
-            });
-
-            // Build label.
-            var labelElem = $(document.createElement("span"));
-            labelElem.text();
-            labelElem.append(linkElem);
-
-            liElem.append(labelElem);
-
-            return liElem;
-        }).map(function appendEntries(entry) {
-            return entriesElem.append(entry);
-        });
-        entriesElem.hide(); // Show on click.
-        categoryElem.append(entriesElem);
-
         return categoryElem;
-    }))
+    }));
 
     var sidebarElem = $("#sidebar");
-    sidebarElem.append(categoriesElem);
+    sidebarElem.html(categoriesElem);
 }
 
 /*
@@ -431,7 +468,7 @@ function toggleBoundsRectangle(dataset, state) {
         delete boundsRectangles[title];
     }
 
-    if (state === true || did_exist === false) {
+    if (state === true && did_exist === false) {
         // Need to add it.
         var bounds = {
             north: dataset["North"],

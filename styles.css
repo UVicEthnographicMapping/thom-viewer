@@ -118,6 +118,26 @@ main {
 #categories {
     padding-top: 50px;
 }
+#preview {
+    max-width: 100%;
+    height: 40vh;
+}
+#preview > div {
+    position:absolute;
+    width: 400px;
+    height: 40vh;
+    left:0;
+    opacity: 0.0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    background-position: center;
+    background-size: cover;
+}
+#preview > div.in {
+    opacity: 1.0;
+}
 
 .tooltip-inner {
     max-width: none;
