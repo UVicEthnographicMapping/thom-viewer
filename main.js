@@ -326,7 +326,6 @@ function getBounds() {
  * This changes the sidebar to contain that category's data sets.
  */
 function chooseCategory(category) {
-
     var previewElem = $(document.createElement("div"));
     previewElem.attr("id", "preview");
     var cf1Elem = $(document.createElement("div"));
@@ -342,57 +341,7 @@ function chooseCategory(category) {
     var entriesElem = $(document.createElement("ul"));
     entriesElem.attr("id", "entries");
 
-    category.entries.map(function buildDOM(entry) {
-        // Ensure it's off.
-        toggleBoundsRectangle(entry, false);
-        // Build `li`
-        var liElem = $(document.createElement("li"));
-        liElem.attr("file", entry["TIF File"]);
-
-        // Build checkbox.
-        var linkElem = $(document.createElement("span"));
-
-        linkElem.html("<i class=\"btn btn-xs btn-default glyphicon glyphicon-eye-close\"></i>" + entry["Pretty Title"]);
-        linkElem.data("dataset", entry);
-        linkElem.click(function () {
-            toggleMap($(this).data("dataset"));
-        });
-        map.overlayMapTypes.forEach(function (elem, idx) {
-            var tilesetName = entry["TIF File"].split(".");
-            tilesetName.pop(); // remove extension.
-            tilesetName = String(tilesetName);
-            if (elem.name == tilesetName) {
-                // Set the icon.
-                linkElem.find("i").toggleClass("glyphicon-eye-open glyphicon-eye-close btn-primary");
-            }
-        });
-
-        // in, then out
-        linkElem.hover(function () {
-            $("#cf2").css('background-image', 'url(' +  "sm_jpgs/" + entry["JPG File"] + ')');
-            $("#cf2").toggleClass('in');
-
-            category.entries.map(function (entry) {
-                toggleBoundsRectangle(entry, false);
-            });
-            toggleBoundsRectangle($(this).data("dataset"), true);
-        }, function () {
-            $("#cf2").toggleClass('in');
-            category.entries.map(function (entry) {
-                toggleBoundsRectangle(entry, false);
-            });
-            toggleBoundsRectangle($(this).data("dataset"), false);
-        });
-
-        // Build label.
-        var labelElem = $(document.createElement("span"));
-        labelElem.text();
-        labelElem.append(linkElem);
-
-        liElem.append(labelElem);
-
-        return liElem;
-    }).map(function appendEntries(entry) {
+    category.entries.map(buildSidebarEntry).map(function appendEntries(entry) {
         return entriesElem.append(entry);
     });
 
@@ -408,6 +357,63 @@ function chooseCategory(category) {
 }
 
 /*
+ * Builds the sidebar entry. Returns an HTML Element for the sidebar.
+ */
+function buildSidebarEntry(entry) {
+    // Ensure it's off.
+    toggleBoundsRectangle(entry, false);
+    // Build `li`
+    var liElem = $(document.createElement("li"));
+    liElem.attr("file", entry["TIF File"]);
+
+    // Build checkbox.
+    var linkElem = $(document.createElement("span"));
+
+    linkElem.html("<i class=\"btn btn-xs btn-default glyphicon glyphicon-eye-close\"></i>" + entry["Pretty Title"]);
+    linkElem.data("dataset", entry);
+    linkElem.click(function () {
+        toggleMap($(this).data("dataset"));
+    });
+
+    map.overlayMapTypes.forEach(function (elem, idx) {
+        var tilesetName = entry["TIF File"].split(".");
+        tilesetName.pop(); // remove extension.
+        tilesetName = String(tilesetName);
+        if (elem.name == tilesetName) {
+            // Set the icon.
+            linkElem.find("i").toggleClass("glyphicon-eye-open glyphicon-eye-close btn-primary");
+        }
+    });
+
+    // in, then out
+    linkElem.hover(function () {
+        $("#cf2").css('background-image', 'url(' +  "sm_jpgs/" + entry["JPG File"] + ')');
+        $("#cf2").toggleClass('in');
+
+        // category.entries.map(function (entry) {
+        //     toggleBoundsRectangle(entry, false);
+        // });
+        toggleBoundsRectangle($(this).data("dataset"), true);
+    }, function () {
+        $("#cf2").toggleClass('in');
+        // category.entries.map(function (entry) {
+        //     toggleBoundsRectangle(entry, false);
+        // });
+        toggleBoundsRectangle($(this).data("dataset"), false);
+    });
+
+    // Build label.
+    var labelElem = $(document.createElement("span"));
+    labelElem.text();
+    labelElem.append(linkElem);
+
+    liElem.append(labelElem);
+
+    return liElem;
+}
+
+
+/*
  * Fired when the user either goes back or on init.
  * This changes the sidebar to contain the list of categories.
  */
@@ -415,48 +421,50 @@ function categoryList(categories) {
     var categoriesElem = $(document.createElement("ul"));
     categoriesElem.attr("id", "categories");
 
-    categoriesElem.append(categories.map(function (category) {
-        var categoryElem = $(document.createElement("li"));
-
-        // Setup description
-        var descriptionElem = $(document.createElement("div"));
-        descriptionElem.toggleClass("description");
-        descriptionElem.text(category["Info Window"]);
-
-        // Build checkbox.
-        var boundsElem = $(document.createElement("span"));
-        boundsElem.addClass("glyphicon glyphicon-info-sign");
-        boundsElem.data("category", category["Category"]);
-        boundsElem.click(function () {
-            descriptionElem.toggleClass("in");
-        });
-        categoryElem.append(boundsElem);
-
-        // Build Link.
-        var linkElem = $(document.createElement("strong"));
-        linkElem.text(category["Pretty Category"]);
-        linkElem.hover(function () {
-            category.entries.map(function (entry) {
-                toggleBoundsRectangle(entry, true);
-            });
-        }, function () {
-            category.entries.map(function (entry) {
-                toggleBoundsRectangle(entry, false);
-            });
-        });
-        linkElem.click(function () {
-            chooseCategory(category);
-        });
-
-        categoryElem.append(linkElem);
-        categoryElem.append("<br>");
-        categoryElem.append(descriptionElem);
-
-        return categoryElem;
-    }));
+    categoriesElem.append(categories.map(buildSidebarCategory));
 
     var sidebarElem = $("#sidebar");
     sidebarElem.html(categoriesElem);
+}
+
+function buildSidebarCategory(category) {
+    var categoryElem = $(document.createElement("li"));
+
+    // Setup description
+    var descriptionElem = $(document.createElement("div"));
+    descriptionElem.toggleClass("description");
+    descriptionElem.text(category["Info Window"]);
+
+    // Build checkbox.
+    var boundsElem = $(document.createElement("span"));
+    boundsElem.addClass("glyphicon glyphicon-info-sign");
+    boundsElem.data("category", category["Category"]);
+    boundsElem.click(function () {
+        descriptionElem.toggleClass("in");
+    });
+    categoryElem.append(boundsElem);
+
+    // Build Link.
+    var linkElem = $(document.createElement("strong"));
+    linkElem.text(category["Pretty Category"]);
+    linkElem.hover(function () {
+        category.entries.map(function (entry) {
+            toggleBoundsRectangle(entry, true);
+        });
+    }, function () {
+        category.entries.map(function (entry) {
+            toggleBoundsRectangle(entry, false);
+        });
+    });
+    linkElem.click(function () {
+        chooseCategory(category);
+    });
+
+    categoryElem.append(linkElem);
+    categoryElem.append("<br>");
+    categoryElem.append(descriptionElem);
+
+    return categoryElem;
 }
 
 /*
