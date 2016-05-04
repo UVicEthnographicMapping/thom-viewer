@@ -38,7 +38,7 @@ function init() {
     toggleInfobox();
 
     data = getData();
-    data.then(categoryList);
+    data.then(buildSidebar);
 
     var tooltips = $("[data-toggle=tooltip]");
     tooltips.tooltip({ trigger: "hover", });
@@ -62,11 +62,11 @@ function init() {
     $(infoButton).toggleClass("gm-button");
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(infoButton);
 
-    // var searchButton = document.createElement("div");
-    // $(searchButton).text("Search Box");
-    // $(searchButton).click(toggleSearchRectangle)
-    // $(searchButton).toggleClass("gm-button");
-    // map.controls[google.maps.ControlPosition.TOP_LEFT].push(searchButton);
+    var searchButton = document.createElement("div");
+    $(searchButton).text("Search Box");
+    $(searchButton).click(toggleSearchRectangle)
+    $(searchButton).toggleClass("gm-button");
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(searchButton);
 
 }
 google.maps.event.addDomListener(window, 'load', init);
@@ -326,34 +326,7 @@ function getBounds() {
  * This changes the sidebar to contain that category's data sets.
  */
 function chooseCategory(category) {
-    var previewElem = $(document.createElement("div"));
-    previewElem.attr("id", "preview");
-    var cf1Elem = $(document.createElement("div"));
-    cf1Elem.attr("id", "cf1");
-    cf1Elem.css('background-image', 'url(placeholder.jpg)');
-    cf1Elem.toggleClass('in');
-    previewElem.append(cf1Elem);
-    var cf2Elem = $(document.createElement("div"));
-    cf2Elem.attr("id", "cf2");
-    cf2Elem.css('background-image', '');
-    previewElem.append(cf2Elem);
 
-    var entriesElem = $(document.createElement("ul"));
-    entriesElem.attr("id", "entries");
-
-    category.entries.map(buildSidebarEntry).map(function appendEntries(entry) {
-        return entriesElem.append(entry);
-    });
-
-    var backElem = $(document.createElement("li"));
-    backElem.html("<span><i class=\"glyphicon glyphicon-arrow-left\"></i>Go back...</span>");
-    backElem.click(function () { data.then(categoryList); });
-    entriesElem.append(backElem);
-
-
-    var sidebarElem = $("#sidebar");
-    sidebarElem.html(previewElem);
-    sidebarElem.append(entriesElem);
 }
 
 /*
@@ -417,14 +390,27 @@ function buildSidebarEntry(entry) {
  * Fired when the user either goes back or on init.
  * This changes the sidebar to contain the list of categories.
  */
-function categoryList(categories) {
+function buildSidebar(categories) {
+    var previewElem = $(document.createElement("div"));
+    previewElem.attr("id", "preview");
+    var cf1Elem = $(document.createElement("div"));
+    cf1Elem.attr("id", "cf1");
+    cf1Elem.css('background-image', 'url(placeholder.jpg)');
+    cf1Elem.toggleClass('in');
+    previewElem.append(cf1Elem);
+    var cf2Elem = $(document.createElement("div"));
+    cf2Elem.attr("id", "cf2");
+    cf2Elem.css('background-image', '');
+    previewElem.append(cf2Elem);
+
     var categoriesElem = $(document.createElement("ul"));
     categoriesElem.attr("id", "categories");
 
     categoriesElem.append(categories.map(buildSidebarCategory));
 
     var sidebarElem = $("#sidebar");
-    sidebarElem.html(categoriesElem);
+    sidebarElem.html(previewElem);
+    sidebarElem.append(categoriesElem);
 }
 
 function buildSidebarCategory(category) {
@@ -444,6 +430,13 @@ function buildSidebarCategory(category) {
     });
     categoryElem.append(boundsElem);
 
+    // Build Entries
+    var entriesElem = $(document.createElement("ul"));
+    entriesElem.attr("class", "entries");
+    category.entries.map(buildSidebarEntry).map(function appendEntries(entry) {
+        return entriesElem.append(entry);
+    });
+
     // Build Link.
     var linkElem = $(document.createElement("strong"));
     linkElem.text(category["Pretty Category"]);
@@ -457,12 +450,13 @@ function buildSidebarCategory(category) {
         });
     });
     linkElem.click(function () {
-        chooseCategory(category);
+        entriesElem.toggleClass("in");
     });
 
     categoryElem.append(linkElem);
     categoryElem.append("<br>");
     categoryElem.append(descriptionElem);
+    categoryElem.append(entriesElem);
 
     return categoryElem;
 }
@@ -508,11 +502,10 @@ var searchRectangle = new google.maps.Rectangle({
     editable: true,
 });
 searchRectangle.addListener('bounds_changed', searchBounds);
+searchRectangle.setMap(null); // Later we check for this.
 
 function toggleSearchRectangle() {
-    console.log("Search Rectanble");
     if (searchRectangle.getMap() === null) {
-        console.log("Should be on");
         var center = map.center;
         var bounds = {
             north: center.lat() + 5,
@@ -523,8 +516,13 @@ function toggleSearchRectangle() {
         searchRectangle.setBounds(bounds);
         searchRectangle.setMap(map);
     } else {
+        resetSearch();
         searchRectangle.setMap(null);
     }
+}
+
+function resetSearch() {
+
 }
 
 function searchBounds() {
