@@ -76,7 +76,7 @@ google.maps.event.addDomListener(window, 'load', init);
  */
 function toggleMap(dataset) {
     // Set the icon.
-    $("li[file='"+dataset["TIF File"]+"'] i").toggleClass("glyphicon-eye-open glyphicon-eye-close btn-primary");
+    $("li[data-file='"+dataset["TIF File"]+"'] i").toggleClass("glyphicon-eye-open glyphicon-eye-close btn-primary");
     // Get tile url
     var tilesetName = dataset["TIF File"].split(".");
     tilesetName.pop(); // remove extension.
@@ -322,14 +322,6 @@ function getBounds() {
 }
 
 /*
- * Fired when the user chooses a category sidebar.
- * This changes the sidebar to contain that category's data sets.
- */
-function chooseCategory(category) {
-
-}
-
-/*
  * Builds the sidebar entry. Returns an HTML Element for the sidebar.
  */
 function buildSidebarEntry(entry) {
@@ -337,10 +329,11 @@ function buildSidebarEntry(entry) {
     toggleBoundsRectangle(entry, false);
     // Build `li`
     var liElem = $(document.createElement("li"));
-    liElem.attr("file", entry["TIF File"]);
+    liElem.attr("data-file", entry["TIF File"]);
 
     // Build checkbox.
-    var linkElem = $(document.createElement("span"));
+    var linkElem = $(document.createElement("a"));
+    linkElem.addClass("entry-link")
 
     linkElem.html("<i class=\"btn btn-xs btn-default glyphicon glyphicon-eye-close\"></i>" + entry["Pretty Title"]);
     linkElem.data("dataset", entry);
@@ -375,12 +368,7 @@ function buildSidebarEntry(entry) {
         toggleBoundsRectangle($(this).data("dataset"), false);
     });
 
-    // Build label.
-    var labelElem = $(document.createElement("span"));
-    labelElem.text();
-    labelElem.append(linkElem);
-
-    liElem.append(labelElem);
+    liElem.append(linkElem);
 
     return liElem;
 }
@@ -415,6 +403,7 @@ function buildSidebar(categories) {
 
 function buildSidebarCategory(category) {
     var categoryElem = $(document.createElement("li"));
+    categoryElem.attr("data-category", category["Category"])
 
     // Setup description
     var descriptionElem = $(document.createElement("div"));
@@ -502,10 +491,10 @@ var searchRectangle = new google.maps.Rectangle({
     editable: true,
 });
 searchRectangle.addListener('bounds_changed', searchBounds);
-searchRectangle.setMap(null); // Later we check for this.
+
 
 function toggleSearchRectangle() {
-    if (searchRectangle.getMap() === null) {
+    if (searchRectangle.getMap() === null || searchRectangle.getMap() === undefined) {
         var center = map.center;
         var bounds = {
             north: center.lat() + 5,
@@ -522,12 +511,45 @@ function toggleSearchRectangle() {
 }
 
 function resetSearch() {
-
+    $("ul#categories > li").show();
+    $("ul#categories > li > .entries > li").show();
 }
 
 function searchBounds() {
-    var bounds = searchRectangle.getBounds();
-    console.log(bounds);
+    resetSearch();
+
+    var search_bounds = searchRectangle.getBounds();
+    var s_n = search_bounds.getNorthEast().lat(),
+        s_e = search_bounds.getNorthEast().lng(),
+        s_s = search_bounds.getSouthWest().lat(),
+        s_w = search_bounds.getSouthWest().lng();
+
+    $("ul#categories > li").each(function () {
+        var entries = $(this).find(".entries > li > a");
+        var collapsed = 0;
+        entries.each(function () {
+            var dataset = $(this).data("dataset");
+            var d_n = Number(dataset["North"]),
+                d_e = Number(dataset["East"]),
+                d_s = Number(dataset["South"]),
+                d_w = Number(dataset["West"]);
+
+            var data_south_in_search = (s_n > d_s && s_s < d_s);
+            var data_north_in_search = (s_s < d_n && s_n > d_n);
+
+            var data_east_in_search = (s_w < d_e && s_e > d_e);
+            var data_west_in_search = (s_e > d_w && s_w < d_w);
+
+            if ((data_south_in_search || data_north_in_search) && (data_east_in_search || data_west_in_search)) {
+            } else {
+                $(this).parent().hide();
+                collapsed += 1;
+            }
+        });
+        if (collapsed == entries.length) {
+            $(this).hide();
+        }
+    });
 }
 
 /*

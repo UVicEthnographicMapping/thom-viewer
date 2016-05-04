@@ -142,6 +142,11 @@ ul#categories > li {
     opacity: 1.0;
 }
 
+.entry-link {
+    text-decoration: none;
+    color: black;
+}
+
 .description,.entries {
     max-height: 0px;
     overflow: hidden;
@@ -187,5 +192,9 @@ img.tooltip-image {
 }
 
 .gm-button:hover {
+    background-color: #EBEBEB;
+}
+
+.gm-button:active {
     background-color: #EBEBEB;
 }
