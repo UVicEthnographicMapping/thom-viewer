@@ -385,20 +385,24 @@ function buildSidebar(categories) {
     cf1Elem.attr("id", "cf1");
     cf1Elem.css('background-image', 'url(placeholder.jpg)');
     cf1Elem.toggleClass('in');
+    // cf1Elem.text("Hover over maps below to see a preview.")
     previewElem.append(cf1Elem);
     var cf2Elem = $(document.createElement("div"));
     cf2Elem.attr("id", "cf2");
     cf2Elem.css('background-image', '');
     previewElem.append(cf2Elem);
 
+    var categoriesHolderElem = $(document.createElement("div"));
+    categoriesHolderElem.attr("id", "categoriesHolder");
     var categoriesElem = $(document.createElement("ul"));
     categoriesElem.attr("id", "categories");
+    categoriesHolderElem.append(categoriesElem);
 
     categoriesElem.append(categories.map(buildSidebarCategory));
 
     var sidebarElem = $("#sidebar");
     sidebarElem.html(previewElem);
-    sidebarElem.append(categoriesElem);
+    sidebarElem.append(categoriesHolderElem);
 }
 
 function buildSidebarCategory(category) {

@@ -78,18 +78,17 @@ main {
     top: 325px;
 }
 #sidebar {
-    height: 100%;
     top: 0px;
     bottom: 0px;
-    overflow: scroll;
+    height: 100%;
 }
 #sidebarContainer {
     border-radius: 2px;
     background-clip: padding-box;
     box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3);
-    margin-top: 50px;
+    top: 10vh;
     position: absolute;
-    height: 100%;
+    bottom: 0;
     z-index: 50;
     background: white;
     width: 400px;
@@ -99,22 +98,27 @@ main {
 #sidebarContainer.in {
     left: 0px;
 }
-#sidebar > ul {
+
+#sidebar > div#categoriesHolder {
+    overflow: scroll;
+    height: 50vh;
+}
+
+#sidebar > div > ul {
     list-style: none;
     list-style-position: inside;
     padding-left: 10px;
 }
-#sidebar > ul > li > ul {
+#sidebar > div > ul > li > ul {
     width: 400%;
     margin: 0;
     list-style: none;
     padding-left: 10px;
 }
-#sidebar > ul > li > ul > li > input {
+#sidebar > div > ul > li > ul > li > input {
     float: left;
     display: inline-block;
 }
-
 ul#categories > li {
     padding-top: 10px;
     padding-left: 15px;
