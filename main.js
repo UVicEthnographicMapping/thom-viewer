@@ -77,9 +77,8 @@ google.maps.event.addDomListener(window, 'load', init);
 function toggleMap(dataset) {
     // Set the icon.
     var listElem = $("li[data-file='"+dataset["TIF File"]+"']")
-    listElem.find("i").toggleClass("glyphicon-eye-open glyphicon-eye-close");
-    // Background.
-    listElem.toggleClass("on");
+
+    listElem.find("span.material-icons.descriptionToggle").toggleClass("in");
 
     // Get tile url
     var tilesetName = dataset["TIF File"].split(".");
@@ -336,7 +335,7 @@ function buildSidebarEntry(entry) {
     liElem.attr("data-file", entry["TIF File"]);
 
     // Build checkbox.
-    liElem.append("<i class=\"glyphicon glyphicon-eye-close\"></i>");
+    liElem.append("<span class='material-icons map'>map</span>");
 
     liElem.addClass("entry-link")
     liElem.data("dataset", entry);
@@ -351,9 +350,7 @@ function buildSidebarEntry(entry) {
         tilesetName = String(tilesetName);
         if (elem.name == tilesetName) {
             // Set the icon.
-            liElem.find("i").toggleClass("glyphicon-eye-open glyphicon-eye-close");
-            // Background.
-            liElem.toggleClass("on");
+            liElem.find("span").toggleClass("on");
         }
     });
 
@@ -419,10 +416,13 @@ function buildSidebarCategory(category) {
     descriptionElem.text(category["Info Window"]);
 
     // Description button.
-    var descriptionToggleElem = $(document.createElement("i"));
-    descriptionToggleElem.addClass("glyphicon glyphicon-info-sign");
+    var descriptionToggleElem = $(document.createElement("span"));
+    descriptionToggleElem.addClass("material-icons");
+    descriptionToggleElem.addClass("descriptionToggle");
+    descriptionToggleElem.text("sms");
     descriptionToggleElem.data("category", category["Category"]);
     descriptionToggleElem.click(function () {
+        descriptionToggleElem.toggleClass("in");
         descriptionElem.toggleClass("in");
     });
     categoryElem.append(descriptionToggleElem);
@@ -447,8 +447,16 @@ function buildSidebarCategory(category) {
         });
     });
     linkElem.click(function () {
+        layersToggleElem.toggleClass("in");
         entriesElem.toggleClass("in");
     });
+
+    // Layers hint.
+    var layersToggleElem = $(document.createElement("span"));
+    layersToggleElem.addClass("material-icons");
+    layersToggleElem.addClass("layers");
+    layersToggleElem.text("layers");
+    categoryElem.append(layersToggleElem);
 
     categoryElem.append(linkElem);
     categoryElem.append("<br>");
@@ -533,7 +541,7 @@ function searchBounds() {
         s_w = search_bounds.getSouthWest().lng();
 
     $("ul#categories > li").each(function () {
-        var entries = $(this).find(".entries > li > a");
+        var entries = $(this).find(".entries > li");
         var collapsed = 0;
         entries.each(function () {
             var dataset = $(this).data("dataset");
