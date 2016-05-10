@@ -124,7 +124,7 @@ main {
     padding-left: 0px;
     background-color: rgb(238, 238, 238);
 }
-#sidebar > div > ul > li > ul > li > i {
+li > i {
     padding-left: 15px;
     padding-right: 5px;
 }
@@ -176,6 +176,10 @@ ul.entries > li.on {
 }
 .description.in,.entries.in {
     max-height: 400vh;
+}
+.description {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 

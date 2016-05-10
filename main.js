@@ -419,11 +419,11 @@ function buildSidebarCategory(category) {
     descriptionElem.text(category["Info Window"]);
 
     // Description button.
-    var descriptionToggleElem = $(document.createElement("span"));
+    var descriptionToggleElem = $(document.createElement("i"));
     descriptionToggleElem.addClass("glyphicon glyphicon-info-sign");
     descriptionToggleElem.data("category", category["Category"]);
     descriptionToggleElem.click(function () {
-        descriptionToggleElem.toggleClass("in");
+        descriptionElem.toggleClass("in");
     });
     categoryElem.append(descriptionToggleElem);
 
