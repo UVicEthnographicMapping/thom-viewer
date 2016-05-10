@@ -1,3 +1,12 @@
+/*
+ * A project for Brian Thom of the University of Victoria Ethnographic Mapping Lab
+ * Learn more about the lab: http://ethnographicmapping.uvic.ca/
+ * Explore the project: http://ethnomap.uvic.ca/
+ *
+ * Parts of `styles.css` by Andrew Hobden, 2015, MIT licensed.
+ * Other parts copied in small part from Google's maps library.
+*/
+
 html, body {
     height: 100%;
     margin: 0;
@@ -107,21 +116,26 @@ main {
 #sidebar > div > ul {
     list-style: none;
     list-style-position: inside;
-    padding-left: 10px;
+    padding-left: 0px;
 }
 #sidebar > div > ul > li > ul {
-    width: 400%;
     margin: 0;
     list-style: none;
-    padding-left: 10px;
+    padding-left: 0px;
+    background-color: rgb(238, 238, 238);
 }
-#sidebar > div > ul > li > ul > li > input {
-    float: left;
-    display: inline-block;
+#sidebar > div > ul > li > ul > li > i {
+    padding-left: 15px;
+    padding-right: 5px;
 }
 ul#categories > li {
     padding-top: 10px;
-    padding-left: 15px;
+}
+li > a:hover {
+    text-decoration: none;
+}
+ul.entries > li.on {
+    background-color: rgb(162, 199, 230);
 }
 #preview {
     max-width: 100%;
@@ -149,6 +163,7 @@ ul#categories > li {
 .entry-link {
     text-decoration: none;
     color: black;
+    width: 100%;
 }
 
 .description,.entries {

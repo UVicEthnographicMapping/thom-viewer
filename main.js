@@ -76,7 +76,11 @@ google.maps.event.addDomListener(window, 'load', init);
  */
 function toggleMap(dataset) {
     // Set the icon.
-    $("li[data-file='"+dataset["TIF File"]+"'] i").toggleClass("glyphicon-eye-open glyphicon-eye-close btn-primary");
+    var listElem = $("li[data-file='"+dataset["TIF File"]+"']")
+    listElem.find("i").toggleClass("glyphicon-eye-open glyphicon-eye-close");
+    // Background.
+    listElem.toggleClass("on");
+
     // Get tile url
     var tilesetName = dataset["TIF File"].split(".");
     tilesetName.pop(); // remove extension.
@@ -332,12 +336,12 @@ function buildSidebarEntry(entry) {
     liElem.attr("data-file", entry["TIF File"]);
 
     // Build checkbox.
-    var linkElem = $(document.createElement("a"));
-    linkElem.addClass("entry-link")
+    liElem.append("<i class=\"glyphicon glyphicon-eye-close\"></i>");
 
-    linkElem.html("<i class=\"btn btn-xs btn-default glyphicon glyphicon-eye-close\"></i>" + entry["Pretty Title"]);
-    linkElem.data("dataset", entry);
-    linkElem.click(function () {
+    liElem.addClass("entry-link")
+    liElem.data("dataset", entry);
+    liElem.append(entry["Pretty Title"])
+    liElem.click(function () {
         toggleMap($(this).data("dataset"));
     });
 
@@ -347,12 +351,14 @@ function buildSidebarEntry(entry) {
         tilesetName = String(tilesetName);
         if (elem.name == tilesetName) {
             // Set the icon.
-            linkElem.find("i").toggleClass("glyphicon-eye-open glyphicon-eye-close btn-primary");
+            liElem.find("i").toggleClass("glyphicon-eye-open glyphicon-eye-close");
+            // Background.
+            liElem.toggleClass("on");
         }
     });
 
     // in, then out
-    linkElem.hover(function () {
+    liElem.hover(function () {
         $("#cf2").css('background-image', 'url(' +  "sm_jpgs/" + entry["JPG File"] + ')');
         $("#cf2").toggleClass('in');
 
@@ -367,8 +373,6 @@ function buildSidebarEntry(entry) {
         // });
         toggleBoundsRectangle($(this).data("dataset"), false);
     });
-
-    liElem.append(linkElem);
 
     return liElem;
 }
@@ -414,14 +418,14 @@ function buildSidebarCategory(category) {
     descriptionElem.toggleClass("description");
     descriptionElem.text(category["Info Window"]);
 
-    // Build checkbox.
-    var boundsElem = $(document.createElement("span"));
-    boundsElem.addClass("glyphicon glyphicon-info-sign");
-    boundsElem.data("category", category["Category"]);
-    boundsElem.click(function () {
-        descriptionElem.toggleClass("in");
+    // Description button.
+    var descriptionToggleElem = $(document.createElement("span"));
+    descriptionToggleElem.addClass("glyphicon glyphicon-info-sign");
+    descriptionToggleElem.data("category", category["Category"]);
+    descriptionToggleElem.click(function () {
+        descriptionToggleElem.toggleClass("in");
     });
-    categoryElem.append(boundsElem);
+    categoryElem.append(descriptionToggleElem);
 
     // Build Entries
     var entriesElem = $(document.createElement("ul"));
