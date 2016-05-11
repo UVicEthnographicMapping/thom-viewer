@@ -44,38 +44,31 @@ function init() {
     tooltips.tooltip({ trigger: "hover", });
 
     // Add new buttons
-    var categoriesButton = document.createElement("div");
-    $(categoriesButton).text("Browse Library");
-    $(categoriesButton).click(function () {
-        toggleSidebar();
-        $(categoriesButton).toggleClass("in");
-    });
-    $(categoriesButton).toggleClass("gm-button");
-    map.controls[google.maps.ControlPosition.TOP_LEFT].push(categoriesButton);
+    var sidebarButton = document.createElement("div");
+    $(sidebarButton).attr("id", "sidebarButton");
+    $(sidebarButton).text("Browse Library");
+    $(sidebarButton).click(toggleSidebar);
+    $(sidebarButton).toggleClass("gm-button");
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(sidebarButton);
 
-    var mapsButton = document.createElement("div");
-    $(mapsButton).text("Selected Maps");
-    $(mapsButton).click(function () {
-        toggleDatasets();
-        $(mapsButton).toggleClass("in");
-    });
-    $(mapsButton).toggleClass("gm-button");
-    map.controls[google.maps.ControlPosition.TOP_LEFT].push(mapsButton);
+    var datasetsButton = document.createElement("div");
+    $(datasetsButton).attr("id", "datasetsButton");
+    $(datasetsButton).text("Selected Maps");
+    $(datasetsButton).click(toggleDatasets);
+    $(datasetsButton).toggleClass("gm-button");
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(datasetsButton);
 
     var infoButton = document.createElement("div");
+    $(infoButton).attr("id", "infoButton");
     $(infoButton).text("Project Info");
-    $(infoButton).click(function () {
-        toggleInfobox();
-    });
+    $(infoButton).click(toggleInfobox);
     $(infoButton).toggleClass("gm-button");
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(infoButton);
 
     var searchButton = document.createElement("div");
+    $(searchButton).attr("id", "searchButton");
     $(searchButton).text("Search Box");
-    $(searchButton).click(function () {
-        toggleSearchRectangle();
-        $(searchButton).toggleClass("in");
-    });
+    $(searchButton).click(toggleSearchRectangle);
     $(searchButton).toggleClass("gm-button");
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(searchButton);
 
@@ -226,6 +219,7 @@ function toggleMap(dataset) {
 }
 
 function toggleSidebar(optional_state) {
+    $("#sidebarButton").toggleClass("in");
     console.log("Toggling sidebar");
     if (optional_state === true) {
         $("#sidebarContainer").addClass("in");
@@ -237,6 +231,7 @@ function toggleSidebar(optional_state) {
 }
 
 function toggleDatasets(optional_state) {
+    $("#datasetsButton").toggleClass("in");
     console.log("Toggling Datasets");
     if (optional_state === true) {
         $("#datasetsContainer").addClass("in");
@@ -248,6 +243,7 @@ function toggleDatasets(optional_state) {
 }
 
 function toggleInfobox(optional_state) {
+    $("#infoboxButton").toggleClass("in");
     console.log("Toggling infobox");
     $("#infoboxContainer").modal("toggle");
 }
@@ -516,6 +512,7 @@ searchRectangle.addListener('bounds_changed', searchBounds);
 
 
 function toggleSearchRectangle() {
+    $("#searchButton").toggleClass("in");
     if (searchRectangle.getMap() === null || searchRectangle.getMap() === undefined) {
         var center = map.center;
         var bounds = {

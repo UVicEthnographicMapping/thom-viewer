@@ -35,11 +35,6 @@ main {
 /******************/
 /* Datasets stuff */
 /******************/
-#datasetsButton {
-    position: absolute;
-    right: 400px;
-    bottom: 200px;
-}
 #datasetsContainer {
     border-radius: 2px;
     background-clip: padding-box;
@@ -84,11 +79,6 @@ main {
 /*****************/
 /* Sidebar stuff */
 /*****************/
-#sidebarButton {
-    position: absolute;
-    right: -40px;
-    top: 325px;
-}
 #sidebar {
     top: 0px;
     bottom: 0px;
