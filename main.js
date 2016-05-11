@@ -46,25 +46,36 @@ function init() {
     // Add new buttons
     var categoriesButton = document.createElement("div");
     $(categoriesButton).text("Browse Library");
-    $(categoriesButton).click(toggleSidebar);
+    $(categoriesButton).click(function () {
+        toggleSidebar();
+        $(categoriesButton).toggleClass("in");
+    });
     $(categoriesButton).toggleClass("gm-button");
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(categoriesButton);
 
     var mapsButton = document.createElement("div");
     $(mapsButton).text("Selected Maps");
-    $(mapsButton).click(toggleDatasets);
+    $(mapsButton).click(function () {
+        toggleDatasets();
+        $(mapsButton).toggleClass("in");
+    });
     $(mapsButton).toggleClass("gm-button");
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(mapsButton);
 
     var infoButton = document.createElement("div");
     $(infoButton).text("Project Info");
-    $(infoButton).click(toggleInfobox)
+    $(infoButton).click(function () {
+        toggleInfobox();
+    });
     $(infoButton).toggleClass("gm-button");
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(infoButton);
 
     var searchButton = document.createElement("div");
     $(searchButton).text("Search Box");
-    $(searchButton).click(toggleSearchRectangle)
+    $(searchButton).click(function () {
+        toggleSearchRectangle();
+        $(searchButton).toggleClass("in");
+    });
     $(searchButton).toggleClass("gm-button");
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(searchButton);
 

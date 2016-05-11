@@ -261,6 +261,16 @@ img.tooltip-image {
     box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.3);
     min-width: 37px;
     font-weight: 500;
+
+    -webkit-transition: color .5s ease-out, background-color .5s ease-out;
+    -moz-transition: color .5s ease-out, background-color .5s ease-out;
+    -o-transition: color .5s ease-out, background-color .5s ease-out;
+    transition: color .5s ease-out, background-color .5s ease-out;
+}
+
+.gm-button.in {
+    background-color: #4285F4 !important;
+    color: white;
 }
 
 .gm-button:hover {
