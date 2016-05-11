@@ -82,7 +82,7 @@ function toggleMap(dataset) {
     // Set the icon.
     var listElem = $("li[data-file='"+dataset["TIF File"]+"']")
 
-    listElem.find("span.material-icons.descriptionToggle").toggleClass("in");
+    listElem.find("span.material-icons").toggleClass("in");
 
     // Get tile url
     var tilesetName = dataset["TIF File"].split(".");
