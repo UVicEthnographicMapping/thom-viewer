@@ -130,8 +130,9 @@ function toggleMap(dataset) {
         tr.data("dataset", tilesetName);
 
         // Build the removal box.
-        var buttonElem = $(document.createElement("button"));
-        buttonElem.addClass("btn btn-xs btn-danger glyphicon glyphicon-remove");
+        var buttonElem = $(document.createElement("span"));
+        buttonElem.addClass("material-icons");
+        buttonElem.text("delete")
         buttonElem.data("dataset", dataset);
         buttonElem.prop('checked', true);
         buttonElem.click(function () {
@@ -176,7 +177,7 @@ function toggleMap(dataset) {
         // Web link
         if (dataset["URL"]) {
             var urlElem = document.createElement("span");
-            $(urlElem).html(" <a target=blank href=\""+dataset["URL"]+"\"><i class=\"btn btn-default btn-xs glyphicon glyphicon-link\"></i></a>");
+            $(urlElem).html(" <a target=blank href=\""+dataset["URL"]+"\"><span class=\"material-icons\">link</span></a>");
             td = document.createElement("td");
             $(td).append(urlElem);
             tr.append(td);
@@ -187,7 +188,7 @@ function toggleMap(dataset) {
         // Alt link
         if (dataset["Alternate Link"]) {
             var alternateLinkElem = $(document.createElement("span"));
-            alternateLinkElem.html(" <a target=blank href=\""+dataset["Alternate Link"]+"\"><i class=\"btn btn-default btn-xs glyphicon glyphicon-link\"></i></a>");
+            alternateLinkElem.html(" <a target=blank href=\""+dataset["Alternate Link"]+"\"><span class=\"material-icons\">link</span></a>");
             td = $(document.createElement("td"));
             td.append(alternateLinkElem);
             tr.append(td);
@@ -198,10 +199,9 @@ function toggleMap(dataset) {
         // Download
         if (dataset["JPG File"]) {
             var downloadElem = $(document.createElement("a"));
-            downloadElem.addClass("btn btn-xs btn-default");
             downloadElem.attr("target", "blank");
             downloadElem.attr("href", "jpgs/" + dataset["JPG File"]);
-            downloadElem.html("<i class='glyphicon glyphicon-download'></i>");
+            downloadElem.html("<span class='material-icons'>file_download</span>");
             td = $(document.createElement("td"));
             td.append(downloadElem);
             console.log(downloadElem);
@@ -219,25 +219,29 @@ function toggleMap(dataset) {
 }
 
 function toggleSidebar(optional_state) {
-    $("#sidebarButton").toggleClass("in");
     console.log("Toggling sidebar");
     if (optional_state === true) {
+        $("#sidebarButton").addClass("in");
         $("#sidebarContainer").addClass("in");
     } else if (optional_state === false) {
+        $("#sidebarButton").removeClass("in");
         $("#sidebarContainer").removeClass("in");
     } else {
+        $("#sidebarButton").toggleClass("in");
         $("#sidebarContainer").toggleClass("in");
     }
 }
 
 function toggleDatasets(optional_state) {
-    $("#datasetsButton").toggleClass("in");
     console.log("Toggling Datasets");
     if (optional_state === true) {
         $("#datasetsContainer").addClass("in");
+        $("#datasetsButton").addClass("in");
     } else if (optional_state === false) {
         $("#datasetsContainer").removeClass("in");
+        $("#datasetsButton").removeClass("in");
     } else {
+        $("#datasetsButton").toggleClass("in");
         $("#datasetsContainer").toggleClass("in");
     }
 }
@@ -514,6 +518,7 @@ searchRectangle.addListener('bounds_changed', searchBounds);
 function toggleSearchRectangle() {
     $("#searchButton").toggleClass("in");
     if (searchRectangle.getMap() === null || searchRectangle.getMap() === undefined) {
+        console.log("Toggling search rectangle on");
         var center = map.center;
         var bounds = {
             north: center.lat() + 5,
@@ -530,13 +535,12 @@ function toggleSearchRectangle() {
 }
 
 function resetSearch() {
+    console.log("Resetting search");
     $("ul#categories > li").show();
-    $("ul#categories > li > .entries > li").show();
+    $(".entries > li").show();
 }
 
 function searchBounds() {
-    resetSearch();
-
     var search_bounds = searchRectangle.getBounds();
     var s_n = search_bounds.getNorthEast().lat(),
         s_e = search_bounds.getNorthEast().lng(),
@@ -560,13 +564,19 @@ function searchBounds() {
             var data_west_in_search = (s_e > d_w && s_w < d_w);
 
             if ((data_south_in_search || data_north_in_search) && (data_east_in_search || data_west_in_search)) {
+                console.log("Showing");
+                $(this).show();
             } else {
-                $(this).parent().hide();
+                $(this).hide();
                 collapsed += 1;
             }
         });
         if (collapsed == entries.length) {
+            console.log("All entries hidden, hiding cat.");
             $(this).hide();
+        } else {
+            console.log("Not all entries hidden, opening cat");
+            $(this).show();
         }
     });
 }

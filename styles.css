@@ -39,6 +39,8 @@ main {
     border-radius: 2px;
     background-clip: padding-box;
     margin-left: 420px;
+    padding-right: 0;
+    padding-left: 0;
     position: absolute;
     height: 200px;
     width: unset;
@@ -50,26 +52,30 @@ main {
     background: white;
     bottom: -200px;
     transition: left .75s, right .75s, top .75s, bottom .75s;
+
 }
 #datasetsContainer.in {
     bottom: 0px;
 }
 #datasets {
-    height: 100%;
     top: 0px;
     bottom: 0px;
     overflow: scroll;
 }
 
-#datasets th {
+#datasets thead {
     vertical-align: top !important;
+    background-color: #4285F4;
+    color: white;
+    font-weight: bold;
+    height: 50px;
 }
 
 #datasetsWrapper {
     height: 200px;
     overflow: scroll;
-    margin-left: 20px;
     width: 100%;
+    margin-left: 0;
 }
 
 #sidebarContainer,#datasetsContainer {
@@ -116,7 +122,8 @@ main {
     list-style: none;
     padding-left: 0px;
 }
-li > span.material-icons {
+
+li > span.material-icons  {
     margin-left: 10px;
     padding: 8px;
     box-shadow: 0 1px 6px 0 rgba(0,0,0,.3);
@@ -124,6 +131,19 @@ li > span.material-icons {
     box-sizing: border-box;
     display: inline-block;
 }
+tr span.material-icons  {
+    margin-left: 10px;
+    padding: 8px;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.3);
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+
+    color: white;
+    background-color: #4285F4;
+}
+
+
 ul#categories > li {
     padding-top: 10px;
 }
