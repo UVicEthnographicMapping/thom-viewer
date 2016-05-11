@@ -339,7 +339,7 @@ function buildSidebarEntry(entry) {
 
     liElem.addClass("entry-link")
     liElem.data("dataset", entry);
-    liElem.append(entry["Pretty Title"])
+    liElem.append("<div>"+entry["Pretty Title"]+"</div>");
     liElem.click(function () {
         toggleMap($(this).data("dataset"));
     });
@@ -356,18 +356,14 @@ function buildSidebarEntry(entry) {
 
     // in, then out
     liElem.hover(function () {
-        $("#cf2").css('background-image', 'url(' +  "sm_jpgs/" + entry["JPG File"] + ')');
-        $("#cf2").toggleClass('in');
+        $("div[id^='cf']:not(.in)").css('background-image', 'url(' +  "sm_jpgs/" + entry["JPG File"] + ')');
+        $("#cf1, #cf2").map(function() { $(this).toggleClass('in'); });
 
         // category.entries.map(function (entry) {
         //     toggleBoundsRectangle(entry, false);
         // });
         toggleBoundsRectangle($(this).data("dataset"), true);
     }, function () {
-        $("#cf2").toggleClass('in');
-        // category.entries.map(function (entry) {
-        //     toggleBoundsRectangle(entry, false);
-        // });
         toggleBoundsRectangle($(this).data("dataset"), false);
     });
 
@@ -384,9 +380,8 @@ function buildSidebar(categories) {
     previewElem.attr("id", "preview");
     var cf1Elem = $(document.createElement("div"));
     cf1Elem.attr("id", "cf1");
-    cf1Elem.css('background-image', 'url(placeholder.jpg)');
     cf1Elem.toggleClass('in');
-    // cf1Elem.text("Hover over maps below to see a preview.")
+    previewElem.append("<span>[Hover over maps below to see a preview here]</span>")
     previewElem.append(cf1Elem);
     var cf2Elem = $(document.createElement("div"));
     cf2Elem.attr("id", "cf2");
