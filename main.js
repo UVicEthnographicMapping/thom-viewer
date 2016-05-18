@@ -511,13 +511,15 @@ var searchRectangle = new google.maps.Rectangle({
     clickable: true,
     draggable: true,
     editable: true,
+    fillColor: '#4285F4',
+    strokeColor: '#4285F4'
 });
 searchRectangle.addListener('bounds_changed', searchBounds);
 
 
 function toggleSearchRectangle() {
     $("#searchButton").toggleClass("in");
-    if (searchRectangle.getMap() === null || searchRectangle.getMap() === undefined) {
+    if (searchRectangle.getMap() === undefined) {
         console.log("Toggling search rectangle on");
         var center = map.center;
         var bounds = {
@@ -527,6 +529,8 @@ function toggleSearchRectangle() {
             west: center.lng() - 5,
         };
         searchRectangle.setBounds(bounds);
+        searchRectangle.setMap(map);
+    } else if (searchRectangle.getMap() === null) {
         searchRectangle.setMap(map);
     } else {
         resetSearch();
