@@ -21,7 +21,7 @@ $(TILE_DIR):
 # This is lazy and only updates ones it actually needs to.
 $(TILE_DIR)/%: $(GEOTIFF_DIR)/%.tif
 	# Build the tiles.
-	gdal2tiles.py -r cubicspline -w none "$<" "$@"
+	gdal2tiles.py -r cubicspline -z 2-11 -w none "$<" "$@"
 
 $(SM_JPG_DIR):
 	mkdir -p $(SM_JPG_DIR)
